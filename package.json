@@ -18,11 +18,14 @@
     ]
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "prettier": "^2.6.2"
   }
 }
