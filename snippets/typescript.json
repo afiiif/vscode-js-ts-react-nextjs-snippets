@@ -324,7 +324,7 @@
   "useState": {
     "prefix": "$useStateSnippet",
     "body": [
-      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$0(${2:initialValue})"
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$3($2)"
     ],
     "description": "React useState",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -332,7 +332,7 @@
   "useRef": {
     "prefix": "$useRefSnippet",
     "body": [
-      "const ${1:ref} = useRef$0(${2:null})"
+      "const ${1:ref} = useRef$3(${2:null})"
     ],
     "description": "React useRef",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -340,7 +340,7 @@
   "useReducer": {
     "prefix": "$useReducerSnippet",
     "body": [
-      "const [state, dispatch] = useReducer$0(${1:reducer}, ${2:initialState})"
+      "const [state, dispatch] = useReducer$3(${1:reducer}, ${2:null})"
     ],
     "description": "React useReducer",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -348,7 +348,7 @@
   "useEffect": {
     "prefix": "$useEffectSnippet",
     "body": [
-      "useEffect(() => {",
+      "useEffect$3(() => {",
       "\t${1:// code}",
       "}, [$2])",
       ""
@@ -359,7 +359,7 @@
   "useEffectWithCleanUp": {
     "prefix": "$useEffectWithCleanupSnippet",
     "body": [
-      "useEffect(() => {",
+      "useEffect$4(() => {",
       "\t${1:// code}",
       "",
       "\treturn () => {",
@@ -374,7 +374,7 @@
   "useLayoutEffect": {
     "prefix": "$useLayoutEffectSnippet",
     "body": [
-      "useLayoutEffect(() => {",
+      "useLayoutEffect$3(() => {",
       "\t${1:// code}",
       "}, [$2])",
       ""
@@ -385,7 +385,7 @@
   "useLayoutEffectWithCleanUp": {
     "prefix": "$useLayoutEffectWithCleanupSnippet",
     "body": [
-      "useLayoutEffect(() => {",
+      "useLayoutEffect$4(() => {",
       "\t${1:// code}",
       "",
       "\treturn () => {",
@@ -400,7 +400,7 @@
   "useMemo": {
     "prefix": "$useMemoSnippet",
     "body": [
-      "useMemo(() => ${1:computeValue}, [$2])"
+      "useMemo$3(() => ${1:computeValue}, [$2])"
     ],
     "description": "React useMemo",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -408,7 +408,7 @@
   "useCallback": {
     "prefix": "$useCallbackSnippet",
     "body": [
-      "useCallback(() => {",
+      "useCallback$3(() => {",
       "\t${1:// code}",
       "}, [$2])",
       ""
@@ -419,7 +419,7 @@
   "tsUseState": {
     "prefix": "$$useStateSnippet",
     "body": [
-      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$0<${3:any}>(${2:initialValue})"
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$4<${3:any}>($2)"
     ],
     "description": "React useState",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -427,7 +427,7 @@
   "tsUseRef": {
     "prefix": "$$useRefSnippet",
     "body": [
-      "const ${1:ref} = useRef$0<${3:HTMLDivElement}>(${2:null})"
+      "const ${1:ref} = useRef$4<${3:HTMLDivElement}>(${2:null})"
     ],
     "description": "React useRef",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -435,7 +435,7 @@
   "tsUseMemo": {
     "prefix": "$$useMemoSnippet",
     "body": [
-      "useMemo<${3:any}>(() => ${1:computeValue}, [$2])"
+      "useMemo$4<${3:any}>(() => ${1:computeValue}, [$2])"
     ],
     "description": "React useMemo",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -443,7 +443,7 @@
   "tsUseCallback": {
     "prefix": "$$useCallbackSnippet",
     "body": [
-      "useCallback<() => ${3:void}>(() => {",
+      "useCallback$4<() => ${3:void}>(() => {",
       "\t${1:// code}",
       "}, [$2])",
       ""
