@@ -31,16 +31,18 @@ const typescriptSnippets = {
   ...nextTS,
 };
 
-// Add scope
+// Update prefix & add scope
 Object.keys(javascriptSnippets).forEach((key) => {
   javascriptSnippets[key] = {
     ...javascriptSnippets[key],
+    prefix: `${javascriptSnippets[key].prefix} 💡`,
     scope: 'javascript,javascriptreact',
   };
 });
 Object.keys(typescriptSnippets).forEach((key) => {
   typescriptSnippets[key] = {
     ...typescriptSnippets[key],
+    prefix: `${typescriptSnippets[key].prefix} 💡`,
     scope: 'javascript,typescript,javascriptreact,typescriptreact',
   };
 });

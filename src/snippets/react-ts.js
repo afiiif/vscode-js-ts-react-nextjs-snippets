@@ -1,7 +1,7 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
 exports.tsReactFunctionalComponent = {
-  prefix: '$$rfc',
+  prefix: 'rfc $$rfc(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -17,7 +17,7 @@ exports.tsReactFunctionalComponent = {
 };
 
 exports.tsReactFunctionalExportComponent = {
-  prefix: '$$rfce',
+  prefix: 'rfce $$rfce(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -35,7 +35,7 @@ exports.tsReactFunctionalExportComponent = {
 };
 
 exports.tsReactArrowFunctionComponent = {
-  prefix: '$$rafc',
+  prefix: 'rafc $$rafc(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -51,7 +51,7 @@ exports.tsReactArrowFunctionComponent = {
 };
 
 exports.tsReactArrowFunctionExportComponent = {
-  prefix: '$$rafce',
+  prefix: 'rafce $$rafce(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
