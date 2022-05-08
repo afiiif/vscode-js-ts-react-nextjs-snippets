@@ -1,0 +1,553 @@
+{
+  "consoleLog": {
+    "prefix": "$clg",
+    "body": [
+      "console.log(${1:data})"
+    ],
+    "description": "console.log",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleLogWithLabel": {
+    "prefix": "$cll",
+    "body": [
+      "console.log('${1:data}', ${1:data})"
+    ],
+    "description": "console.log with label",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleLogJSON": {
+    "prefix": "$clj",
+    "body": [
+      "console.log('${1:data}', JSON.stringify(${1:data}, null, 2))"
+    ],
+    "description": "console.log JSON",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleInfo": {
+    "prefix": "$cin",
+    "body": [
+      "console.info(${1:data})"
+    ],
+    "description": "console.info",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleWarn": {
+    "prefix": "$cwa",
+    "body": [
+      "console.warn(${1:data})"
+    ],
+    "description": "console.warn",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleError": {
+    "prefix": "$cer",
+    "body": [
+      "console.error(${1:data})"
+    ],
+    "description": "console.error",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleTable": {
+    "prefix": "$ctl",
+    "body": [
+      "console.table(${1:data})"
+    ],
+    "description": "console.table",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleDir": {
+    "prefix": "$cdi",
+    "body": [
+      "console.dir(${1:data})"
+    ],
+    "description": "console.dir",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleCount": {
+    "prefix": "$cco",
+    "body": [
+      "console.count(${1:data})"
+    ],
+    "description": "console.count",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleGroup": {
+    "prefix": "$cgr",
+    "body": [
+      "console.group(${1:label})"
+    ],
+    "description": "console.group",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleGroupEnd": {
+    "prefix": "$cge",
+    "body": [
+      "console.groupEnd()"
+    ],
+    "description": "console.groupEnd",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "consoleClear": {
+    "prefix": "$ccl",
+    "body": [
+      "console.clear()"
+    ],
+    "description": "console.clear",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "setTimeout": {
+    "prefix": "$sto",
+    "body": [
+      "setTimeout(() => {",
+      "\t${1:// code}",
+      "}, ${2:1000})",
+      ""
+    ],
+    "description": "setTimeout",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "setInterval": {
+    "prefix": "$sti",
+    "body": [
+      "setInterval(() => {",
+      "\t${1:// code}",
+      "}, ${2:1000})",
+      ""
+    ],
+    "description": "setInterval",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactFunctionalComponent": {
+    "prefix": "$rfc",
+    "body": [
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:$1 Component}</$2>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Functional Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactFunctionalExportComponent": {
+    "prefix": "$rfce",
+    "body": [
+      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:$1 Component}</$2>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Functional Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactFunctionalComponentWithPropTypes": {
+    "prefix": "$rfcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:$1 Component}</$2>",
+      "\t)",
+      "}",
+      "",
+      "$1.propTypes = {}",
+      ""
+    ],
+    "description": "React Functional Component with PropTypes",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactFunctionalComponentWithPropTypesChildren": {
+    "prefix": "$rfcpch",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}({ children }) {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:{ children \\}}</$2>",
+      "\t)",
+      "}",
+      "",
+      "$1.propTypes = {",
+      "\tchildren: PropTypes.node.isRequired",
+      "}",
+      ""
+    ],
+    "description": "React Functional Component with PropTypes",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactArrowFunctionComponent": {
+    "prefix": "$rafc",
+    "body": [
+      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:$1 Component}</$2>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Arrow Function Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactArrowFunctionExportComponent": {
+    "prefix": "$rafce",
+    "body": [
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:$1 Component}</$2>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Arrow Function Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactArrowFunctionComponentWithPropTypes": {
+    "prefix": "$rafcp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:$1 Component}</$2>",
+      "\t)",
+      "}",
+      "",
+      "$1.propTypes = {}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Arrow Function Component with PropTypes",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactArrowFunctionComponentWithPropTypesChildren": {
+    "prefix": "$rafcpch",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = ({ children }) => {",
+      "\treturn (",
+      "\t\t<${2:div}>${0:{ children \\}}</$2>",
+      "\t)",
+      "}",
+      "",
+      "$1.propTypes = {",
+      "\tchildren: PropTypes.node.isRequired",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Arrow Function Component with PropTypes",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useState": {
+    "prefix": "$useStateSnippet",
+    "body": [
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$0(${2:initialValue})"
+    ],
+    "description": "React useState",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useRef": {
+    "prefix": "$useRefSnippet",
+    "body": [
+      "const ${1:ref} = useRef$0(${2:null})"
+    ],
+    "description": "React useRef",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useReducer": {
+    "prefix": "$useReducerSnippet",
+    "body": [
+      "const [state, dispatch] = useReducer$0(${1:reducer}, ${2:initialState})"
+    ],
+    "description": "React useReducer",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useEffect": {
+    "prefix": "$useEffectSnippet",
+    "body": [
+      "useEffect(() => {",
+      "\t${1:// code}",
+      "}, [$2])",
+      ""
+    ],
+    "description": "React useEffect",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useEffectWithCleanUp": {
+    "prefix": "$useEffectWithCleanupSnippet",
+    "body": [
+      "useEffect(() => {",
+      "\t${1:// code}",
+      "",
+      "\treturn () => {",
+      "\t\t${3:// cleanup}",
+      "\t}",
+      "}, [$2])",
+      ""
+    ],
+    "description": "React useEffect with cleanup",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useLayoutEffect": {
+    "prefix": "$useLayoutEffectSnippet",
+    "body": [
+      "useLayoutEffect(() => {",
+      "\t${1:// code}",
+      "}, [$2])",
+      ""
+    ],
+    "description": "React useLayoutEffect",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useLayoutEffectWithCleanUp": {
+    "prefix": "$useLayoutEffectWithCleanupSnippet",
+    "body": [
+      "useLayoutEffect(() => {",
+      "\t${1:// code}",
+      "",
+      "\treturn () => {",
+      "\t\t${3:// cleanup}",
+      "\t}",
+      "}, [$2])",
+      ""
+    ],
+    "description": "React useLayoutEffect with cleanup",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useMemo": {
+    "prefix": "$useMemoSnippet",
+    "body": [
+      "useMemo(() => ${1:computeValue}, [$2])"
+    ],
+    "description": "React useMemo",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "useCallback": {
+    "prefix": "$useCallbackSnippet",
+    "body": [
+      "useCallback(() => {",
+      "\t${1:// code}",
+      "}, [$2])",
+      ""
+    ],
+    "description": "React useCallback",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextGSS": {
+    "prefix": "$nGSS",
+    "body": [
+      "export async function getServerSideProps(${1:{ req, res, params, query \\}}) {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Next.js getServerSideProps",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextGST": {
+    "prefix": "$nGST",
+    "body": [
+      "export async function getStaticProps(${1:{ params \\}}) {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Next.js getStaticProps",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextGSP": {
+    "prefix": "$nGSP",
+    "body": [
+      "export async function getStaticPaths() {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tpaths: [],",
+      "\t\tfallback: ${1|true,false,'blocking'|},",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Next.js getStaticPaths",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextPageGSS": {
+    "prefix": "$npGSS",
+    "body": [
+      "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}Page}() {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$1 content",
+      "\t\t</>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Next.js page with getServerSideProps",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextPageGST": {
+    "prefix": "$npGST",
+    "body": [
+      "export async function getStaticProps(${2:{ params \\}}) {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}Page}() {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$1 content",
+      "\t\t</>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "Next.js page with getStaticProps",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextGSSArrowFunction": {
+    "prefix": "$naGSS",
+    "body": [
+      "export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Next.js getServerSideProps arrow function",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextGSTArrowFunction": {
+    "prefix": "$naGST",
+    "body": [
+      "export const getStaticProps = async (${1:{ params \\}}) => {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Next.js getStaticProps arrow function",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextGSPArrowFunction": {
+    "prefix": "$naGSP",
+    "body": [
+      "export const getStaticPaths = async () => {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tpaths: [],",
+      "\t\tfallback: ${1|true,false,'blocking'|},",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "Next.js getStaticPaths arrow function",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextPageGSSArrowFunction": {
+    "prefix": "$npaGSS",
+    "body": [
+      "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}Page} = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$1 content",
+      "\t\t</>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "Next.js page with getServerSideProps",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextPageGSTArrowFunction": {
+    "prefix": "$npaGST",
+    "body": [
+      "export const getStaticProps = async (${2:{ params \\}}) => {",
+      "\t${0:// code}",
+      "",
+      "\treturn {",
+      "\t\tprops: {},",
+      "\t}",
+      "}",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}Page} = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$1 content",
+      "\t\t</>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "Next.js page with getStaticProps",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextUseRouter": {
+    "prefix": "$nUseRouter",
+    "body": [
+      "const { ${1:pathname, query} } = useRouter$0()"
+    ],
+    "description": "Next.js useRouter",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextLinkComponent": {
+    "prefix": "$nLink",
+    "body": [
+      "<Link href=$1>",
+      "\t<a>${2:LinkText}</a>",
+      "</Link>"
+    ],
+    "description": "Next.js Link component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  }
+}
