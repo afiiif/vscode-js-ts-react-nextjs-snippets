@@ -1,6 +1,6 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
-exports.tsReactFunctionalComponent = {
+exports.tsReactFunctionalComp = {
   prefix: 'rfc $$rfc(ts)',
   body: [
     'interface Props {',
@@ -16,7 +16,7 @@ exports.tsReactFunctionalComponent = {
   description: 'React Functional Component',
 };
 
-exports.tsReactFunctionalExportComponent = {
+exports.tsReactFunctionalCompExport = {
   prefix: 'rfce $$rfce(ts)',
   body: [
     'interface Props {',
@@ -34,7 +34,7 @@ exports.tsReactFunctionalExportComponent = {
   description: 'React Functional Component',
 };
 
-exports.tsReactArrowFunctionComponent = {
+exports.tsReactArrowFunctionComp = {
   prefix: 'rafc $$rafc(ts)',
   body: [
     'interface Props {',
@@ -50,7 +50,7 @@ exports.tsReactArrowFunctionComponent = {
   description: 'React Arrow Function Component',
 };
 
-exports.tsReactArrowFunctionExportComponent = {
+exports.tsReactArrowFunctionCompExport = {
   prefix: 'rafce $$rafce(ts)',
   body: [
     'interface Props {',
@@ -68,7 +68,7 @@ exports.tsReactArrowFunctionExportComponent = {
   description: 'React Arrow Function Component',
 };
 
-exports.tsReactFunctionalComponentV2 = {
+exports.tsReactFunctionalCompV2 = {
   prefix: 'rfc $$rfc(ts)',
   body: [
     'type Props = {',
@@ -84,7 +84,7 @@ exports.tsReactFunctionalComponentV2 = {
   description: 'React Functional Component',
 };
 
-exports.tsReactFunctionalExportComponentV2 = {
+exports.tsReactFunctionalCompExportV2 = {
   prefix: 'rfce $$rfce(ts)',
   body: [
     'type Props = {',
@@ -102,7 +102,7 @@ exports.tsReactFunctionalExportComponentV2 = {
   description: 'React Functional Component',
 };
 
-exports.tsReactArrowFunctionComponentV2 = {
+exports.tsReactArrowFunctionCompV2 = {
   prefix: 'rafc $$rafc(ts)',
   body: [
     'type Props = {',
@@ -118,7 +118,7 @@ exports.tsReactArrowFunctionComponentV2 = {
   description: 'React Arrow Function Component',
 };
 
-exports.tsReactArrowFunctionExportComponentV2 = {
+exports.tsReactArrowFunctionCompExportV2 = {
   prefix: 'rafce $$rafce(ts)',
   body: [
     'type Props = {',

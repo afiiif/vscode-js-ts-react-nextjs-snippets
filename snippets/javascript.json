@@ -117,7 +117,7 @@
     "description": "setInterval",
     "scope": "javascript,javascriptreact"
   },
-  "reactFunctionalComponent": {
+  "reactFunctionalComp": {
     "prefix": "rfc $rfc 💡",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
@@ -130,7 +130,7 @@
     "description": "React Functional Component",
     "scope": "javascript,javascriptreact"
   },
-  "reactFunctionalExportComponent": {
+  "reactFunctionalCompExport": {
     "prefix": "rfce $rfce 💡",
     "body": [
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
@@ -145,7 +145,7 @@
     "description": "React Functional Component",
     "scope": "javascript,javascriptreact"
   },
-  "reactFunctionalComponentWithPropTypes": {
+  "reactFunctionalCompWithPropTypes": {
     "prefix": "rfcp $rfcp 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -162,7 +162,7 @@
     "description": "React Functional Component with PropTypes",
     "scope": "javascript,javascriptreact"
   },
-  "reactFunctionalComponentWithPropTypesChildren": {
+  "reactFunctionalCompWithPropTypesChildren": {
     "prefix": "rfcpch $rfcpch 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -181,7 +181,7 @@
     "description": "React Functional Component with PropTypes",
     "scope": "javascript,javascriptreact"
   },
-  "reactArrowFunctionComponent": {
+  "reactArrowFunctionComp": {
     "prefix": "rafc $rafc 💡",
     "body": [
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
@@ -194,7 +194,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,javascriptreact"
   },
-  "reactArrowFunctionExportComponent": {
+  "reactArrowFunctionCompExport": {
     "prefix": "rafce $rafce 💡",
     "body": [
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
@@ -209,7 +209,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,javascriptreact"
   },
-  "reactArrowFunctionComponentWithPropTypes": {
+  "reactArrowFunctionCompWithPropTypes": {
     "prefix": "rafcp $rafcp 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -228,7 +228,7 @@
     "description": "React Arrow Function Component with PropTypes",
     "scope": "javascript,javascriptreact"
   },
-  "reactArrowFunctionComponentWithPropTypesChildren": {
+  "reactArrowFunctionCompWithPropTypesChildren": {
     "prefix": "rafcpch $rafcpch 💡",
     "body": [
       "import PropTypes from 'prop-types'",

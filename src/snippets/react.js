@@ -1,6 +1,6 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
-exports.reactFunctionalComponent = {
+exports.reactFunctionalComp = {
   prefix: 'rfc $rfc',
   body: [
     `export default function \${1:${FILENAME_PASCALCASE}}() {`,
@@ -12,7 +12,7 @@ exports.reactFunctionalComponent = {
   description: 'React Functional Component',
 };
 
-exports.reactFunctionalExportComponent = {
+exports.reactFunctionalCompExport = {
   prefix: 'rfce $rfce',
   body: [
     `function \${1:${FILENAME_PASCALCASE}}() {`,
@@ -26,7 +26,7 @@ exports.reactFunctionalExportComponent = {
   description: 'React Functional Component',
 };
 
-exports.reactFunctionalComponentWithPropTypes = {
+exports.reactFunctionalCompWithPropTypes = {
   prefix: 'rfcp $rfcp',
   body: [
     "import PropTypes from 'prop-types'",
@@ -42,7 +42,7 @@ exports.reactFunctionalComponentWithPropTypes = {
   description: 'React Functional Component with PropTypes',
 };
 
-exports.reactFunctionalComponentWithPropTypesChildren = {
+exports.reactFunctionalCompWithPropTypesChildren = {
   prefix: 'rfcpch $rfcpch',
   body: [
     "import PropTypes from 'prop-types'",
@@ -60,7 +60,7 @@ exports.reactFunctionalComponentWithPropTypesChildren = {
   description: 'React Functional Component with PropTypes',
 };
 
-exports.reactArrowFunctionComponent = {
+exports.reactArrowFunctionComp = {
   prefix: 'rafc $rafc',
   body: [
     `export const \${1:${FILENAME_PASCALCASE}} = () => {`,
@@ -72,7 +72,7 @@ exports.reactArrowFunctionComponent = {
   description: 'React Arrow Function Component',
 };
 
-exports.reactArrowFunctionExportComponent = {
+exports.reactArrowFunctionCompExport = {
   prefix: 'rafce $rafce',
   body: [
     `const \${1:${FILENAME_PASCALCASE}} = () => {`,
@@ -86,7 +86,7 @@ exports.reactArrowFunctionExportComponent = {
   description: 'React Arrow Function Component',
 };
 
-exports.reactArrowFunctionComponentWithPropTypes = {
+exports.reactArrowFunctionCompWithPropTypes = {
   prefix: 'rafcp $rafcp',
   body: [
     "import PropTypes from 'prop-types'",
@@ -104,7 +104,7 @@ exports.reactArrowFunctionComponentWithPropTypes = {
   description: 'React Arrow Function Component with PropTypes',
 };
 
-exports.reactArrowFunctionComponentWithPropTypesChildren = {
+exports.reactArrowFunctionCompWithPropTypesChildren = {
   prefix: 'rafcpch $rafcpch',
   body: [
     "import PropTypes from 'prop-types'",

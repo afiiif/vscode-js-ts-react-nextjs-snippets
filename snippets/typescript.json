@@ -117,7 +117,7 @@
     "description": "setInterval",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactFunctionalComponent": {
+  "reactFunctionalComp": {
     "prefix": "rfc $rfc 💡",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
@@ -130,7 +130,7 @@
     "description": "React Functional Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactFunctionalExportComponent": {
+  "reactFunctionalCompExport": {
     "prefix": "rfce $rfce 💡",
     "body": [
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
@@ -145,7 +145,7 @@
     "description": "React Functional Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactFunctionalComponentWithPropTypes": {
+  "reactFunctionalCompWithPropTypes": {
     "prefix": "rfcp $rfcp 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -162,7 +162,7 @@
     "description": "React Functional Component with PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactFunctionalComponentWithPropTypesChildren": {
+  "reactFunctionalCompWithPropTypesChildren": {
     "prefix": "rfcpch $rfcpch 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -181,7 +181,7 @@
     "description": "React Functional Component with PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactArrowFunctionComponent": {
+  "reactArrowFunctionComp": {
     "prefix": "rafc $rafc 💡",
     "body": [
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
@@ -194,7 +194,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactArrowFunctionExportComponent": {
+  "reactArrowFunctionCompExport": {
     "prefix": "rafce $rafce 💡",
     "body": [
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
@@ -209,7 +209,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactArrowFunctionComponentWithPropTypes": {
+  "reactArrowFunctionCompWithPropTypes": {
     "prefix": "rafcp $rafcp 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -228,7 +228,7 @@
     "description": "React Arrow Function Component with PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "reactArrowFunctionComponentWithPropTypesChildren": {
+  "reactArrowFunctionCompWithPropTypesChildren": {
     "prefix": "rafcpch $rafcpch 💡",
     "body": [
       "import PropTypes from 'prop-types'",
@@ -249,7 +249,7 @@
     "description": "React Arrow Function Component with PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactFunctionalComponent": {
+  "tsReactFunctionalComp": {
     "prefix": "rfc $$rfc(ts) 💡",
     "body": [
       "interface Props {",
@@ -266,7 +266,7 @@
     "description": "React Functional Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactFunctionalExportComponent": {
+  "tsReactFunctionalCompExport": {
     "prefix": "rfce $$rfce(ts) 💡",
     "body": [
       "interface Props {",
@@ -285,7 +285,7 @@
     "description": "React Functional Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactArrowFunctionComponent": {
+  "tsReactArrowFunctionComp": {
     "prefix": "rafc $$rafc(ts) 💡",
     "body": [
       "interface Props {",
@@ -302,7 +302,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactArrowFunctionExportComponent": {
+  "tsReactArrowFunctionCompExport": {
     "prefix": "rafce $$rafce(ts) 💡",
     "body": [
       "interface Props {",
@@ -321,7 +321,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactFunctionalComponentV2": {
+  "tsReactFunctionalCompV2": {
     "prefix": "rfc $$rfc(ts) 💡",
     "body": [
       "type Props = {",
@@ -338,7 +338,7 @@
     "description": "React Functional Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactFunctionalExportComponentV2": {
+  "tsReactFunctionalCompExportV2": {
     "prefix": "rfce $$rfce(ts) 💡",
     "body": [
       "type Props = {",
@@ -357,7 +357,7 @@
     "description": "React Functional Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactArrowFunctionComponentV2": {
+  "tsReactArrowFunctionCompV2": {
     "prefix": "rafc $$rafc(ts) 💡",
     "body": [
       "type Props = {",
@@ -374,7 +374,7 @@
     "description": "React Arrow Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsReactArrowFunctionExportComponentV2": {
+  "tsReactArrowFunctionCompExportV2": {
     "prefix": "rafce $$rafce(ts) 💡",
     "body": [
       "type Props = {",
