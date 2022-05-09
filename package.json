@@ -2,7 +2,14 @@
   "name": "vscode-js-ts-react-nextjs-snippets",
   "displayName": "JS/TS React/Next.js Snippets",
   "description": "JavaScript/TypeScript React/Next.js snippets",
-  "version": "0.0.1",
+  "icon": "images/logo.png",
+  "version": "0.1.0",
+  "publisher": "afifu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afiiif/vscode-js-ts-react-nextjs-snippets"
+  },
   "engines": {
     "vscode": "^1.67.0"
   },
