@@ -549,5 +549,91 @@
     ],
     "description": "Next.js Link component",
     "scope": "javascript,javascriptreact"
+  },
+  "rqUseQuery": {
+    "prefix": "rqUseQuery/$rqUseQuery/useQuery/💡",
+    "body": [
+      "const { isLoading, data, error } = ${2:useQuery}$3($1)",
+      ""
+    ],
+    "description": "React Query useQuery",
+    "scope": "javascript,javascriptreact"
+  },
+  "rqLDE": {
+    "prefix": "rqLDE/$rqLDE/💡",
+    "body": [
+      "if (isLoading) {",
+      "\treturn <div>⏳ Loading</div>",
+      "}",
+      "",
+      "if (data) {",
+      "\treturn <div>🎉 Yay!</div>",
+      "}",
+      "",
+      "return <div>🚫 Nay! ({error.message})</div>"
+    ],
+    "description": "React Query Loading-Data-Error pattern",
+    "scope": "javascript,javascriptreact"
+  },
+  "rqUseQueryLDE": {
+    "prefix": "rqUseQueryLDE/$rqUseQueryLDE/useQueryLDE/💡",
+    "body": [
+      "const { isLoading, data, error } = ${2:useQuery}$3($1)",
+      "",
+      "if (isLoading) {",
+      "\treturn <div>⏳ Loading</div>",
+      "}",
+      "",
+      "if (data) {",
+      "\treturn <div>🎉 Yay!</div>",
+      "}",
+      "",
+      "return <div>🚫 Nay! ({error.message})</div>"
+    ],
+    "description": "React Query useQuery with Loading-Data-Error pattern",
+    "scope": "javascript,javascriptreact"
+  },
+  "rqLED": {
+    "prefix": "rqLED/$rqLED/💡",
+    "body": [
+      "if (isLoading) {",
+      "\treturn <div>⏳ Loading</div>",
+      "}",
+      "",
+      "if (error) {",
+      "\treturn <div>🚫 Nay! ({error.message})</div>",
+      "}",
+      "",
+      "return <div>🎉 Yay!</div>"
+    ],
+    "description": "React Query Loading-Error-Data pattern",
+    "scope": "javascript,javascriptreact"
+  },
+  "rqUseQueryLED": {
+    "prefix": "rqUseQueryLED/$rqUseQueryLED/useQueryLED/💡",
+    "body": [
+      "const { isLoading, error, data } = ${2:useQuery}$3($1)",
+      "",
+      "if (isLoading) {",
+      "\treturn <div>⏳ Loading</div>",
+      "}",
+      "",
+      "if (error) {",
+      "\treturn <div>🚫 Nay! ({error.message})</div>",
+      "}",
+      "",
+      "return <div>🎉 Yay!</div>"
+    ],
+    "description": "React Query useQuery with Loading-Error-Data pattern",
+    "scope": "javascript,javascriptreact"
+  },
+  "rqUseMutation": {
+    "prefix": "rqUseMutation/$rqUseMutation/useMutation/💡",
+    "body": [
+      "const { mutate, isLoading } = ${2:useMutation}$3($1)",
+      ""
+    ],
+    "description": "React Query useMutation",
+    "scope": "javascript,javascriptreact"
   }
 }

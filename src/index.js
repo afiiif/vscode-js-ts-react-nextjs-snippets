@@ -9,6 +9,7 @@ const reactHookTS = require('./snippets/react-hook-ts');
 
 const next = require('./snippets/next');
 const nextTS = require('./snippets/next-ts');
+const reactQuery = require('./snippets/react-query');
 
 // Add line break at the end
 Object.keys(react).forEach((key) => react[key].body.push(''));
@@ -19,6 +20,7 @@ const javascriptSnippets = {
   ...react,
   ...reactHook,
   ...next,
+  ...reactQuery,
 };
 
 const typescriptSnippets = {
@@ -29,6 +31,7 @@ const typescriptSnippets = {
   ...reactHookTS,
   ...next,
   ...nextTS,
+  ...reactQuery,
 };
 
 // Update prefix & add scope
