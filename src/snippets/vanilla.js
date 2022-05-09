@@ -72,12 +72,12 @@ exports.consoleClear = {
 
 exports.setTimeout = {
   prefix: 'sto/$sto',
-  body: ['setTimeout(() => {', '\t${1:// code}', '}, ${2:1000})', ''],
+  body: ['setTimeout(() => {', '\t${2:// code}', '}, ${1:1000})', ''],
   description: 'setTimeout',
 };
 
 exports.setInterval = {
   prefix: 'sti/$sti',
-  body: ['setInterval(() => {', '\t${1:// code}', '}, ${2:1000})', ''],
+  body: ['setInterval(() => {', '\t${2:// code}', '}, ${1:1000})', ''],
   description: 'setInterval',
 };

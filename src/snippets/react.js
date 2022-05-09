@@ -3,9 +3,9 @@ const { FILENAME_PASCALCASE } = require('../constants');
 exports.reactFunctionalComp = {
   prefix: 'rfc/$rfc',
   body: [
-    `export default function \${1:${FILENAME_PASCALCASE}}() {`,
+    `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1 Component}</$2>',
     '\t)',
     '}',
   ],
@@ -15,9 +15,9 @@ exports.reactFunctionalComp = {
 exports.reactFunctionalCompExport = {
   prefix: 'rfce/$rfce',
   body: [
-    `function \${1:${FILENAME_PASCALCASE}}() {`,
+    `function \${1:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1 Component}</$2>',
     '\t)',
     '}',
     '',
@@ -31,9 +31,9 @@ exports.reactFunctionalCompWithPropTypes = {
   body: [
     "import PropTypes from 'prop-types'",
     '',
-    `export default function \${1:${FILENAME_PASCALCASE}}() {`,
+    `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1 Component}</$2>',
     '\t)',
     '}',
     '',
@@ -47,9 +47,9 @@ exports.reactFunctionalCompWithPropTypesChildren = {
   body: [
     "import PropTypes from 'prop-types'",
     '',
-    `export default function \${1:${FILENAME_PASCALCASE}}({ children }) {`,
+    `export default function \${1:${FILENAME_PASCALCASE}}({ children }) {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:{ children \\}}</$2>',
+    '\t\t<${2:div}>${3:{ children \\}}</$2>',
     '\t)',
     '}',
     '',
@@ -63,9 +63,9 @@ exports.reactFunctionalCompWithPropTypesChildren = {
 exports.reactArrowFunctionComp = {
   prefix: 'rafc/$rafc',
   body: [
-    `export const \${1:${FILENAME_PASCALCASE}} = () => {`,
+    `export const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1 Component}</$2>',
     '\t)',
     '}',
   ],
@@ -75,9 +75,9 @@ exports.reactArrowFunctionComp = {
 exports.reactArrowFunctionCompExport = {
   prefix: 'rafce/$rafce',
   body: [
-    `const \${1:${FILENAME_PASCALCASE}} = () => {`,
+    `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1 Component}</$2>',
     '\t)',
     '}',
     '',
@@ -91,9 +91,9 @@ exports.reactArrowFunctionCompWithPropTypes = {
   body: [
     "import PropTypes from 'prop-types'",
     '',
-    `const \${1:${FILENAME_PASCALCASE}} = () => {`,
+    `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1 Component}</$2>',
     '\t)',
     '}',
     '',
@@ -109,9 +109,9 @@ exports.reactArrowFunctionCompWithPropTypesChildren = {
   body: [
     "import PropTypes from 'prop-types'",
     '',
-    `const \${1:${FILENAME_PASCALCASE}} = ({ children }) => {`,
+    `const \${1:${FILENAME_PASCALCASE}} = ({ children }) => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${0:{ children \\}}</$2>',
+    '\t\t<${2:div}>${3:{ children \\}}</$2>',
     '\t)',
     '}',
     '',
