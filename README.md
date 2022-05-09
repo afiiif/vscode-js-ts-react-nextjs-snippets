@@ -3,7 +3,7 @@
 Write code faster using snippets!  
 Just type the snippet keyword (for example, type `rfc`), a suggestion will appear, then press `Tab`. If there is no suggestion, use `Ctrl`+`Space` to open it.
 
-<img src="https://i.postimg.cc/BZVfy86H/snippet-demo-1.gif" alt="VSCode snippet demo" width="100%" />
+<img src="https://i.postimg.cc/pTyPS4wJ/snippet-demo.gif" alt="VSCode snippet demo" width="100%" />
 
 ## Tips
 
@@ -22,4 +22,4 @@ For TypeScript snippets:
 - Check Next.js snippets using `$nx`
 - Check React Query snippets using `$rq`
 
-<img src="https://i.postimg.cc/NG9QQ8Zp/snippet-demo-2.gif" alt="VSCode available snippets" width="100%" />
+<img src="https://i.postimg.cc/W4gy1nMc/snippet-list.gif" alt="VSCode available snippets" width="100%" />
