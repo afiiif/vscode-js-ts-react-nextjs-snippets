@@ -47,7 +47,7 @@ exports.nextGSP = {
 };
 
 exports.nextPageGSS = {
-  prefix: ['nxpGSS', 'getServerSideProps'],
+  prefix: 'nxpGSS',
   body: [
     'export async function getServerSideProps(${2:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -70,7 +70,7 @@ exports.nextPageGSS = {
 };
 
 exports.nextPageGST = {
-  prefix: ['nxpGST', 'getStaticProps'],
+  prefix: 'nxpGST',
   body: [
     'export async function getStaticProps(${2:{ params \\}}) {',
     '\t${0:// code}',
@@ -139,7 +139,7 @@ exports.nextGSPArrowFunction = {
 };
 
 exports.nextPageGSSArrowFunction = {
-  prefix: ['nxpaGSS', 'getServerSideProps'],
+  prefix: 'nxpaGSS',
   body: [
     'export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -164,7 +164,7 @@ exports.nextPageGSSArrowFunction = {
 };
 
 exports.nextPageGSTArrowFunction = {
-  prefix: ['nxpaGST', 'getStaticProps'],
+  prefix: 'nxpaGST',
   body: [
     'export const getStaticProps = async (${2:{ params \\}}) => {',
     '\t${0:// code}',

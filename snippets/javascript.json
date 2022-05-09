@@ -391,7 +391,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGSS": {
-    "prefix": "nxpGSS.$nxpGSS.getServerSideProps.💡",
+    "prefix": "nxpGSS.$nxpGSS.💡",
     "body": [
       "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -414,7 +414,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGST": {
-    "prefix": "nxpGST.$nxpGST.getStaticProps.💡",
+    "prefix": "nxpGST.$nxpGST.💡",
     "body": [
       "export async function getStaticProps(${2:{ params \\}}) {",
       "\t${0:// code}",
@@ -483,7 +483,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGSSArrowFunction": {
-    "prefix": "nxpaGSS.$nxpaGSS.getServerSideProps.💡",
+    "prefix": "nxpaGSS.$nxpaGSS.💡",
     "body": [
       "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -508,7 +508,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGSTArrowFunction": {
-    "prefix": "nxpaGST.$nxpaGST.getStaticProps.💡",
+    "prefix": "nxpaGST.$nxpaGST.💡",
     "body": [
       "export const getStaticProps = async (${2:{ params \\}}) => {",
       "\t${0:// code}",

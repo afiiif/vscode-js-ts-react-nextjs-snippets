@@ -1,7 +1,7 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
 exports.tsNextGSS = {
-  prefix: 'nxGSS',
+  prefix: ['nxGSS', 'getServerSideProps'],
   body: [
     "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
     '',
@@ -23,7 +23,7 @@ exports.tsNextGSS = {
 };
 
 exports.tsNextGST = {
-  prefix: 'nxGST',
+  prefix: ['nxGST', 'getStaticProps'],
   body: [
     "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
     '',
@@ -45,7 +45,7 @@ exports.tsNextGST = {
 };
 
 exports.tsNextGSP = {
-  prefix: 'nxGSP',
+  prefix: ['nxGSP', 'getStaticPaths'],
   body: [
     "import { GetStaticPathsResult } from 'next'",
     '',
@@ -123,7 +123,7 @@ exports.tsNextPageGST = {
 };
 
 exports.tsNextGSSArrowFunction = {
-  prefix: 'nxaGSS',
+  prefix: ['nxaGSS', 'getServerSideProps'],
   body: [
     "import { GetServerSideProps } from 'next'",
     '',
@@ -142,7 +142,7 @@ exports.tsNextGSSArrowFunction = {
 };
 
 exports.tsNextGSTArrowFunction = {
-  prefix: 'nxaGST',
+  prefix: ['nxaGST', 'getStaticProps'],
   body: [
     "import { GetStaticProps } from 'next'",
     '',
@@ -161,7 +161,7 @@ exports.tsNextGSTArrowFunction = {
 };
 
 exports.tsNextGSPArrowFunction = {
-  prefix: 'nxaGSP',
+  prefix: ['nxaGSP', 'getStaticPaths'],
   body: [
     "import { GetStaticPaths } from 'next'",
     '',
