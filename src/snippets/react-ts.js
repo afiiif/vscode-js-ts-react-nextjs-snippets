@@ -1,7 +1,7 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
 exports.tsReactFunctionalComp = {
-  prefix: 'rfc/$$rfc(ts)',
+  prefix: 'rfc.$$rfc(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -17,7 +17,7 @@ exports.tsReactFunctionalComp = {
 };
 
 exports.tsReactFunctionalCompExport = {
-  prefix: 'rfce/$$rfce(ts)',
+  prefix: 'rfce.$$rfce(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -35,7 +35,7 @@ exports.tsReactFunctionalCompExport = {
 };
 
 exports.tsReactArrowFunctionComp = {
-  prefix: 'rafc/$$rafc(ts)',
+  prefix: 'rafc.$$rafc(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -51,7 +51,7 @@ exports.tsReactArrowFunctionComp = {
 };
 
 exports.tsReactArrowFunctionCompExport = {
-  prefix: 'rafce/$$rafce(ts)',
+  prefix: 'rafce.$$rafce(ts)',
   body: [
     'interface Props {',
     '  $2: unknown;',
@@ -69,7 +69,7 @@ exports.tsReactArrowFunctionCompExport = {
 };
 
 exports.tsReactFunctionalCompV2 = {
-  prefix: 'rfc/$$rfc(ts)',
+  prefix: 'rfc.$$rfc(ts)',
   body: [
     'type Props = {',
     '  $2: unknown;',
@@ -85,7 +85,7 @@ exports.tsReactFunctionalCompV2 = {
 };
 
 exports.tsReactFunctionalCompExportV2 = {
-  prefix: 'rfce/$$rfce(ts)',
+  prefix: 'rfce.$$rfce(ts)',
   body: [
     'type Props = {',
     '  $2: unknown;',
@@ -103,7 +103,7 @@ exports.tsReactFunctionalCompExportV2 = {
 };
 
 exports.tsReactArrowFunctionCompV2 = {
-  prefix: 'rafc/$$rafc(ts)',
+  prefix: 'rafc.$$rafc(ts)',
   body: [
     'type Props = {',
     '  $2: unknown;',
@@ -119,7 +119,7 @@ exports.tsReactArrowFunctionCompV2 = {
 };
 
 exports.tsReactArrowFunctionCompExportV2 = {
-  prefix: 'rafce/$$rafce(ts)',
+  prefix: 'rafce.$$rafce(ts)',
   body: [
     'type Props = {',
     '  $2: unknown;',
