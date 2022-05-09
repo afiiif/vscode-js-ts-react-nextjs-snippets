@@ -1,6 +1,6 @@
 {
   "consoleLog": {
-    "prefix": "clg $clg 💡",
+    "prefix": "clg/$clg/💡",
     "body": [
       "console.log(${1:data})"
     ],
@@ -8,7 +8,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleLogWithLabel": {
-    "prefix": "cll $cll clg(labelled) 💡",
+    "prefix": "cll/$cll/clg(labelled)/💡",
     "body": [
       "console.log('${1:data}', ${1:data})"
     ],
@@ -16,7 +16,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleLogJSON": {
-    "prefix": "clj $clj clg(json) 💡",
+    "prefix": "clj/$clj/clg(json)/💡",
     "body": [
       "console.log('${1:data}', JSON.stringify(${1:data}, null, 2))"
     ],
@@ -24,7 +24,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleInfo": {
-    "prefix": "cin $cin 💡",
+    "prefix": "cin/$cin/💡",
     "body": [
       "console.info(${1:data})"
     ],
@@ -32,7 +32,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleWarn": {
-    "prefix": "cwa $cwa 💡",
+    "prefix": "cwa/$cwa/💡",
     "body": [
       "console.warn(${1:data})"
     ],
@@ -40,7 +40,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleError": {
-    "prefix": "cer $cer 💡",
+    "prefix": "cer/$cer/💡",
     "body": [
       "console.error(${1:data})"
     ],
@@ -48,7 +48,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleTable": {
-    "prefix": "ctl $ctl 💡",
+    "prefix": "ctl/$ctl/💡",
     "body": [
       "console.table(${1:data})"
     ],
@@ -56,7 +56,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleDir": {
-    "prefix": "cdi $cdi 💡",
+    "prefix": "cdi/$cdi/💡",
     "body": [
       "console.dir(${1:data})"
     ],
@@ -64,7 +64,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleCount": {
-    "prefix": "cco $cco 💡",
+    "prefix": "cco/$cco/💡",
     "body": [
       "console.count(${1:data})"
     ],
@@ -72,7 +72,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleGroup": {
-    "prefix": "cgr $cgr 💡",
+    "prefix": "cgr/$cgr/💡",
     "body": [
       "console.group(${1:label})"
     ],
@@ -80,7 +80,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleGroupEnd": {
-    "prefix": "cge $cge 💡",
+    "prefix": "cge/$cge/💡",
     "body": [
       "console.groupEnd()"
     ],
@@ -88,7 +88,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "consoleClear": {
-    "prefix": "ccl $ccl 💡",
+    "prefix": "ccl/$ccl/💡",
     "body": [
       "console.clear()"
     ],
@@ -96,7 +96,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "setTimeout": {
-    "prefix": "sto $sto 💡",
+    "prefix": "sto/$sto/💡",
     "body": [
       "setTimeout(() => {",
       "\t${1:// code}",
@@ -107,7 +107,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "setInterval": {
-    "prefix": "sti $sti 💡",
+    "prefix": "sti/$sti/💡",
     "body": [
       "setInterval(() => {",
       "\t${1:// code}",
@@ -118,7 +118,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactFunctionalComp": {
-    "prefix": "rfc $rfc 💡",
+    "prefix": "rfc/$rfc/💡",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
       "\treturn (",
@@ -131,7 +131,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactFunctionalCompExport": {
-    "prefix": "rfce $rfce 💡",
+    "prefix": "rfce/$rfce/💡",
     "body": [
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}}() {",
       "\treturn (",
@@ -146,7 +146,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactFunctionalCompWithPropTypes": {
-    "prefix": "rfcp $rfcp 💡",
+    "prefix": "rfcp/$rfcp/💡",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -163,7 +163,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactFunctionalCompWithPropTypesChildren": {
-    "prefix": "rfcpch $rfcpch 💡",
+    "prefix": "rfcpch/$rfcpch/💡",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -182,7 +182,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactArrowFunctionComp": {
-    "prefix": "rafc $rafc 💡",
+    "prefix": "rafc/$rafc/💡",
     "body": [
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
       "\treturn (",
@@ -195,7 +195,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactArrowFunctionCompExport": {
-    "prefix": "rafce $rafce 💡",
+    "prefix": "rafce/$rafce/💡",
     "body": [
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|(\\w+)/${3:/capitalize}/g}} = () => {",
       "\treturn (",
@@ -210,7 +210,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactArrowFunctionCompWithPropTypes": {
-    "prefix": "rafcp $rafcp 💡",
+    "prefix": "rafcp/$rafcp/💡",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -229,7 +229,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactArrowFunctionCompWithPropTypesChildren": {
-    "prefix": "rafcpch $rafcpch 💡",
+    "prefix": "rafcpch/$rafcpch/💡",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -250,7 +250,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactFunctionalComp": {
-    "prefix": "rfc $$rfc(ts) 💡",
+    "prefix": "rfc/$$rfc(ts)/💡",
     "body": [
       "interface Props {",
       "  $2: unknown;",
@@ -267,7 +267,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactFunctionalCompExport": {
-    "prefix": "rfce $$rfce(ts) 💡",
+    "prefix": "rfce/$$rfce(ts)/💡",
     "body": [
       "interface Props {",
       "  $2: unknown;",
@@ -286,7 +286,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactArrowFunctionComp": {
-    "prefix": "rafc $$rafc(ts) 💡",
+    "prefix": "rafc/$$rafc(ts)/💡",
     "body": [
       "interface Props {",
       "  $2: unknown;",
@@ -303,7 +303,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactArrowFunctionCompExport": {
-    "prefix": "rafce $$rafce(ts) 💡",
+    "prefix": "rafce/$$rafce(ts)/💡",
     "body": [
       "interface Props {",
       "  $2: unknown;",
@@ -322,7 +322,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactFunctionalCompV2": {
-    "prefix": "rfc $$rfc(ts) 💡",
+    "prefix": "rfc/$$rfc(ts)/💡",
     "body": [
       "type Props = {",
       "  $2: unknown;",
@@ -339,7 +339,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactFunctionalCompExportV2": {
-    "prefix": "rfce $$rfce(ts) 💡",
+    "prefix": "rfce/$$rfce(ts)/💡",
     "body": [
       "type Props = {",
       "  $2: unknown;",
@@ -358,7 +358,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactArrowFunctionCompV2": {
-    "prefix": "rafc $$rafc(ts) 💡",
+    "prefix": "rafc/$$rafc(ts)/💡",
     "body": [
       "type Props = {",
       "  $2: unknown;",
@@ -375,7 +375,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsReactArrowFunctionCompExportV2": {
-    "prefix": "rafce $$rafce(ts) 💡",
+    "prefix": "rafce/$$rafce(ts)/💡",
     "body": [
       "type Props = {",
       "  $2: unknown;",
@@ -394,7 +394,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useState": {
-    "prefix": "useState $useState 💡",
+    "prefix": "useState/$useState/💡",
     "body": [
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$3($2)"
     ],
@@ -402,7 +402,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useRef": {
-    "prefix": "useRef $useRef 💡",
+    "prefix": "useRef/$useRef/💡",
     "body": [
       "const ${1:ref} = useRef$3(${2:null})"
     ],
@@ -410,7 +410,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useReducer": {
-    "prefix": "useReducer $useReducer 💡",
+    "prefix": "useReducer/$useReducer/💡",
     "body": [
       "const [state, dispatch] = useReducer$3(${1:reducer}, ${2:null})"
     ],
@@ -418,7 +418,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useEffect": {
-    "prefix": "useEffect $useEffect 💡",
+    "prefix": "useEffect/$useEffect/💡",
     "body": [
       "useEffect$3(() => {",
       "\t${1:// code}",
@@ -429,7 +429,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useEffectV2": {
-    "prefix": "useEffectV2 $useEffectV2 💡",
+    "prefix": "useEffectV2/$useEffectV2/💡",
     "body": [
       "useEffect$4(() => {",
       "\t${1:// code}",
@@ -444,7 +444,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useLayoutEffect": {
-    "prefix": "useLayoutEffect $useLayoutEffect 💡",
+    "prefix": "useLayoutEffect/$useLayoutEffect/💡",
     "body": [
       "useLayoutEffect$3(() => {",
       "\t${1:// code}",
@@ -455,7 +455,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useLayoutEffectV2": {
-    "prefix": "useLayoutEffectV2 $useLayoutEffectV2 💡",
+    "prefix": "useLayoutEffectV2/$useLayoutEffectV2/💡",
     "body": [
       "useLayoutEffect$4(() => {",
       "\t${1:// code}",
@@ -470,7 +470,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useMemo": {
-    "prefix": "useMemo $useMemo 💡",
+    "prefix": "useMemo/$useMemo/💡",
     "body": [
       "useMemo$3(() => ${1:computeValue}, [$2])"
     ],
@@ -478,7 +478,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "useCallback": {
-    "prefix": "useCallback $useCallback 💡",
+    "prefix": "useCallback/$useCallback/💡",
     "body": [
       "useCallback$3(() => {",
       "\t${1:// code}",
@@ -489,7 +489,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsUseState": {
-    "prefix": "useState $$useState(ts) 💡",
+    "prefix": "useState/$$useState(ts)/💡",
     "body": [
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$4<${3:any}>($2)"
     ],
@@ -497,7 +497,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsUseRef": {
-    "prefix": "useRef $$useRef(ts) 💡",
+    "prefix": "useRef/$$useRef(ts)/💡",
     "body": [
       "const ${1:ref} = useRef$4<${3:HTMLDivElement}>(${2:null})"
     ],
@@ -505,7 +505,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsUseMemo": {
-    "prefix": "useMemo $$useMemo(ts) 💡",
+    "prefix": "useMemo/$$useMemo(ts)/💡",
     "body": [
       "useMemo$4<${3:any}>(() => ${1:computeValue}, [$2])"
     ],
@@ -513,7 +513,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsUseCallback": {
-    "prefix": "useCallback $$useCallback(ts) 💡",
+    "prefix": "useCallback/$$useCallback(ts)/💡",
     "body": [
       "useCallback$4<() => ${3:void}>(() => {",
       "\t${1:// code}",
@@ -524,7 +524,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextGSS": {
-    "prefix": "nxGSS $nxGSS getServerSideProps 💡",
+    "prefix": "nxGSS/$nxGSS/getServerSideProps/💡",
     "body": [
       "export async function getServerSideProps(${1:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -539,7 +539,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextGST": {
-    "prefix": "nxGST $nxGST getStaticProps 💡",
+    "prefix": "nxGST/$nxGST/getStaticProps/💡",
     "body": [
       "export async function getStaticProps(${1:{ params \\}}) {",
       "\t${0:// code}",
@@ -554,7 +554,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextGSP": {
-    "prefix": "nxGSP $nxGSP getStaticPaths 💡",
+    "prefix": "nxGSP/$nxGSP/getStaticPaths/💡",
     "body": [
       "export async function getStaticPaths() {",
       "\t${0:// code}",
@@ -570,7 +570,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextPageGSS": {
-    "prefix": "nxpGSS $nxpGSS getServerSideProps 💡",
+    "prefix": "nxpGSS/$nxpGSS/getServerSideProps/💡",
     "body": [
       "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -593,7 +593,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextPageGST": {
-    "prefix": "nxpGST $nxpGST getStaticProps 💡",
+    "prefix": "nxpGST/$nxpGST/getStaticProps/💡",
     "body": [
       "export async function getStaticProps(${2:{ params \\}}) {",
       "\t${0:// code}",
@@ -616,7 +616,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextGSSArrowFunction": {
-    "prefix": "nxaGSS $nxaGSS getServerSideProps 💡",
+    "prefix": "nxaGSS/$nxaGSS/getServerSideProps/💡",
     "body": [
       "export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -631,7 +631,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextGSTArrowFunction": {
-    "prefix": "nxaGST $nxaGST getStaticProps 💡",
+    "prefix": "nxaGST/$nxaGST/getStaticProps/💡",
     "body": [
       "export const getStaticProps = async (${1:{ params \\}}) => {",
       "\t${0:// code}",
@@ -646,7 +646,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextGSPArrowFunction": {
-    "prefix": "nxaGSP $nxaGSP getStaticPaths 💡",
+    "prefix": "nxaGSP/$nxaGSP/getStaticPaths/💡",
     "body": [
       "export const getStaticPaths = async () => {",
       "\t${0:// code}",
@@ -662,7 +662,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextPageGSSArrowFunction": {
-    "prefix": "nxpaGSS $nxpaGSS getServerSideProps 💡",
+    "prefix": "nxpaGSS/$nxpaGSS/getServerSideProps/💡",
     "body": [
       "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -687,7 +687,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextPageGSTArrowFunction": {
-    "prefix": "nxpaGST $nxpaGST getStaticProps 💡",
+    "prefix": "nxpaGST/$nxpaGST/getStaticProps/💡",
     "body": [
       "export const getStaticProps = async (${2:{ params \\}}) => {",
       "\t${0:// code}",
@@ -712,7 +712,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextUseRouter": {
-    "prefix": "nxUseRouter $nxUseRouter useRouter 💡",
+    "prefix": "nxUseRouter/$nxUseRouter/useRouter/💡",
     "body": [
       "const { ${1:pathname, query} } = useRouter$2()"
     ],
@@ -720,7 +720,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextLinkComponent": {
-    "prefix": "nxLink $nxLink 💡",
+    "prefix": "nxLink/$nxLink/💡",
     "body": [
       "<Link href=$1>",
       "\t<a>${2:LinkText}</a>",
@@ -730,7 +730,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSS": {
-    "prefix": "nxGSS $$nxGSS(ts) 💡",
+    "prefix": "nxGSS/$$nxGSS(ts)/💡",
     "body": [
       "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
       "",
@@ -752,7 +752,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGST": {
-    "prefix": "nxGST $$nxGST(ts) 💡",
+    "prefix": "nxGST/$$nxGST(ts)/💡",
     "body": [
       "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
       "",
@@ -774,7 +774,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSP": {
-    "prefix": "nxGSP $$nxGSP(ts) 💡",
+    "prefix": "nxGSP/$$nxGSP(ts)/💡",
     "body": [
       "import { GetStaticPathsResult } from 'next'",
       "",
@@ -792,7 +792,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextPageGSS": {
-    "prefix": "nxpGSS $$nxpGSS(ts) 💡",
+    "prefix": "nxpGSS/$$nxpGSS(ts)/💡",
     "body": [
       "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
       "",
@@ -822,7 +822,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextPageGST": {
-    "prefix": "nxpGST $$nxpGST(ts) 💡",
+    "prefix": "nxpGST/$$nxpGST(ts)/💡",
     "body": [
       "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
       "",
@@ -852,7 +852,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSSArrowFunction": {
-    "prefix": "nxaGSS $$nxaGSS(ts) 💡",
+    "prefix": "nxaGSS/$$nxaGSS(ts)/💡",
     "body": [
       "import { GetServerSideProps } from 'next'",
       "",
@@ -871,7 +871,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSTArrowFunction": {
-    "prefix": "nxaGST $$nxaGST(ts) 💡",
+    "prefix": "nxaGST/$$nxaGST(ts)/💡",
     "body": [
       "import { GetStaticProps } from 'next'",
       "",
@@ -890,7 +890,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSPArrowFunction": {
-    "prefix": "nxaGSP $$nxaGSP(ts) 💡",
+    "prefix": "nxaGSP/$$nxaGSP(ts)/💡",
     "body": [
       "import { GetStaticPaths } from 'next'",
       "",
@@ -908,7 +908,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextPageGSSArrowFunction": {
-    "prefix": "nxpaGSS $$nxpaGSS(ts) 💡",
+    "prefix": "nxpaGSS/$$nxpaGSS(ts)/💡",
     "body": [
       "import { GetServerSideProps } from 'next'",
       "",
@@ -937,7 +937,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextPageGSTArrowFunction": {
-    "prefix": "nxpaGST $$nxpaGST(ts) 💡",
+    "prefix": "nxpaGST/$$nxpaGST(ts)/💡",
     "body": [
       "import { GetStaticProps } from 'next'",
       "",

@@ -1,7 +1,7 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
 exports.reactFunctionalComp = {
-  prefix: 'rfc $rfc',
+  prefix: 'rfc/$rfc',
   body: [
     `export default function \${1:${FILENAME_PASCALCASE}}() {`,
     '\treturn (',
@@ -13,7 +13,7 @@ exports.reactFunctionalComp = {
 };
 
 exports.reactFunctionalCompExport = {
-  prefix: 'rfce $rfce',
+  prefix: 'rfce/$rfce',
   body: [
     `function \${1:${FILENAME_PASCALCASE}}() {`,
     '\treturn (',
@@ -27,7 +27,7 @@ exports.reactFunctionalCompExport = {
 };
 
 exports.reactFunctionalCompWithPropTypes = {
-  prefix: 'rfcp $rfcp',
+  prefix: 'rfcp/$rfcp',
   body: [
     "import PropTypes from 'prop-types'",
     '',
@@ -43,7 +43,7 @@ exports.reactFunctionalCompWithPropTypes = {
 };
 
 exports.reactFunctionalCompWithPropTypesChildren = {
-  prefix: 'rfcpch $rfcpch',
+  prefix: 'rfcpch/$rfcpch',
   body: [
     "import PropTypes from 'prop-types'",
     '',
@@ -61,7 +61,7 @@ exports.reactFunctionalCompWithPropTypesChildren = {
 };
 
 exports.reactArrowFunctionComp = {
-  prefix: 'rafc $rafc',
+  prefix: 'rafc/$rafc',
   body: [
     `export const \${1:${FILENAME_PASCALCASE}} = () => {`,
     '\treturn (',
@@ -73,7 +73,7 @@ exports.reactArrowFunctionComp = {
 };
 
 exports.reactArrowFunctionCompExport = {
-  prefix: 'rafce $rafce',
+  prefix: 'rafce/$rafce',
   body: [
     `const \${1:${FILENAME_PASCALCASE}} = () => {`,
     '\treturn (',
@@ -87,7 +87,7 @@ exports.reactArrowFunctionCompExport = {
 };
 
 exports.reactArrowFunctionCompWithPropTypes = {
-  prefix: 'rafcp $rafcp',
+  prefix: 'rafcp/$rafcp',
   body: [
     "import PropTypes from 'prop-types'",
     '',
@@ -105,7 +105,7 @@ exports.reactArrowFunctionCompWithPropTypes = {
 };
 
 exports.reactArrowFunctionCompWithPropTypesChildren = {
-  prefix: 'rafcpch $rafcpch',
+  prefix: 'rafcpch/$rafcpch',
   body: [
     "import PropTypes from 'prop-types'",
     '',

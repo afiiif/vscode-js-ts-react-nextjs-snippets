@@ -1,7 +1,7 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
 exports.nextGSS = {
-  prefix: 'nxGSS $nxGSS getServerSideProps',
+  prefix: 'nxGSS/$nxGSS/getServerSideProps',
   body: [
     'export async function getServerSideProps(${1:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -16,7 +16,7 @@ exports.nextGSS = {
 };
 
 exports.nextGST = {
-  prefix: 'nxGST $nxGST getStaticProps',
+  prefix: 'nxGST/$nxGST/getStaticProps',
   body: [
     'export async function getStaticProps(${1:{ params \\}}) {',
     '\t${0:// code}',
@@ -31,7 +31,7 @@ exports.nextGST = {
 };
 
 exports.nextGSP = {
-  prefix: 'nxGSP $nxGSP getStaticPaths',
+  prefix: 'nxGSP/$nxGSP/getStaticPaths',
   body: [
     'export async function getStaticPaths() {',
     '\t${0:// code}',
@@ -47,7 +47,7 @@ exports.nextGSP = {
 };
 
 exports.nextPageGSS = {
-  prefix: 'nxpGSS $nxpGSS getServerSideProps',
+  prefix: 'nxpGSS/$nxpGSS/getServerSideProps',
   body: [
     'export async function getServerSideProps(${2:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -70,7 +70,7 @@ exports.nextPageGSS = {
 };
 
 exports.nextPageGST = {
-  prefix: 'nxpGST $nxpGST getStaticProps',
+  prefix: 'nxpGST/$nxpGST/getStaticProps',
   body: [
     'export async function getStaticProps(${2:{ params \\}}) {',
     '\t${0:// code}',
@@ -93,7 +93,7 @@ exports.nextPageGST = {
 };
 
 exports.nextGSSArrowFunction = {
-  prefix: 'nxaGSS $nxaGSS getServerSideProps',
+  prefix: 'nxaGSS/$nxaGSS/getServerSideProps',
   body: [
     'export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -108,7 +108,7 @@ exports.nextGSSArrowFunction = {
 };
 
 exports.nextGSTArrowFunction = {
-  prefix: 'nxaGST $nxaGST getStaticProps',
+  prefix: 'nxaGST/$nxaGST/getStaticProps',
   body: [
     'export const getStaticProps = async (${1:{ params \\}}) => {',
     '\t${0:// code}',
@@ -123,7 +123,7 @@ exports.nextGSTArrowFunction = {
 };
 
 exports.nextGSPArrowFunction = {
-  prefix: 'nxaGSP $nxaGSP getStaticPaths',
+  prefix: 'nxaGSP/$nxaGSP/getStaticPaths',
   body: [
     'export const getStaticPaths = async () => {',
     '\t${0:// code}',
@@ -139,7 +139,7 @@ exports.nextGSPArrowFunction = {
 };
 
 exports.nextPageGSSArrowFunction = {
-  prefix: 'nxpaGSS $nxpaGSS getServerSideProps',
+  prefix: 'nxpaGSS/$nxpaGSS/getServerSideProps',
   body: [
     'export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -164,7 +164,7 @@ exports.nextPageGSSArrowFunction = {
 };
 
 exports.nextPageGSTArrowFunction = {
-  prefix: 'nxpaGST $nxpaGST getStaticProps',
+  prefix: 'nxpaGST/$nxpaGST/getStaticProps',
   body: [
     'export const getStaticProps = async (${2:{ params \\}}) => {',
     '\t${0:// code}',
@@ -189,13 +189,13 @@ exports.nextPageGSTArrowFunction = {
 };
 
 exports.nextUseRouter = {
-  prefix: 'nxUseRouter $nxUseRouter useRouter',
+  prefix: 'nxUseRouter/$nxUseRouter/useRouter',
   body: ['const { ${1:pathname, query} } = useRouter$2()'],
   description: 'Next.js useRouter',
 };
 
 exports.nextLinkComponent = {
-  prefix: 'nxLink $nxLink',
+  prefix: 'nxLink/$nxLink',
   body: ['<Link href=$1>', '\t<a>${2:LinkText}</a>', '</Link>'],
   description: 'Next.js Link component',
 };
