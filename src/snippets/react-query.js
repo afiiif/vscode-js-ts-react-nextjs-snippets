@@ -1,11 +1,11 @@
 exports.rqUseQuery = {
-  prefix: 'rqUseQuery.$rqUseQuery.useQuery',
+  prefix: ['rqUseQuery', 'useQuery'],
   body: ['const { isLoading, data, error } = ${2:useQuery}$3($1)', ''],
   description: 'React Query useQuery',
 };
 
 exports.rqLDE = {
-  prefix: 'rqLDE.$rqLDE',
+  prefix: 'rqLDE',
   body: [
     'if (isLoading) {',
     '\treturn <div>⏳ Loading</div>',
@@ -21,7 +21,7 @@ exports.rqLDE = {
 };
 
 exports.rqUseQueryLDE = {
-  prefix: 'rqUseQueryLDE.$rqUseQueryLDE.useQueryLDE',
+  prefix: ['rqUseQueryLDE', 'useQueryLDE'],
   body: [
     'const { isLoading, data, error } = ${2:useQuery}$3($1)',
     '',
@@ -39,7 +39,7 @@ exports.rqUseQueryLDE = {
 };
 
 exports.rqLED = {
-  prefix: 'rqLED.$rqLED',
+  prefix: 'rqLED',
   body: [
     'if (isLoading) {',
     '\treturn <div>⏳ Loading</div>',
@@ -55,7 +55,7 @@ exports.rqLED = {
 };
 
 exports.rqUseQueryLED = {
-  prefix: 'rqUseQueryLED.$rqUseQueryLED.useQueryLED',
+  prefix: ['rqUseQueryLED', 'useQueryLED'],
   body: [
     'const { isLoading, error, data } = ${2:useQuery}$3($1)',
     '',
@@ -73,7 +73,7 @@ exports.rqUseQueryLED = {
 };
 
 exports.rqUseMutation = {
-  prefix: 'rqUseMutation.$rqUseMutation.useMutation',
+  prefix: ['rqUseMutation', 'useMutation'],
   body: ['const { mutate, isLoading } = ${2:useMutation}$3($1)', ''],
   description: 'React Query useMutation',
 };

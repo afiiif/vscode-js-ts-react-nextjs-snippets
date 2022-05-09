@@ -1,7 +1,7 @@
 const { FILENAME_PASCALCASE } = require('../constants');
 
 exports.tsNextGSS = {
-  prefix: 'nxGSS.$$nxGSS(ts)',
+  prefix: 'nxGSS',
   body: [
     "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
     '',
@@ -23,7 +23,7 @@ exports.tsNextGSS = {
 };
 
 exports.tsNextGST = {
-  prefix: 'nxGST.$$nxGST(ts)',
+  prefix: 'nxGST',
   body: [
     "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
     '',
@@ -45,7 +45,7 @@ exports.tsNextGST = {
 };
 
 exports.tsNextGSP = {
-  prefix: 'nxGSP.$$nxGSP(ts)',
+  prefix: 'nxGSP',
   body: [
     "import { GetStaticPathsResult } from 'next'",
     '',
@@ -63,7 +63,7 @@ exports.tsNextGSP = {
 };
 
 exports.tsNextPageGSS = {
-  prefix: 'nxpGSS.$$nxpGSS(ts)',
+  prefix: 'nxpGSS',
   body: [
     "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
     '',
@@ -93,7 +93,7 @@ exports.tsNextPageGSS = {
 };
 
 exports.tsNextPageGST = {
-  prefix: 'nxpGST.$$nxpGST(ts)',
+  prefix: 'nxpGST',
   body: [
     "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
     '',
@@ -123,7 +123,7 @@ exports.tsNextPageGST = {
 };
 
 exports.tsNextGSSArrowFunction = {
-  prefix: 'nxaGSS.$$nxaGSS(ts)',
+  prefix: 'nxaGSS',
   body: [
     "import { GetServerSideProps } from 'next'",
     '',
@@ -142,7 +142,7 @@ exports.tsNextGSSArrowFunction = {
 };
 
 exports.tsNextGSTArrowFunction = {
-  prefix: 'nxaGST.$$nxaGST(ts)',
+  prefix: 'nxaGST',
   body: [
     "import { GetStaticProps } from 'next'",
     '',
@@ -161,7 +161,7 @@ exports.tsNextGSTArrowFunction = {
 };
 
 exports.tsNextGSPArrowFunction = {
-  prefix: 'nxaGSP.$$nxaGSP(ts)',
+  prefix: 'nxaGSP',
   body: [
     "import { GetStaticPaths } from 'next'",
     '',
@@ -179,7 +179,7 @@ exports.tsNextGSPArrowFunction = {
 };
 
 exports.tsNextPageGSSArrowFunction = {
-  prefix: 'nxpaGSS.$$nxpaGSS(ts)',
+  prefix: 'nxpaGSS',
   body: [
     "import { GetServerSideProps } from 'next'",
     '',
@@ -208,7 +208,7 @@ exports.tsNextPageGSSArrowFunction = {
 };
 
 exports.tsNextPageGSTArrowFunction = {
-  prefix: 'nxpaGST.$$nxpaGST(ts)',
+  prefix: 'nxpaGST',
   body: [
     "import { GetStaticProps } from 'next'",
     '',

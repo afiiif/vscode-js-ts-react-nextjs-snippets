@@ -1,15 +1,17 @@
 const fs = require('fs');
 
-const vanilla = require('./snippets/vanilla');
+const { normalizeSnippets } = require('./utilities');
 
-const react = require('./snippets/react');
-const reactTS = require('./snippets/react-ts');
-const reactHook = require('./snippets/react-hook');
-const reactHookTS = require('./snippets/react-hook-ts');
+const vanilla = normalizeSnippets(require('./snippets/vanilla'));
 
-const next = require('./snippets/next');
-const nextTS = require('./snippets/next-ts');
-const reactQuery = require('./snippets/react-query');
+const react = normalizeSnippets(require('./snippets/react'));
+const reactTS = normalizeSnippets(require('./snippets/react-ts'), true);
+const reactHook = normalizeSnippets(require('./snippets/react-hook'));
+const reactHookTS = normalizeSnippets(require('./snippets/react-hook-ts'), true);
+
+const next = normalizeSnippets(require('./snippets/next'));
+const nextTS = normalizeSnippets(require('./snippets/next-ts'), true);
+const reactQuery = normalizeSnippets(require('./snippets/react-query'));
 
 // Add line break at the end
 Object.keys(react).forEach((key) => react[key].body.push(''));
@@ -34,18 +36,16 @@ const typescriptSnippets = {
   ...reactQuery,
 };
 
-// Update prefix & add scope
+// Add scope
 Object.keys(javascriptSnippets).forEach((key) => {
   javascriptSnippets[key] = {
     ...javascriptSnippets[key],
-    prefix: `${javascriptSnippets[key].prefix}.💡`,
     scope: 'javascript,javascriptreact',
   };
 });
 Object.keys(typescriptSnippets).forEach((key) => {
   typescriptSnippets[key] = {
     ...typescriptSnippets[key],
-    prefix: `${typescriptSnippets[key].prefix}.💡`,
     scope: 'javascript,typescript,javascriptreact,typescriptreact',
   };
 });
