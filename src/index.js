@@ -12,6 +12,7 @@ const reactHookTS = normalizeSnippets(require('./snippets/react-hook-ts'), true)
 const next = normalizeSnippets(require('./snippets/next'));
 const nextTS = normalizeSnippets(require('./snippets/next-ts'), true);
 const reactQuery = normalizeSnippets(require('./snippets/react-query'));
+const testing = normalizeSnippets(require('./snippets/testing'));
 
 // Add line break at the end
 Object.keys(react).forEach((key) => react[key].body.push(''));
@@ -23,6 +24,7 @@ const javascriptSnippets = {
   ...reactHook,
   ...next,
   ...reactQuery,
+  ...testing,
 };
 
 const typescriptSnippets = {
@@ -34,6 +36,7 @@ const typescriptSnippets = {
   ...next,
   ...nextTS,
   ...reactQuery,
+  ...testing,
 };
 
 // Add scope
