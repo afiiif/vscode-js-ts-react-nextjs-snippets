@@ -2,8 +2,15 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 0.2.0 <small>- 2022/05/10</small>
 
-## [Unreleased]
+- Added [Jest](https://jestjs.io/) snippets
+- Added [React Hook Form](https://react-hook-form.com/) snippets
+- Added [Zustand](https://www.npmjs.com/package/zustand) snippets
 
-- Initial release
+## 0.1.0 <small>- 2022/05/09</small>
+
+- Added vanilla JS snippets
+- Added React snippets
+- Added [Next.js](https://nextjs.org/) snippets
+- Added [React Query](https://react-query.tanstack.com/) snippets
