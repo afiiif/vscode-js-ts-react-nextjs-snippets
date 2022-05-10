@@ -769,5 +769,31 @@
     ],
     "description": "Testing `afterAll` / `afterEach` block",
     "scope": "javascript,javascriptreact"
+  },
+  "wrapWithFragment": {
+    "prefix": "_frag.$_frag.wrap.💡",
+    "body": [
+      "<$1$0>",
+      "\t${TM_SELECTED_TEXT}",
+      "</$1>"
+    ],
+    "description": "Wrap component with Fragment",
+    "scope": "javascript,javascriptreact"
+  },
+  "wrapWithJsonStringify": {
+    "prefix": "_js.$_js.wrap.💡",
+    "body": [
+      "JSON.stringify(${TM_SELECTED_TEXT})"
+    ],
+    "description": "Wrap with `JSON.stringify`",
+    "scope": "javascript,javascriptreact"
+  },
+  "wrapWithJsonParse": {
+    "prefix": "_jp.$_jp.wrap.💡",
+    "body": [
+      "JSON.parse(${TM_SELECTED_TEXT})"
+    ],
+    "description": "Wrap with `JSON.parse`",
+    "scope": "javascript,javascriptreact"
   }
 }

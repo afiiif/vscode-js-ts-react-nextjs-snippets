@@ -16,6 +16,7 @@ const reactHookForm = normalizeSnippets(require('./snippets/react-hook-form'));
 const zustand = normalizeSnippets(require('./snippets/zustand'));
 
 const testing = normalizeSnippets(require('./snippets/testing'));
+const wrapper = normalizeSnippets(require('./snippets/wrapper'));
 
 // Add line break at the end
 Object.keys(react).forEach((key) => react[key].body.push(''));
@@ -30,6 +31,7 @@ const javascriptSnippets = {
   ...reactHookForm,
   ...zustand,
   ...testing,
+  ...wrapper,
 };
 
 const typescriptSnippets = {
@@ -44,6 +46,7 @@ const typescriptSnippets = {
   ...reactHookForm,
   ...zustand,
   ...testing,
+  ...wrapper,
 };
 
 // Add scope
