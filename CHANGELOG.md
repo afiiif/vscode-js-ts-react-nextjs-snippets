@@ -2,6 +2,11 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 0.3.1 <small>- 2022/05/10</small>
+
+- Fixed bug on Windows  
+  (because Windows path separator use `\`, not `/`)
+
 ## 0.3.0 <small>- 2022/05/10</small>
 
 - Added wrapper snippets
