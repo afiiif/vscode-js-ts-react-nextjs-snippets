@@ -28,6 +28,12 @@ For TypeScript snippets:
 
 <img src="https://i.postimg.cc/HLHMbVgJ/snippet-list.gif" alt="VSCode available snippets" width="100%" />
 
+## Wrapper Snippets
+
+![Wrapper snippet](https://i.postimg.cc/d3zt2dvd/wrapper-snippet.gif)
+
+Type `_` to check all available wrapper snippets
+
 ---
 
 ## Why There Are No Snippet for Import? 🤔
