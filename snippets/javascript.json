@@ -636,6 +636,100 @@
     "description": "React Query useMutation",
     "scope": "javascript,javascriptreact"
   },
+  "rhfUseForm": {
+    "prefix": "rhf.$rhf.useForm.💡",
+    "body": [
+      "const { ${1:register, control, handleSubmit, formState: { errors \\}} } = useForm$2($0)",
+      "const onSubmit = data => console.log(data)"
+    ],
+    "description": "React Hook Form `useForm` hook",
+    "scope": "javascript,javascriptreact"
+  },
+  "rhfUseFormYup": {
+    "prefix": "rhfYup.$rhfYup.useForm.💡",
+    "body": [
+      "const schema = yup$4.object({",
+      "\t${3:// schema fields}",
+      "}).required()",
+      "",
+      "const { ${1:register, control, handleSubmit, formState: { errors \\}} } = useForm$2({",
+      "\tresolver: yupResolver(schema)",
+      "})",
+      "const onSubmit = data => console.log(data)"
+    ],
+    "description": "React Hook Form `useForm` hook with yupResolver",
+    "scope": "javascript,javascriptreact"
+  },
+  "rhfCreateFormProvider": {
+    "prefix": "rhfProv.$rhfProv.useForm.💡",
+    "body": [
+      "const methods = useForm$1($2)",
+      "const onSubmit = data => console.log(data)",
+      "",
+      "return (",
+      "\t<FormProvider {...methods} >",
+      "\t\t<form onSubmit={methods.handleSubmit(onSubmit)}>",
+      "\t\t\t${0:<NestedInputs />}",
+      "\t\t</form>",
+      "\t</FormProvider>",
+      ")"
+    ],
+    "description": "React Hook Form create form with `FormProvider`",
+    "scope": "javascript,javascriptreact"
+  },
+  "zuCreate": {
+    "prefix": "zuc.$zuc.💡",
+    "body": [
+      "import create from 'zustand'",
+      "",
+      "const use${1:Store} = create((set) => ({",
+      "\t${0:// code}",
+      "}))",
+      "",
+      "export default use$1"
+    ],
+    "description": "Zustand create store",
+    "scope": "javascript,javascriptreact"
+  },
+  "zuCreateImmer": {
+    "prefix": "zuci.$zuci.💡",
+    "body": [
+      "import create from 'zustand'",
+      "import { immer } from 'zustand/middleware/immer'",
+      "",
+      "const use${1:Store} = create(immer((set) => ({",
+      "\t${0:// code}",
+      "})))",
+      "",
+      "export default use$1"
+    ],
+    "description": "Zustand create store",
+    "scope": "javascript,javascriptreact"
+  },
+  "zuUse": {
+    "prefix": "zuu.$zuu.💡",
+    "body": [
+      "const ${2:bears} = use${1:Store}(state => state.$2)"
+    ],
+    "description": "Zustand useStore",
+    "scope": "javascript,javascriptreact"
+  },
+  "zuUsePickObj": {
+    "prefix": "zuuObj.$zuuObj.💡",
+    "body": [
+      "const { ${2:nuts}, ${3:honey} } = use${1:Store}(state => ({ $2: state.$2, $3: state.$3 }), shallow$4)"
+    ],
+    "description": "Zustand useStore with shallow",
+    "scope": "javascript,javascriptreact"
+  },
+  "zuUsePickArr": {
+    "prefix": "zuuArr.$zuuArr.💡",
+    "body": [
+      "const [${2:nuts}, ${3:honey}] = use${1:Store}(state => [state.$2, state.$3], shallow$4)"
+    ],
+    "description": "Zustand useStore with shallow",
+    "scope": "javascript,javascriptreact"
+  },
   "tdesc": {
     "prefix": "tdescribe.$tdescribe.describe(test).💡",
     "body": [

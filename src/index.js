@@ -12,6 +12,9 @@ const reactHookTS = normalizeSnippets(require('./snippets/react-hook-ts'), true)
 const next = normalizeSnippets(require('./snippets/next'));
 const nextTS = normalizeSnippets(require('./snippets/next-ts'), true);
 const reactQuery = normalizeSnippets(require('./snippets/react-query'));
+const reactHookForm = normalizeSnippets(require('./snippets/react-hook-form'));
+const zustand = normalizeSnippets(require('./snippets/zustand'));
+
 const testing = normalizeSnippets(require('./snippets/testing'));
 
 // Add line break at the end
@@ -24,6 +27,8 @@ const javascriptSnippets = {
   ...reactHook,
   ...next,
   ...reactQuery,
+  ...reactHookForm,
+  ...zustand,
   ...testing,
 };
 
@@ -36,6 +41,8 @@ const typescriptSnippets = {
   ...next,
   ...nextTS,
   ...reactQuery,
+  ...reactHookForm,
+  ...zustand,
   ...testing,
 };
 
