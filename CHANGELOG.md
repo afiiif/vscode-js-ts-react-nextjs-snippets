@@ -2,6 +2,11 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 0.3.0 <small>- 2022/05/10</small>
+
+- Added wrapper snippets
+- Added react custom hook snippet
+
 ## 0.2.0 <small>- 2022/05/10</small>
 
 - Added [Jest](https://jestjs.io/) snippets
