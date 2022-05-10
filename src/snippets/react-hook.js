@@ -1,3 +1,5 @@
+const { FILENAME_CAMELCASE } = require('../constants');
+
 exports.useState = {
   prefix: 'useState',
   body: ['const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$3($2)'],
@@ -68,4 +70,42 @@ exports.useCallback = {
   prefix: 'useCallback',
   body: ['useCallback$3(() => {', '\t${1:// code}', '}, [$2])', ''],
   description: 'React useCallback',
+};
+
+exports.reactCustomHook = {
+  prefix: ['rfhook', 'hook'],
+  body: [
+    "import { useEffect } from 'react'",
+    '',
+    `export default function \${1:${FILENAME_CAMELCASE}}() {`,
+    '\t${0:// code}',
+    '\t',
+    '\tuseEffect(() => {',
+    '\t\t// code',
+    '\t}, [])',
+    '\t',
+    '\treturn null',
+    '}',
+  ],
+  description: 'React create custom hook',
+};
+
+exports.reactCustomHookArrowFunction = {
+  prefix: ['rafhook', 'hook'],
+  body: [
+    "import { useEffect } from 'react'",
+    '',
+    `const \${1:${FILENAME_CAMELCASE}} = () => {`,
+    '\t${0:// code}',
+    '\t',
+    '\tuseEffect(() => {',
+    '\t\t// code',
+    '\t}, [])',
+    '\t',
+    '\treturn null',
+    '}',
+    '',
+    'export default $1',
+  ],
+  description: 'React create custom hook',
 };

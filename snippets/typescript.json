@@ -488,6 +488,44 @@
     "description": "React useCallback",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "reactCustomHook": {
+    "prefix": "rfhook.$rfhook.hook.💡",
+    "body": [
+      "import { useEffect } from 'react'",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|([\\w\\-_]*)/${3:/camelcase}/g}}() {",
+      "\t${0:// code}",
+      "\t",
+      "\tuseEffect(() => {",
+      "\t\t// code",
+      "\t}, [])",
+      "\t",
+      "\treturn null",
+      "}"
+    ],
+    "description": "React create custom hook",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactCustomHookArrowFunction": {
+    "prefix": "rafhook.$rafhook.hook.💡",
+    "body": [
+      "import { useEffect } from 'react'",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=\\/[^\\/]+\\/[^\\/]+\\.[jt]sx?))|(\\.[jt]sx?$|\\/(?:index|\\[).*|.+\\/(?!(?:index|\\[))|[.\\-_\\/])|([\\w\\-_]*)/${3:/camelcase}/g}} = () => {",
+      "\t${0:// code}",
+      "\t",
+      "\tuseEffect(() => {",
+      "\t\t// code",
+      "\t}, [])",
+      "\t",
+      "\treturn null",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "React create custom hook",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "tsUseState": {
     "prefix": "useState.$$useState(ts).💡",
     "body": [
