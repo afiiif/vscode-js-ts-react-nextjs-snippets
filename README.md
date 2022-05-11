@@ -32,12 +32,16 @@ For TypeScript snippets:
 
 ![Wrapper snippet](https://i.postimg.cc/d3zt2dvd/wrapper-snippet.gif)
 
-Type `_` to check all available wrapper snippets
+Type `_` or `$_` to check all available wrapper snippets
 
----
+## Generate-from-Clipboard Snippets
+
+Select text and copy it 📋 write snippet and boom! 🪄💥
+
+![Generate-from-clipboard snippet](https://i.postimg.cc/1tKRrvPw/clipboard-snippet.gif)
 
 ## Why There Are No Snippet for Import? 🤔
 
 Because you might not need that. VSCode has built-in feature for auto-import your modules.
 
-<img src="https://i.postimg.cc/JnLpD1TK/auto-import.gif" alt="VSCode available snippets" width="100%" />
+<img src="https://i.postimg.cc/7LSDVKDX/auto-import.gif" alt="VSCode built-in auto import" width="100%" />

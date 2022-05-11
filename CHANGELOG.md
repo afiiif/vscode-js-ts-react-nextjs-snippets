@@ -2,10 +2,14 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 0.4.0 <small>- 2022/05/11</small>
+
+- Added generate-from-clipboard snippets
+
 ## 0.3.1 <small>- 2022/05/10</small>
 
 - Fixed bug on Windows  
-  (because Windows path separator use `\`, not `/`)
+  (caused by path separator which use `\`, not `/`)
 
 ## 0.3.0 <small>- 2022/05/10</small>
 
