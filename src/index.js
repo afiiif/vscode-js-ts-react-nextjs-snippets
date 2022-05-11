@@ -17,6 +17,7 @@ const zustand = normalizeSnippets(require('./snippets/zustand'));
 
 const testing = normalizeSnippets(require('./snippets/testing'));
 const wrapper = normalizeSnippets(require('./snippets/wrapper'));
+const htmlJsx = normalizeSnippets(require('./snippets/html-jsx'));
 const misc = normalizeSnippets(require('./snippets/misc'));
 
 // Add line break at the end
@@ -33,6 +34,7 @@ const javascriptSnippets = {
   ...zustand,
   ...testing,
   ...wrapper,
+  ...htmlJsx,
   ...misc,
 };
 
@@ -49,6 +51,7 @@ const typescriptSnippets = {
   ...zustand,
   ...testing,
   ...wrapper,
+  ...htmlJsx,
   ...misc,
 };
 

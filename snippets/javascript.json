@@ -31,6 +31,14 @@
     "description": "console.info",
     "scope": "javascript,javascriptreact"
   },
+  "consoleInfo2": {
+    "prefix": "cin2.$cin2.💡",
+    "body": [
+      "console.info('${1:👉 Here}', ${2:data})"
+    ],
+    "description": "console.info",
+    "scope": "javascript,javascriptreact"
+  },
   "consoleWarn": {
     "prefix": "cwa.$cwa.💡",
     "body": [
@@ -115,6 +123,26 @@
       ""
     ],
     "description": "setInterval",
+    "scope": "javascript,javascriptreact"
+  },
+  "arrowFunction": {
+    "prefix": "af.$af.💡",
+    "body": [
+      "const ${1:myFunction} = ($2) => {",
+      "\t${3:// code}",
+      "}"
+    ],
+    "description": "Arrow function",
+    "scope": "javascript,javascriptreact"
+  },
+  "arrowFunctionExport": {
+    "prefix": "afe.$afe.💡",
+    "body": [
+      "export const ${1:myFunction} = ($2) => {",
+      "\t${3:// code}",
+      "}"
+    ],
+    "description": "Arrow function export",
     "scope": "javascript,javascriptreact"
   },
   "reactFunctionalComp": {
@@ -832,6 +860,16 @@
       "JSON.parse(${TM_SELECTED_TEXT})"
     ],
     "description": "Wrap with `JSON.parse`",
+    "scope": "javascript,javascriptreact"
+  },
+  "htmlButton": {
+    "prefix": "button.$button.💡",
+    "body": [
+      "<button type=\"button\" onClick={${2:onClick}}$3>",
+      "\t${1:Button}",
+      "</button>"
+    ],
+    "description": "Create `<button />` element",
     "scope": "javascript,javascriptreact"
   },
   "generateInterface": {

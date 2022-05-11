@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 0.4.1 <small>- 2022/05/12</small>
+
+- Added more snippets
+
 ## 0.4.0 <small>- 2022/05/11</small>
 
 - Added generate-from-clipboard snippets

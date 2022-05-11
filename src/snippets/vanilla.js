@@ -22,6 +22,12 @@ exports.consoleInfo = {
   description: 'console.info',
 };
 
+exports.consoleInfo2 = {
+  prefix: 'cin2',
+  body: ["console.info('${1:👉 Here}', ${2:data})"],
+  description: 'console.info',
+};
+
 exports.consoleWarn = {
   prefix: 'cwa',
   body: ['console.warn(${1:data})'],
@@ -80,4 +86,16 @@ exports.setInterval = {
   prefix: 'sti',
   body: ['setInterval(() => {', '\t${2:// code}', '}, ${1:1000})', ''],
   description: 'setInterval',
+};
+
+exports.arrowFunction = {
+  prefix: 'af',
+  body: ['const ${1:myFunction} = ($2) => {', '\t${3:// code}', '}'],
+  description: 'Arrow function',
+};
+
+exports.arrowFunctionExport = {
+  prefix: 'afe',
+  body: ['export const ${1:myFunction} = ($2) => {', '\t${3:// code}', '}'],
+  description: 'Arrow function export',
 };
