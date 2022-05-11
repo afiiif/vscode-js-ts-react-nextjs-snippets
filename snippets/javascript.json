@@ -833,5 +833,35 @@
     ],
     "description": "Wrap with `JSON.parse`",
     "scope": "javascript,javascriptreact"
+  },
+  "generateInterface": {
+    "prefix": "genInt.$genInt.💡",
+    "body": [
+      "interface ${1:MyInterface} {",
+      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
+      ""
+    ],
+    "description": "From clipboard parameters: generate interface",
+    "scope": "javascript,javascriptreact"
+  },
+  "generateType": {
+    "prefix": "genType.$genType.💡",
+    "body": [
+      "type ${1:MyType} = {",
+      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
+      ""
+    ],
+    "description": "From clipboard parameters: generate type",
+    "scope": "javascript,javascriptreact"
+  },
+  "generatePropTypes": {
+    "prefix": "genPropTypes.$genPropTypes.💡",
+    "body": [
+      "${1:MyComponent}.propTypes = {",
+      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}",
+      ""
+    ],
+    "description": "From clipboard parameters: generate PropTypes",
+    "scope": "javascript,javascriptreact"
   }
 }
