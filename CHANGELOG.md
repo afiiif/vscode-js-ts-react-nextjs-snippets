@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 0.5.0 <small>- 2022/05/15</small>
+
+- Updated snippet prefix pattern for TypeScript
+
 ## 0.4.1 <small>- 2022/05/12</small>
 
 - Added more snippets

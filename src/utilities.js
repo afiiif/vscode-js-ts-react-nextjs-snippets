@@ -1,9 +1,14 @@
 const normalizeSnippet = (snippet, isTS) => {
   const [primaryPrefix, ...prefix] =
     typeof snippet.prefix === 'string' ? [snippet.prefix] : snippet.prefix;
-  const flaggedPrefix = isTS ? `$$${primaryPrefix}(ts)` : `$${primaryPrefix}`;
+  const flaggedPrefix = isTS ? `$$${primaryPrefix}` : `$${primaryPrefix}`;
 
-  const finalPrefix = [primaryPrefix, flaggedPrefix, ...prefix, '💡'];
+  const finalPrefix = [
+    isTS ? `${primaryPrefix}.TS` : primaryPrefix,
+    flaggedPrefix,
+    ...prefix,
+    isTS ? '💡🟦' : '💡',
+  ];
 
   return {
     ...snippet,
