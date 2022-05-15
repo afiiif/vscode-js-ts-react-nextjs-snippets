@@ -3,8 +3,19 @@
   "displayName": "JS/TS React/Next.js Snippets",
   "description": "JavaScript/TypeScript React/Next.js snippets",
   "icon": "images/logo.png",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "publisher": "afifu",
+  "keywords": [
+    "vscode",
+    "snippet",
+    "javascript",
+    "typescript",
+    "react",
+    "nextjs",
+    "react-query",
+    "react-hook-form",
+    "zustand"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
