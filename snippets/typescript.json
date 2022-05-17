@@ -23,18 +23,18 @@
     "description": "console.log JSON",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "consoleX": {
+    "prefix": "ccc.$ccc.💡",
+    "body": [
+      "console.${3|log,info,warn,error|}('👉 ${1:Here}', ${2:data})"
+    ],
+    "description": "console.xxx with label",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "consoleInfo": {
     "prefix": "cin.$cin.💡",
     "body": [
       "console.info(${1:data})"
-    ],
-    "description": "console.info",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "consoleInfo2": {
-    "prefix": "cin2.$cin2.💡",
-    "body": [
-      "console.info('${1:👉 Here}', ${2:data})"
     ],
     "description": "console.info",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"

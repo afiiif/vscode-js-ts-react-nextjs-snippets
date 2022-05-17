@@ -18,15 +18,15 @@ export const consoleLogJSON: Snippet = {
   description: 'console.log JSON',
 };
 
+export const consoleX: Snippet = {
+  prefix: 'ccc',
+  body: ["console.${3|log,info,warn,error|}('👉 ${1:Here}', ${2:data})"],
+  description: 'console.xxx with label',
+};
+
 export const consoleInfo: Snippet = {
   prefix: 'cin',
   body: ['console.info(${1:data})'],
-  description: 'console.info',
-};
-
-export const consoleInfo2: Snippet = {
-  prefix: 'cin2',
-  body: ["console.info('${1:👉 Here}', ${2:data})"],
   description: 'console.info',
 };
 
