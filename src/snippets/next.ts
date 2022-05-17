@@ -197,6 +197,27 @@ export const nextUseRouter: Snippet = {
 
 export const nextLinkComponent: Snippet = {
   prefix: 'nLink',
-  body: ['<Link href=$1>', '\t<a>${2:LinkText}</a>', '</Link>'],
+  body: ['<Link href=${1:"/"}>', '\t<a>${2:LinkText}</a>', '</Link>'],
   description: 'Next.js Link component',
+};
+
+export const nextCustomDocComponent: Snippet = {
+  prefix: 'nDoc',
+  body: [
+    "import { Html, Head, Main, NextScript } from 'next/document'",
+    '',
+    'export default function Document() {',
+    '\treturn (',
+    '\t\t<Html>',
+    '\t\t\t<Head />',
+    '\t\t\t<body>',
+    '\t\t\t\t<Main />',
+    '\t\t\t\t<NextScript />',
+    '\t\t\t</body>',
+    '\t\t</Html>',
+    '\t)',
+    '}',
+    '',
+  ],
+  description: 'Next.js Custom Document component',
 };
