@@ -1,4 +1,4 @@
-# VSCode Snippets for JS/TS, React/Next.js, React Query, and Many Others
+# VSCode Snippets for JS/TS, React/Next.js, React Query, and some other Front-End tech stacks
 
 Write code faster using snippets!  
 Just type the snippet keyword (for example, type `rfc`), a suggestion will appear, then press `Tab`. If there is no suggestion, use `Ctrl`+`Space` to open it.

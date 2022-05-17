@@ -2,6 +2,13 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.0.0 <small>- 2022/05/18</small>
+
+- Added new snippet for Next.js custom document
+- Updated snippet prefix for Next.js
+- Updated generate-from-clipboard snippets
+- Added get cleaned filename in pascalcase/camelcase snippet
+
 ## 0.5.0 <small>- 2022/05/15</small>
 
 - Updated snippet prefix pattern for TypeScript
