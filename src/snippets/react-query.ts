@@ -1,10 +1,12 @@
-exports.rqUseQuery = {
+import { Snippet } from '../types';
+
+export const rqUseQuery: Snippet = {
   prefix: ['rqUseQuery', 'useQuery'],
   body: ['const { isLoading, data, error } = ${2:useQuery}$3($1)', ''],
   description: 'React Query useQuery',
 };
 
-exports.rqLDE = {
+export const rqLDE: Snippet = {
   prefix: 'rqLDE',
   body: [
     'if (isLoading) {',
@@ -20,7 +22,7 @@ exports.rqLDE = {
   description: 'React Query Loading-Data-Error pattern',
 };
 
-exports.rqUseQueryLDE = {
+export const rqUseQueryLDE: Snippet = {
   prefix: ['rqUseQueryLDE', 'useQueryLDE'],
   body: [
     'const { isLoading, data, error } = ${2:useQuery}$3($1)',
@@ -38,7 +40,7 @@ exports.rqUseQueryLDE = {
   description: 'React Query useQuery with Loading-Data-Error pattern',
 };
 
-exports.rqLED = {
+export const rqLED: Snippet = {
   prefix: 'rqLED',
   body: [
     'if (isLoading) {',
@@ -54,7 +56,7 @@ exports.rqLED = {
   description: 'React Query Loading-Error-Data pattern',
 };
 
-exports.rqUseQueryLED = {
+export const rqUseQueryLED: Snippet = {
   prefix: ['rqUseQueryLED', 'useQueryLED'],
   body: [
     'const { isLoading, error, data } = ${2:useQuery}$3($1)',
@@ -72,7 +74,7 @@ exports.rqUseQueryLED = {
   description: 'React Query useQuery with Loading-Error-Data pattern',
 };
 
-exports.rqUseMutation = {
+export const rqUseMutation: Snippet = {
   prefix: ['rqUseMutation', 'useMutation'],
   body: ['const { mutate, isLoading } = ${2:useMutation}$3($1)', ''],
   description: 'React Query useMutation',

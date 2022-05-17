@@ -1,6 +1,6 @@
-const fs = require('fs');
+import * as fs from 'fs';
 
-const { normalizeSnippets } = require('./utilities');
+import { normalizeSnippets } from './utilities';
 
 const vanilla = normalizeSnippets(require('./snippets/vanilla'));
 

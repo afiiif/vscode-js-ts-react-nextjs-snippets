@@ -1,30 +1,31 @@
-const { FILENAME_CAMELCASE } = require('../constants');
+import { FILENAME_CAMELCASE } from '../constants';
+import { Snippet } from '../types';
 
-exports.useState = {
+export const useState: Snippet = {
   prefix: 'useState',
   body: ['const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$3($2)'],
   description: 'React useState',
 };
 
-exports.useRef = {
+export const useRef: Snippet = {
   prefix: 'useRef',
   body: ['const ${1:ref} = useRef$3(${2:null})'],
   description: 'React useRef',
 };
 
-exports.useReducer = {
+export const useReducer: Snippet = {
   prefix: 'useReducer',
   body: ['const [state, dispatch] = useReducer$3(${1:reducer}, ${2:null})'],
   description: 'React useReducer',
 };
 
-exports.useEffect = {
+export const useEffect: Snippet = {
   prefix: 'useEffect',
   body: ['useEffect$3(() => {', '\t${1:// code}', '}, [$2])', ''],
   description: 'React useEffect',
 };
 
-exports.useEffectV2 = {
+export const useEffectV2: Snippet = {
   prefix: 'useEffectV2',
   body: [
     'useEffect$4(() => {',
@@ -39,13 +40,13 @@ exports.useEffectV2 = {
   description: 'React useEffect with cleanup',
 };
 
-exports.useLayoutEffect = {
+export const useLayoutEffect: Snippet = {
   prefix: 'useLayoutEffect',
   body: ['useLayoutEffect$3(() => {', '\t${1:// code}', '}, [$2])', ''],
   description: 'React useLayoutEffect',
 };
 
-exports.useLayoutEffectV2 = {
+export const useLayoutEffectV2: Snippet = {
   prefix: 'useLayoutEffectV2',
   body: [
     'useLayoutEffect$4(() => {',
@@ -60,19 +61,19 @@ exports.useLayoutEffectV2 = {
   description: 'React useLayoutEffect with cleanup',
 };
 
-exports.useMemo = {
+export const useMemo: Snippet = {
   prefix: 'useMemo',
   body: ['useMemo$3(() => ${1:computeValue}, [$2])'],
   description: 'React useMemo',
 };
 
-exports.useCallback = {
+export const useCallback: Snippet = {
   prefix: 'useCallback',
   body: ['useCallback$3(() => {', '\t${1:// code}', '}, [$2])', ''],
   description: 'React useCallback',
 };
 
-exports.reactCustomHook = {
+export const reactCustomHook: Snippet = {
   prefix: ['rfhook', 'hook'],
   body: [
     "import { useEffect } from 'react'",
@@ -90,7 +91,7 @@ exports.reactCustomHook = {
   description: 'React create custom hook',
 };
 
-exports.reactCustomHookArrowFunction = {
+export const reactCustomHookArrowFunction: Snippet = {
   prefix: ['rafhook', 'hook'],
   body: [
     "import { useEffect } from 'react'",

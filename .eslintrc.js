@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     'no-template-curly-in-string': 'off',
+    'import/prefer-default-export': 'off',
     'unicorn/prefer-module': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-array-reduce': 'off',

@@ -1,4 +1,6 @@
-exports.zuCreate = {
+import { Snippet } from '../types';
+
+export const zuCreate: Snippet = {
   prefix: 'zuc',
   body: [
     "import create from 'zustand'",
@@ -12,7 +14,7 @@ exports.zuCreate = {
   description: 'Zustand create store',
 };
 
-exports.zuCreateImmer = {
+export const zuCreateImmer: Snippet = {
   prefix: 'zuci',
   body: [
     "import create from 'zustand'",
@@ -27,13 +29,13 @@ exports.zuCreateImmer = {
   description: 'Zustand create store',
 };
 
-exports.zuUse = {
+export const zuUse: Snippet = {
   prefix: 'zuu',
   body: ['const ${2:bears} = use${1:Store}(state => state.$2)'],
   description: 'Zustand useStore',
 };
 
-exports.zuUsePickObj = {
+export const zuUsePickObj: Snippet = {
   prefix: 'zuuObj',
   body: [
     'const { ${2:nuts}, ${3:honey} } = use${1:Store}(state => ({ $2: state.$2, $3: state.$3 }), shallow$4)',
@@ -41,7 +43,7 @@ exports.zuUsePickObj = {
   description: 'Zustand useStore with shallow',
 };
 
-exports.zuUsePickArr = {
+export const zuUsePickArr: Snippet = {
   prefix: 'zuuArr',
   body: ['const [${2:nuts}, ${3:honey}] = use${1:Store}(state => [state.$2, state.$3], shallow$4)'],
   description: 'Zustand useStore with shallow',

@@ -1,6 +1,8 @@
+import { Snippet } from '../types';
+
 const { FILENAME_PASCALCASE } = require('../constants');
 
-exports.reactFunctionalComp = {
+export const reactFunctionalComp: Snippet = {
   prefix: 'rfc',
   body: [
     `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
@@ -12,7 +14,7 @@ exports.reactFunctionalComp = {
   description: 'React Functional Component',
 };
 
-exports.reactFunctionalCompExport = {
+export const reactFunctionalCompExport: Snippet = {
   prefix: 'rfce',
   body: [
     `function \${1:${FILENAME_PASCALCASE}}() {$0`,
@@ -26,7 +28,7 @@ exports.reactFunctionalCompExport = {
   description: 'React Functional Component',
 };
 
-exports.reactFunctionalCompWithPropTypes = {
+export const reactFunctionalCompWithPropTypes: Snippet = {
   prefix: 'rfcp',
   body: [
     "import PropTypes from 'prop-types'",
@@ -42,7 +44,7 @@ exports.reactFunctionalCompWithPropTypes = {
   description: 'React Functional Component with PropTypes',
 };
 
-exports.reactFunctionalCompWithPropTypesChildren = {
+export const reactFunctionalCompWithPropTypesChildren: Snippet = {
   prefix: 'rfcpch',
   body: [
     "import PropTypes from 'prop-types'",
@@ -60,7 +62,7 @@ exports.reactFunctionalCompWithPropTypesChildren = {
   description: 'React Functional Component with PropTypes',
 };
 
-exports.reactArrowFunctionComp = {
+export const reactArrowFunctionComp: Snippet = {
   prefix: 'rafc',
   body: [
     `export const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
@@ -72,7 +74,7 @@ exports.reactArrowFunctionComp = {
   description: 'React Arrow Function Component',
 };
 
-exports.reactArrowFunctionCompExport = {
+export const reactArrowFunctionCompExport: Snippet = {
   prefix: 'rafce',
   body: [
     `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
@@ -86,7 +88,7 @@ exports.reactArrowFunctionCompExport = {
   description: 'React Arrow Function Component',
 };
 
-exports.reactArrowFunctionCompWithPropTypes = {
+export const reactArrowFunctionCompWithPropTypes: Snippet = {
   prefix: 'rafcp',
   body: [
     "import PropTypes from 'prop-types'",
@@ -104,7 +106,7 @@ exports.reactArrowFunctionCompWithPropTypes = {
   description: 'React Arrow Function Component with PropTypes',
 };
 
-exports.reactArrowFunctionCompWithPropTypesChildren = {
+export const reactArrowFunctionCompWithPropTypesChildren: Snippet = {
   prefix: 'rafcpch',
   body: [
     "import PropTypes from 'prop-types'",

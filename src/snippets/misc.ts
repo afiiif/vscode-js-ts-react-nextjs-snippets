@@ -1,4 +1,6 @@
-exports.generateInterface = {
+import { Snippet } from '../types';
+
+export const generateInterface: Snippet = {
   prefix: 'genInt',
   body: [
     'interface ${1:MyInterface} {',
@@ -8,7 +10,7 @@ exports.generateInterface = {
   description: 'From clipboard parameters: generate interface',
 };
 
-exports.generateType = {
+export const generateType: Snippet = {
   prefix: 'genType',
   body: [
     'type ${1:MyType} = {',
@@ -18,7 +20,7 @@ exports.generateType = {
   description: 'From clipboard parameters: generate type',
 };
 
-exports.generatePropTypes = {
+export const generatePropTypes: Snippet = {
   prefix: 'genPropTypes',
   body: [
     '${1:MyComponent}.propTypes = {',

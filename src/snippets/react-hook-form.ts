@@ -1,4 +1,6 @@
-exports.rhfUseForm = {
+import { Snippet } from '../types';
+
+export const rhfUseForm: Snippet = {
   prefix: ['rhf', 'useForm'],
   body: [
     'const { ${1:register, control, handleSubmit, formState: { errors \\}} } = useForm$2($0)',
@@ -7,7 +9,7 @@ exports.rhfUseForm = {
   description: 'React Hook Form `useForm` hook',
 };
 
-exports.rhfUseFormYup = {
+export const rhfUseFormYup: Snippet = {
   prefix: ['rhfYup', 'useForm'],
   body: [
     'const schema = yup$4.object({',
@@ -22,7 +24,7 @@ exports.rhfUseFormYup = {
   description: 'React Hook Form `useForm` hook with yupResolver',
 };
 
-exports.rhfCreateFormProvider = {
+export const rhfCreateFormProvider: Snippet = {
   prefix: ['rhfProv', 'useForm'],
   body: [
     'const methods = useForm$1($2)',

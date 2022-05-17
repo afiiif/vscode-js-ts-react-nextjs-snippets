@@ -1,4 +1,6 @@
-const normalizeSnippet = (snippet, isTS) => {
+import { Snippet, SnippetCollection } from './types';
+
+export const normalizeSnippet = (snippet: Snippet, isTS?: boolean) => {
   const [primaryPrefix, ...prefix] =
     typeof snippet.prefix === 'string' ? [snippet.prefix] : snippet.prefix;
   const flaggedPrefix = isTS ? `$$${primaryPrefix}` : `$${primaryPrefix}`;
@@ -16,14 +18,10 @@ const normalizeSnippet = (snippet, isTS) => {
   };
 };
 
-const normalizeSnippets = (snippets, isTS) => {
-  const normalizedSnippets = {};
+export const normalizeSnippets = (snippets: SnippetCollection, isTS?: boolean) => {
+  const normalizedSnippets: SnippetCollection = {};
   Object.keys(snippets).forEach((key) => {
     normalizedSnippets[key] = normalizeSnippet(snippets[key], isTS);
   });
   return normalizedSnippets;
-};
-
-module.exports = {
-  normalizeSnippets,
 };

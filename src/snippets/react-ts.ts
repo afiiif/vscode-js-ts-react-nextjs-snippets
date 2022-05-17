@@ -1,6 +1,8 @@
+import { Snippet } from '../types';
+
 const { FILENAME_PASCALCASE } = require('../constants');
 
-exports.tsReactFunctionalComp = {
+export const tsReactFunctionalComp: Snippet = {
   prefix: 'rfc',
   body: [
     'interface Props {',
@@ -16,7 +18,7 @@ exports.tsReactFunctionalComp = {
   description: 'React Functional Component',
 };
 
-exports.tsReactFunctionalCompExport = {
+export const tsReactFunctionalCompExport: Snippet = {
   prefix: 'rfce',
   body: [
     'interface Props {',
@@ -34,7 +36,7 @@ exports.tsReactFunctionalCompExport = {
   description: 'React Functional Component',
 };
 
-exports.tsReactArrowFunctionComp = {
+export const tsReactArrowFunctionComp: Snippet = {
   prefix: 'rafc',
   body: [
     'interface Props {',
@@ -50,7 +52,7 @@ exports.tsReactArrowFunctionComp = {
   description: 'React Arrow Function Component',
 };
 
-exports.tsReactArrowFunctionCompExport = {
+export const tsReactArrowFunctionCompExport: Snippet = {
   prefix: 'rafce',
   body: [
     'interface Props {',
@@ -68,7 +70,7 @@ exports.tsReactArrowFunctionCompExport = {
   description: 'React Arrow Function Component',
 };
 
-exports.tsReactFunctionalCompV2 = {
+export const tsReactFunctionalCompV2: Snippet = {
   prefix: 'rfc',
   body: [
     'type Props = {',
@@ -84,7 +86,7 @@ exports.tsReactFunctionalCompV2 = {
   description: 'React Functional Component',
 };
 
-exports.tsReactFunctionalCompExportV2 = {
+export const tsReactFunctionalCompExportV2: Snippet = {
   prefix: 'rfce',
   body: [
     'type Props = {',
@@ -102,7 +104,7 @@ exports.tsReactFunctionalCompExportV2 = {
   description: 'React Functional Component',
 };
 
-exports.tsReactArrowFunctionCompV2 = {
+export const tsReactArrowFunctionCompV2: Snippet = {
   prefix: 'rafc',
   body: [
     'type Props = {',
@@ -118,7 +120,7 @@ exports.tsReactArrowFunctionCompV2 = {
   description: 'React Arrow Function Component',
 };
 
-exports.tsReactArrowFunctionCompExportV2 = {
+export const tsReactArrowFunctionCompExportV2: Snippet = {
   prefix: 'rafce',
   body: [
     'type Props = {',

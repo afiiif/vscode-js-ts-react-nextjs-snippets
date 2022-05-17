@@ -1,6 +1,7 @@
-const { FILENAME_PASCALCASE } = require('../constants');
+import { FILENAME_PASCALCASE } from '../constants';
+import { Snippet } from '../types';
 
-exports.tsNextGSS = {
+export const tsNextGSS: Snippet = {
   prefix: ['nxGSS', 'getServerSideProps'],
   body: [
     "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
@@ -22,7 +23,7 @@ exports.tsNextGSS = {
   description: 'Next.js getServerSideProps',
 };
 
-exports.tsNextGST = {
+export const tsNextGST: Snippet = {
   prefix: ['nxGST', 'getStaticProps'],
   body: [
     "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
@@ -44,7 +45,7 @@ exports.tsNextGST = {
   description: 'Next.js getStaticProps',
 };
 
-exports.tsNextGSP = {
+export const tsNextGSP: Snippet = {
   prefix: ['nxGSP', 'getStaticPaths'],
   body: [
     "import { GetStaticPathsResult } from 'next'",
@@ -62,7 +63,7 @@ exports.tsNextGSP = {
   description: 'Next.js getStaticPaths',
 };
 
-exports.tsNextPageGSS = {
+export const tsNextPageGSS: Snippet = {
   prefix: 'nxpGSS',
   body: [
     "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
@@ -92,7 +93,7 @@ exports.tsNextPageGSS = {
   description: 'Next.js page with getServerSideProps',
 };
 
-exports.tsNextPageGST = {
+export const tsNextPageGST: Snippet = {
   prefix: 'nxpGST',
   body: [
     "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
@@ -122,7 +123,7 @@ exports.tsNextPageGST = {
   description: 'Next.js page with getStaticProps',
 };
 
-exports.tsNextGSSArrowFunction = {
+export const tsNextGSSArrowFunction: Snippet = {
   prefix: ['nxaGSS', 'getServerSideProps'],
   body: [
     "import { GetServerSideProps } from 'next'",
@@ -141,7 +142,7 @@ exports.tsNextGSSArrowFunction = {
   description: 'Next.js getServerSideProps arrow function',
 };
 
-exports.tsNextGSTArrowFunction = {
+export const tsNextGSTArrowFunction: Snippet = {
   prefix: ['nxaGST', 'getStaticProps'],
   body: [
     "import { GetStaticProps } from 'next'",
@@ -160,7 +161,7 @@ exports.tsNextGSTArrowFunction = {
   description: 'Next.js getStaticProps arrow function',
 };
 
-exports.tsNextGSPArrowFunction = {
+export const tsNextGSPArrowFunction: Snippet = {
   prefix: ['nxaGSP', 'getStaticPaths'],
   body: [
     "import { GetStaticPaths } from 'next'",
@@ -178,7 +179,7 @@ exports.tsNextGSPArrowFunction = {
   description: 'Next.js getStaticPaths arrow function',
 };
 
-exports.tsNextPageGSSArrowFunction = {
+export const tsNextPageGSSArrowFunction: Snippet = {
   prefix: 'nxpaGSS',
   body: [
     "import { GetServerSideProps } from 'next'",
@@ -207,7 +208,7 @@ exports.tsNextPageGSSArrowFunction = {
   description: 'Next.js page with getServerSideProps',
 };
 
-exports.tsNextPageGSTArrowFunction = {
+export const tsNextPageGSTArrowFunction: Snippet = {
   prefix: 'nxpaGST',
   body: [
     "import { GetStaticProps } from 'next'",
