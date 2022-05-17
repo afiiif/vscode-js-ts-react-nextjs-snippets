@@ -1308,6 +1308,22 @@
     "description": "Create `<button />` element",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "getFileNamePascalCase": {
+    "prefix": "fnpascalcase.$fnpascalcase.💡",
+    "body": [
+      "${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}"
+    ],
+    "description": "Get filename in PascalCase",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "getFileNameCamelCase": {
+    "prefix": "fncamelcase.$fncamelcase.💡",
+    "body": [
+      "${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}"
+    ],
+    "description": "Get filename in camelCase",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "generateInterface": {
     "prefix": "genInt.$genInt.💡",
     "body": [

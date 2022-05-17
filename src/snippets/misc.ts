@@ -1,5 +1,17 @@
-import { FILENAME_PASCALCASE } from '../constants';
+import { FILENAME_CAMELCASE, FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
+
+export const getFileNamePascalCase: Snippet = {
+  prefix: 'fnpascalcase',
+  body: [FILENAME_PASCALCASE],
+  description: 'Get filename in PascalCase',
+};
+
+export const getFileNameCamelCase: Snippet = {
+  prefix: 'fncamelcase',
+  body: [FILENAME_CAMELCASE],
+  description: 'Get filename in camelCase',
+};
 
 export const generateInterface: Snippet = {
   prefix: 'genInt',
