@@ -896,31 +896,31 @@
   "generateInterface": {
     "prefix": "genInt.$genInt.💡",
     "body": [
-      "interface ${1:MyInterface} {",
+      "interface ${1:Props} {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
       ""
     ],
-    "description": "From clipboard parameters: generate interface",
+    "description": "From clipboard (parameters) » generate interface",
     "scope": "javascript,javascriptreact"
   },
   "generateType": {
     "prefix": "genType.$genType.💡",
     "body": [
-      "type ${1:MyType} = {",
+      "type ${1:Props} = {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
       ""
     ],
-    "description": "From clipboard parameters: generate type",
+    "description": "From clipboard (parameters) » generate type",
     "scope": "javascript,javascriptreact"
   },
   "generatePropTypes": {
     "prefix": "genPropTypes.$genPropTypes.💡",
     "body": [
-      "${1:MyComponent}.propTypes = {",
+      "${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}.propTypes = {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}",
       ""
     ],
-    "description": "From clipboard parameters: generate PropTypes",
+    "description": "From clipboard (parameters) » generate PropTypes",
     "scope": "javascript,javascriptreact"
   }
 }

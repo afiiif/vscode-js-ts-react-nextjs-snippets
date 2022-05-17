@@ -1,31 +1,32 @@
+import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
 export const generateInterface: Snippet = {
   prefix: 'genInt',
   body: [
-    'interface ${1:MyInterface} {',
+    'interface ${1:Props} {',
     '${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}',
     '',
   ],
-  description: 'From clipboard parameters: generate interface',
+  description: 'From clipboard (parameters) » generate interface',
 };
 
 export const generateType: Snippet = {
   prefix: 'genType',
   body: [
-    'type ${1:MyType} = {',
+    'type ${1:Props} = {',
     '${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}',
     '',
   ],
-  description: 'From clipboard parameters: generate type',
+  description: 'From clipboard (parameters) » generate type',
 };
 
 export const generatePropTypes: Snippet = {
   prefix: 'genPropTypes',
   body: [
-    '${1:MyComponent}.propTypes = {',
+    `\${1:${FILENAME_PASCALCASE}}.propTypes = {`,
     '${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}',
     '',
   ],
-  description: 'From clipboard parameters: generate PropTypes',
+  description: 'From clipboard (parameters) » generate PropTypes',
 };
