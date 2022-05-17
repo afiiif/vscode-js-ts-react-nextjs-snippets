@@ -411,7 +411,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextGSS": {
-    "prefix": "nxGSS.$nxGSS.getServerSideProps.💡",
+    "prefix": "nGSS.$nGSS.getServerSideProps.💡",
     "body": [
       "export async function getServerSideProps(${1:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -426,7 +426,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextGST": {
-    "prefix": "nxGST.$nxGST.getStaticProps.💡",
+    "prefix": "nGST.$nGST.getStaticProps.💡",
     "body": [
       "export async function getStaticProps(${1:{ params \\}}) {",
       "\t${0:// code}",
@@ -441,7 +441,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextGSP": {
-    "prefix": "nxGSP.$nxGSP.getStaticPaths.💡",
+    "prefix": "nGSP.$nGSP.getStaticPaths.💡",
     "body": [
       "export async function getStaticPaths() {",
       "\t${0:// code}",
@@ -457,7 +457,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGSS": {
-    "prefix": "nxpGSS.$nxpGSS.💡",
+    "prefix": "npGSS.$npGSS.💡",
     "body": [
       "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -480,7 +480,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGST": {
-    "prefix": "nxpGST.$nxpGST.💡",
+    "prefix": "npGST.$npGST.💡",
     "body": [
       "export async function getStaticProps(${2:{ params \\}}) {",
       "\t${0:// code}",
@@ -503,7 +503,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextGSSArrowFunction": {
-    "prefix": "nxaGSS.$nxaGSS.getServerSideProps.💡",
+    "prefix": "naGSS.$naGSS.getServerSideProps.💡",
     "body": [
       "export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -518,7 +518,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextGSTArrowFunction": {
-    "prefix": "nxaGST.$nxaGST.getStaticProps.💡",
+    "prefix": "naGST.$naGST.getStaticProps.💡",
     "body": [
       "export const getStaticProps = async (${1:{ params \\}}) => {",
       "\t${0:// code}",
@@ -533,7 +533,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextGSPArrowFunction": {
-    "prefix": "nxaGSP.$nxaGSP.getStaticPaths.💡",
+    "prefix": "naGSP.$naGSP.getStaticPaths.💡",
     "body": [
       "export const getStaticPaths = async () => {",
       "\t${0:// code}",
@@ -549,7 +549,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGSSArrowFunction": {
-    "prefix": "nxpaGSS.$nxpaGSS.💡",
+    "prefix": "npaGSS.$npaGSS.💡",
     "body": [
       "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -574,7 +574,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextPageGSTArrowFunction": {
-    "prefix": "nxpaGST.$nxpaGST.💡",
+    "prefix": "npaGST.$npaGST.💡",
     "body": [
       "export const getStaticProps = async (${2:{ params \\}}) => {",
       "\t${0:// code}",
@@ -599,7 +599,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextUseRouter": {
-    "prefix": "nxUseRouter.$nxUseRouter.useRouter.💡",
+    "prefix": "nUseRouter.$nUseRouter.useRouter.💡",
     "body": [
       "const { ${1:pathname, query} } = useRouter$2()"
     ],
@@ -607,7 +607,7 @@
     "scope": "javascript,javascriptreact"
   },
   "nextLinkComponent": {
-    "prefix": "nxLink.$nxLink.💡",
+    "prefix": "nLink.$nLink.💡",
     "body": [
       "<Link href=$1>",
       "\t<a>${2:LinkText}</a>",

@@ -2,7 +2,7 @@ import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
 export const nextGSS: Snippet = {
-  prefix: ['nxGSS', 'getServerSideProps'],
+  prefix: ['nGSS', 'getServerSideProps'],
   body: [
     'export async function getServerSideProps(${1:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -17,7 +17,7 @@ export const nextGSS: Snippet = {
 };
 
 export const nextGST: Snippet = {
-  prefix: ['nxGST', 'getStaticProps'],
+  prefix: ['nGST', 'getStaticProps'],
   body: [
     'export async function getStaticProps(${1:{ params \\}}) {',
     '\t${0:// code}',
@@ -32,7 +32,7 @@ export const nextGST: Snippet = {
 };
 
 export const nextGSP: Snippet = {
-  prefix: ['nxGSP', 'getStaticPaths'],
+  prefix: ['nGSP', 'getStaticPaths'],
   body: [
     'export async function getStaticPaths() {',
     '\t${0:// code}',
@@ -48,7 +48,7 @@ export const nextGSP: Snippet = {
 };
 
 export const nextPageGSS: Snippet = {
-  prefix: 'nxpGSS',
+  prefix: 'npGSS',
   body: [
     'export async function getServerSideProps(${2:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -71,7 +71,7 @@ export const nextPageGSS: Snippet = {
 };
 
 export const nextPageGST: Snippet = {
-  prefix: 'nxpGST',
+  prefix: 'npGST',
   body: [
     'export async function getStaticProps(${2:{ params \\}}) {',
     '\t${0:// code}',
@@ -94,7 +94,7 @@ export const nextPageGST: Snippet = {
 };
 
 export const nextGSSArrowFunction: Snippet = {
-  prefix: ['nxaGSS', 'getServerSideProps'],
+  prefix: ['naGSS', 'getServerSideProps'],
   body: [
     'export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -109,7 +109,7 @@ export const nextGSSArrowFunction: Snippet = {
 };
 
 export const nextGSTArrowFunction: Snippet = {
-  prefix: ['nxaGST', 'getStaticProps'],
+  prefix: ['naGST', 'getStaticProps'],
   body: [
     'export const getStaticProps = async (${1:{ params \\}}) => {',
     '\t${0:// code}',
@@ -124,7 +124,7 @@ export const nextGSTArrowFunction: Snippet = {
 };
 
 export const nextGSPArrowFunction: Snippet = {
-  prefix: ['nxaGSP', 'getStaticPaths'],
+  prefix: ['naGSP', 'getStaticPaths'],
   body: [
     'export const getStaticPaths = async () => {',
     '\t${0:// code}',
@@ -140,7 +140,7 @@ export const nextGSPArrowFunction: Snippet = {
 };
 
 export const nextPageGSSArrowFunction: Snippet = {
-  prefix: 'nxpaGSS',
+  prefix: 'npaGSS',
   body: [
     'export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -165,7 +165,7 @@ export const nextPageGSSArrowFunction: Snippet = {
 };
 
 export const nextPageGSTArrowFunction: Snippet = {
-  prefix: 'nxpaGST',
+  prefix: 'npaGST',
   body: [
     'export const getStaticProps = async (${2:{ params \\}}) => {',
     '\t${0:// code}',
@@ -190,13 +190,13 @@ export const nextPageGSTArrowFunction: Snippet = {
 };
 
 export const nextUseRouter: Snippet = {
-  prefix: ['nxUseRouter', 'useRouter'],
+  prefix: ['nUseRouter', 'useRouter'],
   body: ['const { ${1:pathname, query} } = useRouter$2()'],
   description: 'Next.js useRouter',
 };
 
 export const nextLinkComponent: Snippet = {
-  prefix: 'nxLink',
+  prefix: 'nLink',
   body: ['<Link href=$1>', '\t<a>${2:LinkText}</a>', '</Link>'],
   description: 'Next.js Link component',
 };

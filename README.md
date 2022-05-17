@@ -20,7 +20,7 @@ For TypeScript snippets:
 
 - Type `$` (and press `Ctrl`+`Space` if necessary), then check all available snippets.
 - Check React snippets using `$r`
-- Check Next.js snippets using `$nx`
+- Check Next.js snippets using `$n`
 - Check React Query snippets using `$rq`
 - Check React Hook Form snippets using `$rhf`
 - Check Zustand snippets using `$zu`
