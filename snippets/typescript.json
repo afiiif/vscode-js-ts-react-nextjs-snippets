@@ -26,7 +26,7 @@
   "consoleX": {
     "prefix": "ccc.$ccc.💡",
     "body": [
-      "console.${3|log,info,warn,error|}('👉 ${1:Here}', ${2:data})"
+      "console.${2|log,info,warn,error|}('👉 ${1:Here}')"
     ],
     "description": "console.xxx with label",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -135,6 +135,16 @@
     "description": "Arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "asyncArrowFunction": {
+    "prefix": "afa.$afa.💡",
+    "body": [
+      "const ${1:myFunction} = async ($2) => {",
+      "\t${3:// code}",
+      "}"
+    ],
+    "description": "Async arrow function",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "arrowFunctionExport": {
     "prefix": "afe.$afe.💡",
     "body": [
@@ -143,6 +153,16 @@
       "}"
     ],
     "description": "Arrow function export",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "asyncArrowFunctionExport": {
+    "prefix": "afae.$afae.💡",
+    "body": [
+      "export const ${1:myFunction} = async ($2) => {",
+      "\t${3:// code}",
+      "}"
+    ],
+    "description": "Async arrow function export",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "reactFunctionalComp": {

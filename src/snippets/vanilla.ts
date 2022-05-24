@@ -20,7 +20,7 @@ export const consoleLogJSON: Snippet = {
 
 export const consoleX: Snippet = {
   prefix: 'ccc',
-  body: ["console.${3|log,info,warn,error|}('👉 ${1:Here}', ${2:data})"],
+  body: ["console.${2|log,info,warn,error|}('👉 ${1:Here}')"],
   description: 'console.xxx with label',
 };
 
@@ -96,8 +96,20 @@ export const arrowFunction: Snippet = {
   description: 'Arrow function',
 };
 
+export const asyncArrowFunction: Snippet = {
+  prefix: 'afa',
+  body: ['const ${1:myFunction} = async ($2) => {', '\t${3:// code}', '}'],
+  description: 'Async arrow function',
+};
+
 export const arrowFunctionExport: Snippet = {
   prefix: 'afe',
   body: ['export const ${1:myFunction} = ($2) => {', '\t${3:// code}', '}'],
   description: 'Arrow function export',
+};
+
+export const asyncArrowFunctionExport: Snippet = {
+  prefix: 'afae',
+  body: ['export const ${1:myFunction} = async ($2) => {', '\t${3:// code}', '}'],
+  description: 'Async arrow function export',
 };
