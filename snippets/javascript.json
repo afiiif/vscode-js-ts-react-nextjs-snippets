@@ -887,6 +887,30 @@
     "description": "Wrap component with Fragment",
     "scope": "javascript,javascriptreact"
   },
+  "wrapWithFunction": {
+    "prefix": "_func.$_func.wrap.💡",
+    "body": [
+      "${1:func}(${TM_SELECTED_TEXT})"
+    ],
+    "description": "Wrap with function",
+    "scope": "javascript,javascriptreact"
+  },
+  "stringToTemplateLiterals": {
+    "prefix": "_lit.$_lit.wrap.💡",
+    "body": [
+      "`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`"
+    ],
+    "description": "Convert regular string to template literals",
+    "scope": "javascript,javascriptreact"
+  },
+  "reactStringPropToTemplateLiteral": {
+    "prefix": "_litr.$_litr.wrap.💡",
+    "body": [
+      "{`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`}"
+    ],
+    "description": "Convert regular string in react prop's value to template literals",
+    "scope": "javascript,javascriptreact"
+  },
   "wrapWithJsonStringify": {
     "prefix": "_js.$_js.wrap.💡",
     "body": [
