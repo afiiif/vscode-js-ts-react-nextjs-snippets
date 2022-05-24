@@ -4,8 +4,9 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['airbnb-base', 'plugin:unicorn/recommended', 'prettier'],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'plugin:unicorn/recommended', 'prettier'],
   parserOptions: {
+    project: './tsconfig.eslint.json',
     ecmaVersion: 'latest',
   },
   rules: {
