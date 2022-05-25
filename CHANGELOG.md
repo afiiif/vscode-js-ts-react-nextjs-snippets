@@ -2,6 +2,14 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.1.0 <small>- 2022/05/25</small>
+
+- Added async function snippet
+- Added react conditional-syntax wrapper-snippets
+- Added regular string to template literals wrapper-snippets
+
+![Wrapper snippet](https://i.postimg.cc/0ybyJ47z/wrapper-snippet-2.gif)
+
 ## 1.0.0 <small>- 2022/05/18</small>
 
 - Added new snippet for Next.js custom document

@@ -30,9 +30,11 @@ For TypeScript snippets:
 
 ## Wrapper Snippets
 
+Type `_` or `$_` to check all available wrapper snippets
+
 ![Wrapper snippet](https://i.postimg.cc/d3zt2dvd/wrapper-snippet.gif)
 
-Type `_` or `$_` to check all available wrapper snippets
+![Wrapper snippet](https://i.postimg.cc/0ybyJ47z/wrapper-snippet-2.gif)
 
 ## Generate-from-Clipboard Snippets
 
