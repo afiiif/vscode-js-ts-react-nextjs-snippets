@@ -880,13 +880,13 @@
   "wrapWithFunction": {
     "prefix": "_func.$_func.wrap.💡",
     "body": [
-      "${1:func}(${TM_SELECTED_TEXT})"
+      "${1:func}($TM_SELECTED_TEXT)"
     ],
     "description": "Wrap with function",
     "scope": "javascript,javascriptreact"
   },
   "stringToTemplateLiterals": {
-    "prefix": "_lit.$_lit.wrap.💡",
+    "prefix": "_lt.$_lt.wrap.💡",
     "body": [
       "`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`"
     ],
@@ -894,7 +894,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactStringPropToTemplateLiteral": {
-    "prefix": "_litr.$_litr.wrap.💡",
+    "prefix": "_ltr.$_ltr.wrap.💡",
     "body": [
       "{`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`}"
     ],
@@ -905,7 +905,7 @@
     "prefix": "_frag.$_frag.wrap.💡",
     "body": [
       "<$1$0>",
-      "\t${TM_SELECTED_TEXT}",
+      "\t$TM_SELECTED_TEXT",
       "</$1>"
     ],
     "description": "Wrap component with Fragment",
@@ -915,7 +915,7 @@
     "prefix": "_rif.$_rif.wrap.💡",
     "body": [
       "{${1:condition} ? (",
-      "\t${TM_SELECTED_TEXT}",
+      "\t$TM_SELECTED_TEXT",
       ") : (",
       "\t${0:null}",
       ")}"
@@ -928,7 +928,7 @@
     "body": [
       "{${1:condition} ? (",
       "\t<>",
-      "\t\t${TM_SELECTED_TEXT}",
+      "\t\t$TM_SELECTED_TEXT",
       "\t</>",
       ") : (",
       "\t${0:null}",
@@ -943,7 +943,7 @@
       "{${1:condition} ? (",
       "\t${0:null}",
       ") : (",
-      "\t${TM_SELECTED_TEXT}",
+      "\t$TM_SELECTED_TEXT",
       ")}"
     ],
     "description": "Wrap in else",
@@ -956,7 +956,7 @@
       "\t${0:null}",
       ") : (",
       "\t<>",
-      "\t\t${TM_SELECTED_TEXT}",
+      "\t\t$TM_SELECTED_TEXT",
       "\t</>",
       ")}"
     ],
@@ -967,7 +967,7 @@
     "prefix": "_rcon.$_rcon.wrap.💡",
     "body": [
       "{${1:condition} && (",
-      "\t${TM_SELECTED_TEXT}",
+      "\t$TM_SELECTED_TEXT",
       ")}"
     ],
     "description": "Wrap with conditional",
@@ -978,7 +978,7 @@
     "body": [
       "{${1:condition} && (",
       "\t<>",
-      "\t\t${TM_SELECTED_TEXT}",
+      "\t\t$TM_SELECTED_TEXT",
       "\t</>",
       ")}"
     ],
@@ -988,7 +988,7 @@
   "wrapWithJsonStringify": {
     "prefix": "_js.$_js.wrap.💡",
     "body": [
-      "JSON.stringify(${TM_SELECTED_TEXT})"
+      "JSON.stringify($TM_SELECTED_TEXT)"
     ],
     "description": "Wrap with `JSON.stringify`",
     "scope": "javascript,javascriptreact"
@@ -996,7 +996,7 @@
   "wrapWithJsonParse": {
     "prefix": "_jp.$_jp.wrap.💡",
     "body": [
-      "JSON.parse(${TM_SELECTED_TEXT})"
+      "JSON.parse($TM_SELECTED_TEXT)"
     ],
     "description": "Wrap with `JSON.parse`",
     "scope": "javascript,javascriptreact"
