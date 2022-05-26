@@ -9,7 +9,7 @@ export const normalizeSnippet = (snippet: Snippet, isTS?: boolean) => {
     isTS ? `${primaryPrefix}.TS` : primaryPrefix,
     flaggedPrefix,
     ...prefix,
-    isTS ? '💡🟦' : '💡',
+    isTS ? '🟦' : '🟨',
   ];
 
   return {

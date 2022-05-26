@@ -2,6 +2,11 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.2.0 <small>- 2022/05/27</small>
+
+- Updated snippet's prefix emoji
+  ![Snippet prefix emoji](https://i.postimg.cc/pdVNSdxm/snippet-prefix-emoji.jpg)
+
 ## 1.1.0 <small>- 2022/05/25</small>
 
 - Added async function snippet
