@@ -1442,8 +1442,18 @@
     "description": "Get filename in camelCase",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "generatePropTypes": {
+    "prefix": "genPropTypes.$genPropTypes.🟨",
+    "body": [
+      "${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}.propTypes = {",
+      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}",
+      ""
+    ],
+    "description": "From clipboard (parameters) » generate PropTypes",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "generateInterface": {
-    "prefix": "genInt.$genInt.🟨",
+    "prefix": "genInt.TS.$$genInt.🟦",
     "body": [
       "interface ${1:Props} {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
@@ -1453,23 +1463,13 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "generateType": {
-    "prefix": "genType.$genType.🟨",
+    "prefix": "genType.TS.$$genType.🟦",
     "body": [
       "type ${1:Props} = {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
       ""
     ],
     "description": "From clipboard (parameters) » generate type",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "generatePropTypes": {
-    "prefix": "genPropTypes.$genPropTypes.🟨",
-    "body": [
-      "${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}.propTypes = {",
-      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}",
-      ""
-    ],
-    "description": "From clipboard (parameters) » generate PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   }
 }

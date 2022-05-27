@@ -13,26 +13,6 @@ export const getFileNameCamelCase: Snippet = {
   description: 'Get filename in camelCase',
 };
 
-export const generateInterface: Snippet = {
-  prefix: 'genInt',
-  body: [
-    'interface ${1:Props} {',
-    '${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}',
-    '',
-  ],
-  description: 'From clipboard (parameters) » generate interface',
-};
-
-export const generateType: Snippet = {
-  prefix: 'genType',
-  body: [
-    'type ${1:Props} = {',
-    '${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}',
-    '',
-  ],
-  description: 'From clipboard (parameters) » generate type',
-};
-
 export const generatePropTypes: Snippet = {
   prefix: 'genPropTypes',
   body: [

@@ -19,6 +19,7 @@ const testing = normalizeSnippets(require('./snippets/testing'));
 const wrapper = normalizeSnippets(require('./snippets/wrapper'));
 const htmlJsx = normalizeSnippets(require('./snippets/html-jsx'));
 const misc = normalizeSnippets(require('./snippets/misc'));
+const miscTS = normalizeSnippets(require('./snippets/misc-ts'), true);
 
 // Add line break at the end
 Object.keys(react).forEach((key) => react[key].body.push(''));
@@ -53,6 +54,7 @@ const typescriptSnippets = {
   ...wrapper,
   ...htmlJsx,
   ...misc,
+  ...miscTS,
 };
 
 // Add scope

@@ -1027,26 +1027,6 @@
     "description": "Get filename in camelCase",
     "scope": "javascript,javascriptreact"
   },
-  "generateInterface": {
-    "prefix": "genInt.$genInt.🟨",
-    "body": [
-      "interface ${1:Props} {",
-      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
-      ""
-    ],
-    "description": "From clipboard (parameters) » generate interface",
-    "scope": "javascript,javascriptreact"
-  },
-  "generateType": {
-    "prefix": "genType.$genType.🟨",
-    "body": [
-      "type ${1:Props} = {",
-      "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
-      ""
-    ],
-    "description": "From clipboard (parameters) » generate type",
-    "scope": "javascript,javascriptreact"
-  },
   "generatePropTypes": {
     "prefix": "genPropTypes.$genPropTypes.🟨",
     "body": [
