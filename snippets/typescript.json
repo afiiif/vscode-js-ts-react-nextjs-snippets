@@ -609,8 +609,8 @@
     "description": "React useCallback",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextGSS": {
-    "prefix": "nGSS.$nGSS.getServerSideProps.🟨",
+  "nextSSR": {
+    "prefix": "nSSR.$nSSR.getServerSideProps.🟨",
     "body": [
       "export async function getServerSideProps(${1:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -624,8 +624,8 @@
     "description": "Next.js getServerSideProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextGST": {
-    "prefix": "nGST.$nGST.getStaticProps.🟨",
+  "nextSSG": {
+    "prefix": "nSSG.$nSSG.getStaticProps.🟨",
     "body": [
       "export async function getStaticProps(${1:{ params \\}}) {",
       "\t${0:// code}",
@@ -655,8 +655,8 @@
     "description": "Next.js getStaticPaths",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextPageGSS": {
-    "prefix": "npGSS.$npGSS.🟨",
+  "nextPageSSR": {
+    "prefix": "npSSR.$npSSR.🟨",
     "body": [
       "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -678,8 +678,8 @@
     "description": "Next.js page with getServerSideProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextPageGST": {
-    "prefix": "npGST.$npGST.🟨",
+  "nextPageSSG": {
+    "prefix": "npSSG.$npSSG.🟨",
     "body": [
       "export async function getStaticProps(${2:{ params \\}}) {",
       "\t${0:// code}",
@@ -701,8 +701,8 @@
     "description": "Next.js page with getStaticProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextGSSArrowFunction": {
-    "prefix": "naGSS.$naGSS.getServerSideProps.🟨",
+  "nextSSRArrowFunction": {
+    "prefix": "naSSR.$naSSR.getServerSideProps.🟨",
     "body": [
       "export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -716,8 +716,8 @@
     "description": "Next.js getServerSideProps arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextGSTArrowFunction": {
-    "prefix": "naGST.$naGST.getStaticProps.🟨",
+  "nextSSGArrowFunction": {
+    "prefix": "naSSG.$naSSG.getStaticProps.🟨",
     "body": [
       "export const getStaticProps = async (${1:{ params \\}}) => {",
       "\t${0:// code}",
@@ -747,8 +747,8 @@
     "description": "Next.js getStaticPaths arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextPageGSSArrowFunction": {
-    "prefix": "npaGSS.$npaGSS.🟨",
+  "nextPageSSRArrowFunction": {
+    "prefix": "npaSSR.$npaSSR.🟨",
     "body": [
       "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -772,8 +772,8 @@
     "description": "Next.js page with getServerSideProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextPageGSTArrowFunction": {
-    "prefix": "npaGST.$npaGST.🟨",
+  "nextPageSSGArrowFunction": {
+    "prefix": "npaSSG.$npaSSG.🟨",
     "body": [
       "export const getStaticProps = async (${2:{ params \\}}) => {",
       "\t${0:// code}",
@@ -836,8 +836,8 @@
     "description": "Next.js Custom Document component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextGSS": {
-    "prefix": "nxGSS.TS.$$nxGSS.getServerSideProps.🟦",
+  "tsNextSSR": {
+    "prefix": "nSSR.TS.$$nSSR.getServerSideProps.🟦",
     "body": [
       "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
       "",
@@ -858,8 +858,8 @@
     "description": "Next.js getServerSideProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextGST": {
-    "prefix": "nxGST.TS.$$nxGST.getStaticProps.🟦",
+  "tsNextSSG": {
+    "prefix": "nSSG.TS.$$nSSG.getStaticProps.🟦",
     "body": [
       "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
       "",
@@ -881,7 +881,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSP": {
-    "prefix": "nxGSP.TS.$$nxGSP.getStaticPaths.🟦",
+    "prefix": "nGSP.TS.$$nGSP.getStaticPaths.🟦",
     "body": [
       "import { GetStaticPathsResult } from 'next'",
       "",
@@ -898,8 +898,8 @@
     "description": "Next.js getStaticPaths",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextPageGSS": {
-    "prefix": "nxpGSS.TS.$$nxpGSS.🟦",
+  "tsNextPageSSR": {
+    "prefix": "npSSR.TS.$$npSSR.🟦",
     "body": [
       "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
       "",
@@ -928,8 +928,8 @@
     "description": "Next.js page with getServerSideProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextPageGST": {
-    "prefix": "nxpGST.TS.$$nxpGST.🟦",
+  "tsNextPageSSG": {
+    "prefix": "npSSG.TS.$$npSSG.🟦",
     "body": [
       "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
       "",
@@ -958,8 +958,8 @@
     "description": "Next.js page with getStaticProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextGSSArrowFunction": {
-    "prefix": "nxaGSS.TS.$$nxaGSS.getServerSideProps.🟦",
+  "tsNextSSRArrowFunction": {
+    "prefix": "naSSR.TS.$$naSSR.getServerSideProps.🟦",
     "body": [
       "import { GetServerSideProps } from 'next'",
       "",
@@ -977,8 +977,8 @@
     "description": "Next.js getServerSideProps arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextGSTArrowFunction": {
-    "prefix": "nxaGST.TS.$$nxaGST.getStaticProps.🟦",
+  "tsNextSSGArrowFunction": {
+    "prefix": "naSSG.TS.$$naSSG.getStaticProps.🟦",
     "body": [
       "import { GetStaticProps } from 'next'",
       "",
@@ -997,7 +997,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "tsNextGSPArrowFunction": {
-    "prefix": "nxaGSP.TS.$$nxaGSP.getStaticPaths.🟦",
+    "prefix": "naGSP.TS.$$naGSP.getStaticPaths.🟦",
     "body": [
       "import { GetStaticPaths } from 'next'",
       "",
@@ -1014,8 +1014,8 @@
     "description": "Next.js getStaticPaths arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextPageGSSArrowFunction": {
-    "prefix": "nxpaGSS.TS.$$nxpaGSS.🟦",
+  "tsNextPageSSRArrowFunction": {
+    "prefix": "npaSSR.TS.$$npaSSR.🟦",
     "body": [
       "import { GetServerSideProps } from 'next'",
       "",
@@ -1043,8 +1043,8 @@
     "description": "Next.js page with getServerSideProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextPageGSTArrowFunction": {
-    "prefix": "nxpaGST.TS.$$nxpaGST.🟦",
+  "tsNextPageSSGArrowFunction": {
+    "prefix": "npaSSG.TS.$$npaSSG.🟦",
     "body": [
       "import { GetStaticProps } from 'next'",
       "",

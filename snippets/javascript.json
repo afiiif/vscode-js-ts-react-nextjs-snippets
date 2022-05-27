@@ -430,8 +430,8 @@
     "description": "React create custom hook",
     "scope": "javascript,javascriptreact"
   },
-  "nextGSS": {
-    "prefix": "nGSS.$nGSS.getServerSideProps.🟨",
+  "nextSSR": {
+    "prefix": "nSSR.$nSSR.getServerSideProps.🟨",
     "body": [
       "export async function getServerSideProps(${1:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -445,8 +445,8 @@
     "description": "Next.js getServerSideProps",
     "scope": "javascript,javascriptreact"
   },
-  "nextGST": {
-    "prefix": "nGST.$nGST.getStaticProps.🟨",
+  "nextSSG": {
+    "prefix": "nSSG.$nSSG.getStaticProps.🟨",
     "body": [
       "export async function getStaticProps(${1:{ params \\}}) {",
       "\t${0:// code}",
@@ -476,8 +476,8 @@
     "description": "Next.js getStaticPaths",
     "scope": "javascript,javascriptreact"
   },
-  "nextPageGSS": {
-    "prefix": "npGSS.$npGSS.🟨",
+  "nextPageSSR": {
+    "prefix": "npSSR.$npSSR.🟨",
     "body": [
       "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -499,8 +499,8 @@
     "description": "Next.js page with getServerSideProps",
     "scope": "javascript,javascriptreact"
   },
-  "nextPageGST": {
-    "prefix": "npGST.$npGST.🟨",
+  "nextPageSSG": {
+    "prefix": "npSSG.$npSSG.🟨",
     "body": [
       "export async function getStaticProps(${2:{ params \\}}) {",
       "\t${0:// code}",
@@ -522,8 +522,8 @@
     "description": "Next.js page with getStaticProps",
     "scope": "javascript,javascriptreact"
   },
-  "nextGSSArrowFunction": {
-    "prefix": "naGSS.$naGSS.getServerSideProps.🟨",
+  "nextSSRArrowFunction": {
+    "prefix": "naSSR.$naSSR.getServerSideProps.🟨",
     "body": [
       "export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -537,8 +537,8 @@
     "description": "Next.js getServerSideProps arrow function",
     "scope": "javascript,javascriptreact"
   },
-  "nextGSTArrowFunction": {
-    "prefix": "naGST.$naGST.getStaticProps.🟨",
+  "nextSSGArrowFunction": {
+    "prefix": "naSSG.$naSSG.getStaticProps.🟨",
     "body": [
       "export const getStaticProps = async (${1:{ params \\}}) => {",
       "\t${0:// code}",
@@ -568,8 +568,8 @@
     "description": "Next.js getStaticPaths arrow function",
     "scope": "javascript,javascriptreact"
   },
-  "nextPageGSSArrowFunction": {
-    "prefix": "npaGSS.$npaGSS.🟨",
+  "nextPageSSRArrowFunction": {
+    "prefix": "npaSSR.$npaSSR.🟨",
     "body": [
       "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -593,8 +593,8 @@
     "description": "Next.js page with getServerSideProps",
     "scope": "javascript,javascriptreact"
   },
-  "nextPageGSTArrowFunction": {
-    "prefix": "npaGST.$npaGST.🟨",
+  "nextPageSSGArrowFunction": {
+    "prefix": "npaSSG.$npaSSG.🟨",
     "body": [
       "export const getStaticProps = async (${2:{ params \\}}) => {",
       "\t${0:// code}",

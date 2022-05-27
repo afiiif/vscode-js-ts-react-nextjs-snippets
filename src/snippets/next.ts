@@ -1,8 +1,8 @@
 import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
-export const nextGSS: Snippet = {
-  prefix: ['nGSS', 'getServerSideProps'],
+export const nextSSR: Snippet = {
+  prefix: ['nSSR', 'getServerSideProps'],
   body: [
     'export async function getServerSideProps(${1:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -16,8 +16,8 @@ export const nextGSS: Snippet = {
   description: 'Next.js getServerSideProps',
 };
 
-export const nextGST: Snippet = {
-  prefix: ['nGST', 'getStaticProps'],
+export const nextSSG: Snippet = {
+  prefix: ['nSSG', 'getStaticProps'],
   body: [
     'export async function getStaticProps(${1:{ params \\}}) {',
     '\t${0:// code}',
@@ -47,8 +47,8 @@ export const nextGSP: Snippet = {
   description: 'Next.js getStaticPaths',
 };
 
-export const nextPageGSS: Snippet = {
-  prefix: 'npGSS',
+export const nextPageSSR: Snippet = {
+  prefix: 'npSSR',
   body: [
     'export async function getServerSideProps(${2:{ req, res, params, query \\}}) {',
     '\t${0:// code}',
@@ -70,8 +70,8 @@ export const nextPageGSS: Snippet = {
   description: 'Next.js page with getServerSideProps',
 };
 
-export const nextPageGST: Snippet = {
-  prefix: 'npGST',
+export const nextPageSSG: Snippet = {
+  prefix: 'npSSG',
   body: [
     'export async function getStaticProps(${2:{ params \\}}) {',
     '\t${0:// code}',
@@ -93,8 +93,8 @@ export const nextPageGST: Snippet = {
   description: 'Next.js page with getStaticProps',
 };
 
-export const nextGSSArrowFunction: Snippet = {
-  prefix: ['naGSS', 'getServerSideProps'],
+export const nextSSRArrowFunction: Snippet = {
+  prefix: ['naSSR', 'getServerSideProps'],
   body: [
     'export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -108,8 +108,8 @@ export const nextGSSArrowFunction: Snippet = {
   description: 'Next.js getServerSideProps arrow function',
 };
 
-export const nextGSTArrowFunction: Snippet = {
-  prefix: ['naGST', 'getStaticProps'],
+export const nextSSGArrowFunction: Snippet = {
+  prefix: ['naSSG', 'getStaticProps'],
   body: [
     'export const getStaticProps = async (${1:{ params \\}}) => {',
     '\t${0:// code}',
@@ -139,8 +139,8 @@ export const nextGSPArrowFunction: Snippet = {
   description: 'Next.js getStaticPaths arrow function',
 };
 
-export const nextPageGSSArrowFunction: Snippet = {
-  prefix: 'npaGSS',
+export const nextPageSSRArrowFunction: Snippet = {
+  prefix: 'npaSSR',
   body: [
     'export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {',
     '\t${0:// code}',
@@ -164,8 +164,8 @@ export const nextPageGSSArrowFunction: Snippet = {
   description: 'Next.js page with getServerSideProps',
 };
 
-export const nextPageGSTArrowFunction: Snippet = {
-  prefix: 'npaGST',
+export const nextPageSSGArrowFunction: Snippet = {
+  prefix: 'npaSSG',
   body: [
     'export const getStaticProps = async (${2:{ params \\}}) => {',
     '\t${0:// code}',
