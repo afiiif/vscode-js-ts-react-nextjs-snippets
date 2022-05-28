@@ -48,6 +48,10 @@ Because you might not need that. VSCode has built-in feature for auto-import you
 
 <img src="https://i.postimg.cc/7LSDVKDX/auto-import.gif" alt="VSCode built-in auto import" width="100%" />
 
+If auto import doesn't appear, open command palette (`Ctrl`+`Shift`+`P`) and select restart TS server.
+
+![Restart TS server](https://i.postimg.cc/cCPWZWSB/vscode-restart-ts-server.png)
+
 ---
 
 ## Donation
