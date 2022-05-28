@@ -1,12 +1,12 @@
 import { Snippet } from '../types';
 
-const { FILENAME_PASCALCASE } = require('../constants');
+import { FILENAME_PASCALCASE } from '../constants';
 
 export const tsReactFunctionalComp: Snippet = {
   prefix: 'rfc',
   body: [
     'type Props = {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -22,7 +22,7 @@ export const tsReactFunctionalCompExport: Snippet = {
   prefix: 'rfce',
   body: [
     'type Props = {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -40,7 +40,7 @@ export const tsReactArrowFunctionComp: Snippet = {
   prefix: 'rafc',
   body: [
     'type Props = {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
@@ -56,7 +56,7 @@ export const tsReactArrowFunctionCompExport: Snippet = {
   prefix: 'rafce',
   body: [
     'type Props = {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
@@ -74,7 +74,7 @@ export const tsReactFunctionalCompV2: Snippet = {
   prefix: 'rfc',
   body: [
     'interface Props {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -90,7 +90,7 @@ export const tsReactFunctionalCompExportV2: Snippet = {
   prefix: 'rfce',
   body: [
     'interface Props {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -108,7 +108,7 @@ export const tsReactArrowFunctionCompV2: Snippet = {
   prefix: 'rafc',
   body: [
     'interface Props {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
@@ -124,7 +124,7 @@ export const tsReactArrowFunctionCompExportV2: Snippet = {
   prefix: 'rafce',
   body: [
     'interface Props {',
-    '  $2: unknown;',
+    '\t$2: unknown;',
     '}',
     '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,

@@ -316,7 +316,7 @@
     "prefix": "rfc.TS.$$rfc.🟦",
     "body": [
       "type Props = {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -333,7 +333,7 @@
     "prefix": "rfce.TS.$$rfce.🟦",
     "body": [
       "type Props = {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -352,7 +352,7 @@
     "prefix": "rafc.TS.$$rafc.🟦",
     "body": [
       "type Props = {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
@@ -369,7 +369,7 @@
     "prefix": "rafce.TS.$$rafce.🟦",
     "body": [
       "type Props = {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
@@ -388,7 +388,7 @@
     "prefix": "rfc.TS.$$rfc.🟦",
     "body": [
       "interface Props {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -405,7 +405,7 @@
     "prefix": "rfce.TS.$$rfce.🟦",
     "body": [
       "interface Props {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -424,7 +424,7 @@
     "prefix": "rafc.TS.$$rafc.🟦",
     "body": [
       "interface Props {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
@@ -441,7 +441,7 @@
     "prefix": "rafce.TS.$$rafce.🟦",
     "body": [
       "interface Props {",
-      "  $2: unknown;",
+      "\t$2: unknown;",
       "}",
       "",
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
