@@ -5,7 +5,7 @@ const { FILENAME_PASCALCASE } = require('../constants');
 export const tsReactFunctionalComp: Snippet = {
   prefix: 'rfc',
   body: [
-    'interface Props {',
+    'type Props = {',
     '  $2: unknown;',
     '}',
     '',
@@ -21,7 +21,7 @@ export const tsReactFunctionalComp: Snippet = {
 export const tsReactFunctionalCompExport: Snippet = {
   prefix: 'rfce',
   body: [
-    'interface Props {',
+    'type Props = {',
     '  $2: unknown;',
     '}',
     '',
@@ -39,7 +39,7 @@ export const tsReactFunctionalCompExport: Snippet = {
 export const tsReactArrowFunctionComp: Snippet = {
   prefix: 'rafc',
   body: [
-    'interface Props {',
+    'type Props = {',
     '  $2: unknown;',
     '}',
     '',
@@ -55,7 +55,7 @@ export const tsReactArrowFunctionComp: Snippet = {
 export const tsReactArrowFunctionCompExport: Snippet = {
   prefix: 'rafce',
   body: [
-    'interface Props {',
+    'type Props = {',
     '  $2: unknown;',
     '}',
     '',
@@ -73,7 +73,7 @@ export const tsReactArrowFunctionCompExport: Snippet = {
 export const tsReactFunctionalCompV2: Snippet = {
   prefix: 'rfc',
   body: [
-    'type Props = {',
+    'interface Props {',
     '  $2: unknown;',
     '}',
     '',
@@ -89,7 +89,7 @@ export const tsReactFunctionalCompV2: Snippet = {
 export const tsReactFunctionalCompExportV2: Snippet = {
   prefix: 'rfce',
   body: [
-    'type Props = {',
+    'interface Props {',
     '  $2: unknown;',
     '}',
     '',
@@ -107,7 +107,7 @@ export const tsReactFunctionalCompExportV2: Snippet = {
 export const tsReactArrowFunctionCompV2: Snippet = {
   prefix: 'rafc',
   body: [
-    'type Props = {',
+    'interface Props {',
     '  $2: unknown;',
     '}',
     '',
@@ -123,7 +123,7 @@ export const tsReactArrowFunctionCompV2: Snippet = {
 export const tsReactArrowFunctionCompExportV2: Snippet = {
   prefix: 'rafce',
   body: [
-    'type Props = {',
+    'interface Props {',
     '  $2: unknown;',
     '}',
     '',

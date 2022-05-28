@@ -300,7 +300,7 @@
   "tsReactFunctionalComp": {
     "prefix": "rfc.TS.$$rfc.🟦",
     "body": [
-      "interface Props {",
+      "type Props = {",
       "  $2: unknown;",
       "}",
       "",
@@ -317,7 +317,7 @@
   "tsReactFunctionalCompExport": {
     "prefix": "rfce.TS.$$rfce.🟦",
     "body": [
-      "interface Props {",
+      "type Props = {",
       "  $2: unknown;",
       "}",
       "",
@@ -336,7 +336,7 @@
   "tsReactArrowFunctionComp": {
     "prefix": "rafc.TS.$$rafc.🟦",
     "body": [
-      "interface Props {",
+      "type Props = {",
       "  $2: unknown;",
       "}",
       "",
@@ -353,7 +353,7 @@
   "tsReactArrowFunctionCompExport": {
     "prefix": "rafce.TS.$$rafce.🟦",
     "body": [
-      "interface Props {",
+      "type Props = {",
       "  $2: unknown;",
       "}",
       "",
@@ -372,7 +372,7 @@
   "tsReactFunctionalCompV2": {
     "prefix": "rfc.TS.$$rfc.🟦",
     "body": [
-      "type Props = {",
+      "interface Props {",
       "  $2: unknown;",
       "}",
       "",
@@ -389,7 +389,7 @@
   "tsReactFunctionalCompExportV2": {
     "prefix": "rfce.TS.$$rfce.🟦",
     "body": [
-      "type Props = {",
+      "interface Props {",
       "  $2: unknown;",
       "}",
       "",
@@ -408,7 +408,7 @@
   "tsReactArrowFunctionCompV2": {
     "prefix": "rafc.TS.$$rafc.🟦",
     "body": [
-      "type Props = {",
+      "interface Props {",
       "  $2: unknown;",
       "}",
       "",
@@ -425,7 +425,7 @@
   "tsReactArrowFunctionCompExportV2": {
     "prefix": "rafce.TS.$$rafce.🟦",
     "body": [
-      "type Props = {",
+      "interface Props {",
       "  $2: unknown;",
       "}",
       "",
