@@ -47,3 +47,15 @@ Select text and copy it 📋 write snippet and boom! 🪄💥
 Because you might not need that. VSCode has built-in feature for auto-import your modules.
 
 <img src="https://i.postimg.cc/7LSDVKDX/auto-import.gif" alt="VSCode built-in auto import" width="100%" />
+
+---
+
+## Donation
+
+<a href="https://www.buymeacoffee.com/afifu">
+  <img src="https://i.postimg.cc/m20G2cNj/bmc-button.png" alt="Buy Me A Coffee" height="64px">
+</a>
+<br />
+<a href="https://trakteer.id/afifu/tip">
+  <img src="https://i.postimg.cc/rwXxGJNr/trakteer-id.png" alt="Trakteer ID" height="44px">
+</a>
