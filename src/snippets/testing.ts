@@ -1,6 +1,6 @@
 import { Snippet } from '../types';
 
-const { FILENAME_PASCALCASE } = require('../constants');
+import { FILENAME_PASCALCASE } from '../constants';
 
 export const tdesc: Snippet = {
   prefix: ['tdescribe', 'describe(test)'],

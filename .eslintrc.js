@@ -19,4 +19,12 @@ module.exports = {
     'unicorn/no-array-callback-reference': 'off',
     'unicorn/no-null': 'off',
   },
+  overrides: [
+    {
+      files: ['src/**/*'],
+      rules: {
+        'unicorn/prefer-module': 'error',
+      },
+    },
+  ],
 };

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-module */
 import * as fs from 'node:fs';
 
 import { normalizeSnippets } from './utilities';
