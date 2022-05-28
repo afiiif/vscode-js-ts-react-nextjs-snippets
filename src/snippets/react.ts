@@ -1,6 +1,5 @@
+import { FILENAME_PASCALCASE, FILENAME_CAMELCASE } from '../constants';
 import { Snippet } from '../types';
-
-const { FILENAME_PASCALCASE } = require('../constants');
 
 export const reactFunctionalComp: Snippet = {
   prefix: 'rfc',
@@ -124,4 +123,18 @@ export const reactArrowFunctionCompWithPropTypesChildren: Snippet = {
     'export default $1',
   ],
   description: 'React Arrow Function Component with PropTypes',
+};
+
+export const hocComponent: Snippet = {
+  prefix: 'hoc',
+  body: [
+    `export default function \${1:${FILENAME_CAMELCASE}}(WrappedComponent) {$0`,
+    '\tconst Component = (props) => {',
+    '\t\treturn <WrappedComponent {...props} />',
+    '\t}',
+    '',
+    '\treturn Component',
+    '}',
+  ],
+  description: 'React HOC',
 };

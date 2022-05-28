@@ -297,6 +297,21 @@
     "description": "React Arrow Function Component with PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "hocComponent": {
+    "prefix": "hoc.$hoc.🟨",
+    "body": [
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}}(WrappedComponent) {$0",
+      "\tconst Component = (props) => {",
+      "\t\treturn <WrappedComponent {...props} />",
+      "\t}",
+      "",
+      "\treturn Component",
+      "}",
+      ""
+    ],
+    "description": "React HOC",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "tsReactFunctionalComp": {
     "prefix": "rfc.TS.$$rfc.🟦",
     "body": [
