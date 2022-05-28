@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.4.0 <small>- 2022/05/29</small>
+
+- Added HOC snippet
+- Updated React TS snippet: prefer `type` over `interface`
+- Fixed inconsistent indentation
+
 ## 1.3.0 <small>- 2022/05/27</small>
 
 - Fixed JS-TS prefix inconsistencies on Next.js snippets
