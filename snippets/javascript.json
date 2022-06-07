@@ -893,7 +893,7 @@
     "scope": "javascript,javascriptreact"
   },
   "wrapWithFunction": {
-    "prefix": "_func.$_func.wrap.🟨",
+    "prefix": "_func.$_func.🟨",
     "body": [
       "${1:func}($TM_SELECTED_TEXT)"
     ],
@@ -901,7 +901,7 @@
     "scope": "javascript,javascriptreact"
   },
   "stringToTemplateLiterals": {
-    "prefix": "_lt.$_lt.wrap.🟨",
+    "prefix": "_lt.$_lt.🟨",
     "body": [
       "`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`"
     ],
@@ -909,7 +909,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactStringPropToTemplateLiteral": {
-    "prefix": "_ltr.$_ltr.wrap.🟨",
+    "prefix": "_ltr.$_ltr.🟨",
     "body": [
       "{`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`}"
     ],
@@ -917,7 +917,7 @@
     "scope": "javascript,javascriptreact"
   },
   "wrapWithFragment": {
-    "prefix": "_frag.$_frag.wrap.🟨",
+    "prefix": "_rFrag.$_rFrag._frag.🟨",
     "body": [
       "<$1$0>",
       "\t$TM_SELECTED_TEXT",
@@ -927,7 +927,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactIf": {
-    "prefix": "_rif.$_rif.wrap.🟨",
+    "prefix": "_rIf.$_rIf.🟨",
     "body": [
       "{${1:condition} ? (",
       "\t$TM_SELECTED_TEXT",
@@ -939,7 +939,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactIfWithFragment": {
-    "prefix": "_riff.$_riff.wrap.🟨",
+    "prefix": "_rIfFrag.$_rIfFrag.🟨",
     "body": [
       "{${1:condition} ? (",
       "\t<>",
@@ -953,7 +953,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactElse": {
-    "prefix": "_rel.$_rel.wrap.🟨",
+    "prefix": "_rEl.$_rEl.🟨",
     "body": [
       "{${1:condition} ? (",
       "\t${0:null}",
@@ -965,7 +965,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactElseWithFragment": {
-    "prefix": "_relf.$_relf.wrap.🟨",
+    "prefix": "_rElFrag.$_rElFrag.🟨",
     "body": [
       "{${1:condition} ? (",
       "\t${0:null}",
@@ -979,7 +979,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactConditional": {
-    "prefix": "_rcon.$_rcon.wrap.🟨",
+    "prefix": "_rCon.$_rCon.🟨",
     "body": [
       "{${1:condition} && (",
       "\t$TM_SELECTED_TEXT",
@@ -989,7 +989,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactConditionalWithFragment": {
-    "prefix": "_rconf.$_rconf.wrap.🟨",
+    "prefix": "_rConFrag.$_rConFrag.🟨",
     "body": [
       "{${1:condition} && (",
       "\t<>",
@@ -1001,7 +1001,7 @@
     "scope": "javascript,javascriptreact"
   },
   "wrapWithJsonStringify": {
-    "prefix": "_js.$_js.wrap.🟨",
+    "prefix": "_js.$_js.🟨",
     "body": [
       "JSON.stringify($TM_SELECTED_TEXT)"
     ],
@@ -1009,7 +1009,7 @@
     "scope": "javascript,javascriptreact"
   },
   "wrapWithJsonParse": {
-    "prefix": "_jp.$_jp.wrap.🟨",
+    "prefix": "_jp.$_jp.🟨",
     "body": [
       "JSON.parse($TM_SELECTED_TEXT)"
     ],

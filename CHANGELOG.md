@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.5.0 <small>- 2022/06/07</small>
+
+- Updated wrapper-snippet prefix
+
 ## 1.4.0 <small>- 2022/05/29</small>
 
 - Added HOC snippet
