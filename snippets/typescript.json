@@ -670,52 +670,6 @@
     "description": "Next.js getStaticPaths",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "nextPageSSR": {
-    "prefix": "npSSR.$npSSR.🟨",
-    "body": [
-      "export async function getServerSideProps(${2:{ req, res, params, query \\}}) {",
-      "\t${0:// code}",
-      "",
-      "\treturn {",
-      "\t\tprops: {},",
-      "\t}",
-      "}",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page}() {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      ""
-    ],
-    "description": "Next.js page with getServerSideProps",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "nextPageSSG": {
-    "prefix": "npSSG.$npSSG.🟨",
-    "body": [
-      "export async function getStaticProps(${2:{ params \\}}) {",
-      "\t${0:// code}",
-      "",
-      "\treturn {",
-      "\t\tprops: {},",
-      "\t}",
-      "}",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page}() {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      ""
-    ],
-    "description": "Next.js page with getStaticProps",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
   "nextSSRArrowFunction": {
     "prefix": "naSSR.$naSSR.getServerSideProps.🟨",
     "body": [
@@ -760,56 +714,6 @@
       ""
     ],
     "description": "Next.js getStaticPaths arrow function",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "nextPageSSRArrowFunction": {
-    "prefix": "npaSSR.$npaSSR.🟨",
-    "body": [
-      "export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {",
-      "\t${0:// code}",
-      "",
-      "\treturn {",
-      "\t\tprops: {},",
-      "\t}",
-      "}",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page} = () => {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "Next.js page with getServerSideProps",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "nextPageSSGArrowFunction": {
-    "prefix": "npaSSG.$npaSSG.🟨",
-    "body": [
-      "export const getStaticProps = async (${2:{ params \\}}) => {",
-      "\t${0:// code}",
-      "",
-      "\treturn {",
-      "\t\tprops: {},",
-      "\t}",
-      "}",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page} = () => {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "Next.js page with getStaticProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "nextUseRouter": {
@@ -913,66 +817,6 @@
     "description": "Next.js getStaticPaths",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "tsNextPageSSR": {
-    "prefix": "npSSR.TS.$$npSSR.🟦",
-    "body": [
-      "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
-      "",
-      "type Context = GetServerSidePropsContext",
-      "type Result = GetServerSidePropsResult<{ ${2:data}: any }>",
-      "",
-      "export async function getServerSideProps(ctx: Context): Promise<Result> {",
-      "\tconst { ${3:req, res, params, query} } = ctx",
-      "\t$0",
-      "\treturn {",
-      "\t\tprops: {",
-      "\t\t\t$2: null,",
-      "\t\t},",
-      "\t}",
-      "}",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page}() {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      ""
-    ],
-    "description": "Next.js page with getServerSideProps",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "tsNextPageSSG": {
-    "prefix": "npSSG.TS.$$npSSG.🟦",
-    "body": [
-      "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
-      "",
-      "type Context = GetStaticPropsContext",
-      "type Result = GetStaticPropsResult<{ ${2:data}: any }>",
-      "",
-      "export async function getStaticProps({ params }: Context): Promise<Result> {",
-      "\t${0:// code}",
-      "",
-      "\treturn {",
-      "\t\tprops: {",
-      "\t\t\t$2: null,",
-      "\t\t},",
-      "\t}",
-      "}",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page}() {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      ""
-    ],
-    "description": "Next.js page with getStaticProps",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
   "tsNextSSRArrowFunction": {
     "prefix": "naSSR.TS.$$naSSR.getServerSideProps.🟦",
     "body": [
@@ -1027,64 +871,6 @@
       ""
     ],
     "description": "Next.js getStaticPaths arrow function",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "tsNextPageSSRArrowFunction": {
-    "prefix": "npaSSR.TS.$$npaSSR.🟦",
-    "body": [
-      "import { GetServerSideProps } from 'next'",
-      "",
-      "export const getServerSideProps: GetServerSideProps<{ ${2:data}: any }> = async (ctx) => {",
-      "\tconst { ${3:req, res, params, query} } = ctx",
-      "\t$0",
-      "\treturn {",
-      "\t\tprops: {",
-      "\t\t\t$2: null,",
-      "\t\t},",
-      "\t}",
-      "}",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page} = () => {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "Next.js page with getServerSideProps",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "tsNextPageSSGArrowFunction": {
-    "prefix": "npaSSG.TS.$$npaSSG.🟦",
-    "body": [
-      "import { GetStaticProps } from 'next'",
-      "",
-      "export const getStaticProps: GetStaticProps<{ ${2:data}: any }> = async (ctx) => {",
-      "\tconst { params } = ctx",
-      "\t$0",
-      "\treturn {",
-      "\t\tprops: {",
-      "\t\t\t$2: null,",
-      "\t\t},",
-      "\t}",
-      "}",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}Page} = () => {",
-      "\treturn (",
-      "\t\t<>",
-      "\t\t\t$1 content",
-      "\t\t</>",
-      "\t)",
-      "}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "Next.js page with getStaticProps",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "rqUseQuery": {

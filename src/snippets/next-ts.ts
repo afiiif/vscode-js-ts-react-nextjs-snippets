@@ -1,4 +1,3 @@
-import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
 export const tsNextSSR: Snippet = {
@@ -63,66 +62,6 @@ export const tsNextGSP: Snippet = {
   description: 'Next.js getStaticPaths',
 };
 
-export const tsNextPageSSR: Snippet = {
-  prefix: 'npSSR',
-  body: [
-    "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
-    '',
-    'type Context = GetServerSidePropsContext',
-    'type Result = GetServerSidePropsResult<{ ${2:data}: any }>',
-    '',
-    'export async function getServerSideProps(ctx: Context): Promise<Result> {',
-    '\tconst { ${3:req, res, params, query} } = ctx',
-    '\t$0',
-    '\treturn {',
-    '\t\tprops: {',
-    '\t\t\t$2: null,',
-    '\t\t},',
-    '\t}',
-    '}',
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}Page}() {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-  ],
-  description: 'Next.js page with getServerSideProps',
-};
-
-export const tsNextPageSSG: Snippet = {
-  prefix: 'npSSG',
-  body: [
-    "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
-    '',
-    'type Context = GetStaticPropsContext',
-    'type Result = GetStaticPropsResult<{ ${2:data}: any }>',
-    '',
-    'export async function getStaticProps({ params }: Context): Promise<Result> {',
-    '\t${0:// code}',
-    '',
-    '\treturn {',
-    '\t\tprops: {',
-    '\t\t\t$2: null,',
-    '\t\t},',
-    '\t}',
-    '}',
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}Page}() {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-  ],
-  description: 'Next.js page with getStaticProps',
-};
-
 export const tsNextSSRArrowFunction: Snippet = {
   prefix: ['naSSR', 'getServerSideProps'],
   body: [
@@ -177,62 +116,4 @@ export const tsNextGSPArrowFunction: Snippet = {
     '',
   ],
   description: 'Next.js getStaticPaths arrow function',
-};
-
-export const tsNextPageSSRArrowFunction: Snippet = {
-  prefix: 'npaSSR',
-  body: [
-    "import { GetServerSideProps } from 'next'",
-    '',
-    'export const getServerSideProps: GetServerSideProps<{ ${2:data}: any }> = async (ctx) => {',
-    '\tconst { ${3:req, res, params, query} } = ctx',
-    '\t$0',
-    '\treturn {',
-    '\t\tprops: {',
-    '\t\t\t$2: null,',
-    '\t\t},',
-    '\t}',
-    '}',
-    '',
-    `const \${1:${FILENAME_PASCALCASE}Page} = () => {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-    'export default $1',
-    '',
-  ],
-  description: 'Next.js page with getServerSideProps',
-};
-
-export const tsNextPageSSGArrowFunction: Snippet = {
-  prefix: 'npaSSG',
-  body: [
-    "import { GetStaticProps } from 'next'",
-    '',
-    'export const getStaticProps: GetStaticProps<{ ${2:data}: any }> = async (ctx) => {',
-    '\tconst { params } = ctx',
-    '\t$0',
-    '\treturn {',
-    '\t\tprops: {',
-    '\t\t\t$2: null,',
-    '\t\t},',
-    '\t}',
-    '}',
-    '',
-    `const \${1:${FILENAME_PASCALCASE}Page} = () => {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-    'export default $1',
-    '',
-  ],
-  description: 'Next.js page with getStaticProps',
 };

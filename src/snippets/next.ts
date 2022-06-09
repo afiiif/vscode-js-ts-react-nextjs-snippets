@@ -1,4 +1,3 @@
-import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
 export const nextSSR: Snippet = {
@@ -47,52 +46,6 @@ export const nextGSP: Snippet = {
   description: 'Next.js getStaticPaths',
 };
 
-export const nextPageSSR: Snippet = {
-  prefix: 'npSSR',
-  body: [
-    'export async function getServerSideProps(${2:{ req, res, params, query \\}}) {',
-    '\t${0:// code}',
-    '',
-    '\treturn {',
-    '\t\tprops: {},',
-    '\t}',
-    '}',
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}Page}() {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-  ],
-  description: 'Next.js page with getServerSideProps',
-};
-
-export const nextPageSSG: Snippet = {
-  prefix: 'npSSG',
-  body: [
-    'export async function getStaticProps(${2:{ params \\}}) {',
-    '\t${0:// code}',
-    '',
-    '\treturn {',
-    '\t\tprops: {},',
-    '\t}',
-    '}',
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}Page}() {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-  ],
-  description: 'Next.js page with getStaticProps',
-};
-
 export const nextSSRArrowFunction: Snippet = {
   prefix: ['naSSR', 'getServerSideProps'],
   body: [
@@ -137,56 +90,6 @@ export const nextGSPArrowFunction: Snippet = {
     '',
   ],
   description: 'Next.js getStaticPaths arrow function',
-};
-
-export const nextPageSSRArrowFunction: Snippet = {
-  prefix: 'npaSSR',
-  body: [
-    'export const getServerSideProps = async (${2:{ req, res, params, query \\}}) => {',
-    '\t${0:// code}',
-    '',
-    '\treturn {',
-    '\t\tprops: {},',
-    '\t}',
-    '}',
-    '',
-    `const \${1:${FILENAME_PASCALCASE}Page} = () => {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-    'export default $1',
-    '',
-  ],
-  description: 'Next.js page with getServerSideProps',
-};
-
-export const nextPageSSGArrowFunction: Snippet = {
-  prefix: 'npaSSG',
-  body: [
-    'export const getStaticProps = async (${2:{ params \\}}) => {',
-    '\t${0:// code}',
-    '',
-    '\treturn {',
-    '\t\tprops: {},',
-    '\t}',
-    '}',
-    '',
-    `const \${1:${FILENAME_PASCALCASE}Page} = () => {`,
-    '\treturn (',
-    '\t\t<>',
-    '\t\t\t$1 content',
-    '\t\t</>',
-    '\t)',
-    '}',
-    '',
-    'export default $1',
-    '',
-  ],
-  description: 'Next.js page with getStaticProps',
 };
 
 export const nextUseRouter: Snippet = {
