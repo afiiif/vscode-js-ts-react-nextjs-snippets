@@ -340,8 +340,8 @@
     "prefix": "useEffect.$useEffect.🟨",
     "body": [
       "useEffect$3(() => {",
-      "\t${1:// code}",
-      "}, [$2])",
+      "\t${2:// code}",
+      "}, [$1])",
       ""
     ],
     "description": "React useEffect",
@@ -351,12 +351,12 @@
     "prefix": "useEffectV2.$useEffectV2.🟨",
     "body": [
       "useEffect$4(() => {",
-      "\t${1:// code}",
+      "\t${2:// code}",
       "",
       "\treturn () => {",
       "\t\t${3:// cleanup}",
       "\t}",
-      "}, [$2])",
+      "}, [$1])",
       ""
     ],
     "description": "React useEffect with cleanup",
@@ -366,8 +366,8 @@
     "prefix": "useLayoutEffect.$useLayoutEffect.🟨",
     "body": [
       "useLayoutEffect$3(() => {",
-      "\t${1:// code}",
-      "}, [$2])",
+      "\t${2:// code}",
+      "}, [$1])",
       ""
     ],
     "description": "React useLayoutEffect",
@@ -377,12 +377,12 @@
     "prefix": "useLayoutEffectV2.$useLayoutEffectV2.🟨",
     "body": [
       "useLayoutEffect$4(() => {",
-      "\t${1:// code}",
+      "\t${2:// code}",
       "",
       "\treturn () => {",
       "\t\t${3:// cleanup}",
       "\t}",
-      "}, [$2])",
+      "}, [$1])",
       ""
     ],
     "description": "React useLayoutEffect with cleanup",
@@ -391,7 +391,7 @@
   "useMemo": {
     "prefix": "useMemo.$useMemo.🟨",
     "body": [
-      "useMemo$3(() => ${1:computeValue}, [$2])"
+      "useMemo$3(() => ${2:computeValue}, [$1])"
     ],
     "description": "React useMemo",
     "scope": "javascript,javascriptreact"
@@ -400,8 +400,8 @@
     "prefix": "useCallback.$useCallback.🟨",
     "body": [
       "useCallback$3(() => {",
-      "\t${1:// code}",
-      "}, [$2])",
+      "\t${2:// code}",
+      "}, [$1])",
       ""
     ],
     "description": "React useCallback",

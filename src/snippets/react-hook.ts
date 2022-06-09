@@ -21,7 +21,7 @@ export const useReducer: Snippet = {
 
 export const useEffect: Snippet = {
   prefix: 'useEffect',
-  body: ['useEffect$3(() => {', '\t${1:// code}', '}, [$2])', ''],
+  body: ['useEffect$3(() => {', '\t${2:// code}', '}, [$1])', ''],
   description: 'React useEffect',
 };
 
@@ -29,12 +29,12 @@ export const useEffectV2: Snippet = {
   prefix: 'useEffectV2',
   body: [
     'useEffect$4(() => {',
-    '\t${1:// code}',
+    '\t${2:// code}',
     '',
     '\treturn () => {',
     '\t\t${3:// cleanup}',
     '\t}',
-    '}, [$2])',
+    '}, [$1])',
     '',
   ],
   description: 'React useEffect with cleanup',
@@ -42,7 +42,7 @@ export const useEffectV2: Snippet = {
 
 export const useLayoutEffect: Snippet = {
   prefix: 'useLayoutEffect',
-  body: ['useLayoutEffect$3(() => {', '\t${1:// code}', '}, [$2])', ''],
+  body: ['useLayoutEffect$3(() => {', '\t${2:// code}', '}, [$1])', ''],
   description: 'React useLayoutEffect',
 };
 
@@ -50,12 +50,12 @@ export const useLayoutEffectV2: Snippet = {
   prefix: 'useLayoutEffectV2',
   body: [
     'useLayoutEffect$4(() => {',
-    '\t${1:// code}',
+    '\t${2:// code}',
     '',
     '\treturn () => {',
     '\t\t${3:// cleanup}',
     '\t}',
-    '}, [$2])',
+    '}, [$1])',
     '',
   ],
   description: 'React useLayoutEffect with cleanup',
@@ -63,13 +63,13 @@ export const useLayoutEffectV2: Snippet = {
 
 export const useMemo: Snippet = {
   prefix: 'useMemo',
-  body: ['useMemo$3(() => ${1:computeValue}, [$2])'],
+  body: ['useMemo$3(() => ${2:computeValue}, [$1])'],
   description: 'React useMemo',
 };
 
 export const useCallback: Snippet = {
   prefix: 'useCallback',
-  body: ['useCallback$3(() => {', '\t${1:// code}', '}, [$2])', ''],
+  body: ['useCallback$3(() => {', '\t${2:// code}', '}, [$1])', ''],
   description: 'React useCallback',
 };
 
