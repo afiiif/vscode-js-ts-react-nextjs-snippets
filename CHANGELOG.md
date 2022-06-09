@@ -5,10 +5,10 @@ All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will b
 ## 1.6.0 <small>- 2022/06/10</small>
 
 - Add [SWR](https://swr.vercel.app/) snippets
-- Update React component snippets
-- Update React hook snippets
-- Update React Query snippets
 - Add Next.js dynamic import snippet (as wrapper-snippet)
+- Update React-component snippets
+- Update React-hook snippet's tabstop
+- Update React Query snippets
 
 ## 1.5.0 <small>- 2022/06/07</small>
 
@@ -36,43 +36,14 @@ All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will b
 - Added react conditional-syntax wrapper-snippets
 - Added regular string to template literals wrapper-snippets
 
-![Wrapper snippet](https://i.postimg.cc/0ybyJ47z/wrapper-snippet-2.gif)
-
 ## 1.0.0 <small>- 2022/05/18</small>
-
-- Added new snippet for Next.js custom document
-- Updated snippet prefix for Next.js
-- Updated generate-from-clipboard snippets
-- Added get cleaned filename in pascalcase/camelcase snippet
-
-## 0.5.0 <small>- 2022/05/15</small>
-
-- Added more snippets
-- Updated snippet prefix pattern for TypeScript
-
-## 0.4.0 <small>- 2022/05/11</small>
-
-- Added generate-from-clipboard snippets
-
-## 0.3.1 <small>- 2022/05/10</small>
-
-- Fixed bug on Windows  
-  (caused by path separator which use `\`, not `/`)
-
-## 0.3.0 <small>- 2022/05/10</small>
-
-- Added wrapper snippets
-- Added react custom hook snippet
-
-## 0.2.0 <small>- 2022/05/10</small>
-
-- Added [Jest](https://jestjs.io/) snippets
-- Added [React Hook Form](https://react-hook-form.com/) snippets
-- Added [Zustand](https://www.npmjs.com/package/zustand) snippets
-
-## 0.1.0 <small>- 2022/05/09</small>
 
 - Added vanilla JS snippets
 - Added React snippets
 - Added [Next.js](https://nextjs.org/) snippets
 - Added [React Query](https://react-query.tanstack.com/) snippets
+- Added [Jest](https://jestjs.io/) snippets
+- Added [React Hook Form](https://react-hook-form.com/) snippets
+- Added [Zustand](https://www.npmjs.com/package/zustand) snippets
+- Added wrapper snippets
+- Added generate-from-clipboard snippets
