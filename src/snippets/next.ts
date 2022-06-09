@@ -124,3 +124,19 @@ export const nextCustomDocComponent: Snippet = {
   ],
   description: 'Next.js Custom Document component',
 };
+
+export const nextDynamicImport: Snippet = {
+  prefix: ['nDyn', '_nDyn'],
+  body: [
+    '${TM_SELECTED_TEXT/(import )(\\w+)( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4))$5/g}',
+  ],
+  description: 'Convert import to Next.js dynamic import',
+};
+
+export const nextDynamicImportNamed: Snippet = {
+  prefix: ['nDynNamed', '_nDynNamed'],
+  body: [
+    '${TM_SELECTED_TEXT/(import ){ ?(\\w+) ?}( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4).then(mod => mod.$2))$5/g}',
+  ],
+  description: 'Convert import to Next.js dynamic import',
+};

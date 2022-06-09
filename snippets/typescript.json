@@ -755,6 +755,22 @@
     "description": "Next.js Custom Document component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "nextDynamicImport": {
+    "prefix": "nDyn.$nDyn._nDyn.🟨",
+    "body": [
+      "${TM_SELECTED_TEXT/(import )(\\w+)( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4))$5/g}"
+    ],
+    "description": "Convert import to Next.js dynamic import",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "nextDynamicImportNamed": {
+    "prefix": "nDynNamed.$nDynNamed._nDynNamed.🟨",
+    "body": [
+      "${TM_SELECTED_TEXT/(import ){ ?(\\w+) ?}( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4).then(mod => mod.$2))$5/g}"
+    ],
+    "description": "Convert import to Next.js dynamic import",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "tsNextSSR": {
     "prefix": "nSSR.TS.$$nSSR.getServerSideProps.🟦",
     "body": [
