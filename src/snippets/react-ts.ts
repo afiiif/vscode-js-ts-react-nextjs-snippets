@@ -3,7 +3,7 @@ import { Snippet } from '../types';
 import { FILENAME_PASCALCASE } from '../constants';
 
 export const tsReactFunctionalComp: Snippet = {
-  prefix: 'rfc',
+  prefix: ['rFC', '(type)'],
   body: [
     'type Props = {',
     '\t$2: unknown;',
@@ -11,7 +11,7 @@ export const tsReactFunctionalComp: Snippet = {
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
   ],
@@ -19,7 +19,7 @@ export const tsReactFunctionalComp: Snippet = {
 };
 
 export const tsReactFunctionalCompExport: Snippet = {
-  prefix: 'rfce',
+  prefix: ['rFCe', '(type)'],
   body: [
     'type Props = {',
     '\t$2: unknown;',
@@ -27,7 +27,7 @@ export const tsReactFunctionalCompExport: Snippet = {
     '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
     '',
@@ -37,7 +37,7 @@ export const tsReactFunctionalCompExport: Snippet = {
 };
 
 export const tsReactArrowFunctionComp: Snippet = {
-  prefix: 'rafc',
+  prefix: ['rAFC', '(type)'],
   body: [
     'type Props = {',
     '\t$2: unknown;',
@@ -45,7 +45,7 @@ export const tsReactArrowFunctionComp: Snippet = {
     '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
   ],
@@ -53,7 +53,7 @@ export const tsReactArrowFunctionComp: Snippet = {
 };
 
 export const tsReactArrowFunctionCompExport: Snippet = {
-  prefix: 'rafce',
+  prefix: ['rAFCe', '(type)'],
   body: [
     'type Props = {',
     '\t$2: unknown;',
@@ -61,7 +61,7 @@ export const tsReactArrowFunctionCompExport: Snippet = {
     '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
     '',
@@ -71,7 +71,7 @@ export const tsReactArrowFunctionCompExport: Snippet = {
 };
 
 export const tsReactFunctionalCompV2: Snippet = {
-  prefix: 'rfc',
+  prefix: ['rFC', '(interface)'],
   body: [
     'interface Props {',
     '\t$2: unknown;',
@@ -79,7 +79,7 @@ export const tsReactFunctionalCompV2: Snippet = {
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
   ],
@@ -87,7 +87,7 @@ export const tsReactFunctionalCompV2: Snippet = {
 };
 
 export const tsReactFunctionalCompExportV2: Snippet = {
-  prefix: 'rfce',
+  prefix: ['rFCe', '(interface)'],
   body: [
     'interface Props {',
     '\t$2: unknown;',
@@ -95,7 +95,7 @@ export const tsReactFunctionalCompExportV2: Snippet = {
     '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
     '',
@@ -105,7 +105,7 @@ export const tsReactFunctionalCompExportV2: Snippet = {
 };
 
 export const tsReactArrowFunctionCompV2: Snippet = {
-  prefix: 'rafc',
+  prefix: ['rAFC', '(interface)'],
   body: [
     'interface Props {',
     '\t$2: unknown;',
@@ -113,7 +113,7 @@ export const tsReactArrowFunctionCompV2: Snippet = {
     '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
   ],
@@ -121,7 +121,7 @@ export const tsReactArrowFunctionCompV2: Snippet = {
 };
 
 export const tsReactArrowFunctionCompExportV2: Snippet = {
-  prefix: 'rafce',
+  prefix: ['rAFCe', '(interface)'],
   body: [
     'interface Props {',
     '\t$2: unknown;',
@@ -129,7 +129,7 @@ export const tsReactArrowFunctionCompExportV2: Snippet = {
     '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1 Component}</$3>',
+    '\t\t<${3:div}>${4:$1}</$3>',
     '\t)',
     '}',
     '',

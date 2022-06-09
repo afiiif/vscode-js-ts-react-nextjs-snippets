@@ -166,11 +166,11 @@
     "scope": "javascript,javascriptreact"
   },
   "reactFunctionalComp": {
-    "prefix": "rfc.$rfc.🟨",
+    "prefix": "rFC.$rFC.🟨",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1 Component}</$2>",
+      "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
       "}",
       ""
@@ -179,11 +179,11 @@
     "scope": "javascript,javascriptreact"
   },
   "reactFunctionalCompExport": {
-    "prefix": "rfce.$rfce.🟨",
+    "prefix": "rFCe.$rFCe.🟨",
     "body": [
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1 Component}</$2>",
+      "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
       "}",
       "",
@@ -194,13 +194,13 @@
     "scope": "javascript,javascriptreact"
   },
   "reactFunctionalCompWithPropTypes": {
-    "prefix": "rfcp.$rfcp.🟨",
+    "prefix": "rFCp.$rFCp.🟨",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1 Component}</$2>",
+      "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
       "}",
       "",
@@ -211,7 +211,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactFunctionalCompWithPropTypesChildren": {
-    "prefix": "rfcpch.$rfcpch.🟨",
+    "prefix": "rFCpch.$rFCpch.🟨",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -230,11 +230,11 @@
     "scope": "javascript,javascriptreact"
   },
   "reactArrowFunctionComp": {
-    "prefix": "rafc.$rafc.🟨",
+    "prefix": "rAFC.$rAFC.🟨",
     "body": [
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1 Component}</$2>",
+      "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
       "}",
       ""
@@ -243,11 +243,11 @@
     "scope": "javascript,javascriptreact"
   },
   "reactArrowFunctionCompExport": {
-    "prefix": "rafce.$rafce.🟨",
+    "prefix": "rAFCe.$rAFCe.🟨",
     "body": [
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1 Component}</$2>",
+      "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
       "}",
       "",
@@ -258,13 +258,13 @@
     "scope": "javascript,javascriptreact"
   },
   "reactArrowFunctionCompWithPropTypes": {
-    "prefix": "rafcp.$rafcp.🟨",
+    "prefix": "rAFCp.$rAFCp.🟨",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1 Component}</$2>",
+      "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
       "}",
       "",
@@ -277,7 +277,7 @@
     "scope": "javascript,javascriptreact"
   },
   "reactArrowFunctionCompWithPropTypesChildren": {
-    "prefix": "rafcpch.$rafcpch.🟨",
+    "prefix": "rAFCpch.$rAFCpch.🟨",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -298,7 +298,7 @@
     "scope": "javascript,javascriptreact"
   },
   "hocComponent": {
-    "prefix": "hoc.$hoc.🟨",
+    "prefix": "hoc.$hoc.rHOC.🟨",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}}(WrappedComponent) {$0",
       "\tconst Component = (props) => {",

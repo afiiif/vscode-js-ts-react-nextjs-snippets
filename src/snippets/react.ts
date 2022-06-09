@@ -2,11 +2,11 @@ import { FILENAME_PASCALCASE, FILENAME_CAMELCASE } from '../constants';
 import { Snippet } from '../types';
 
 export const reactFunctionalComp: Snippet = {
-  prefix: 'rfc',
+  prefix: 'rFC',
   body: [
     `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1}</$2>',
     '\t)',
     '}',
   ],
@@ -14,11 +14,11 @@ export const reactFunctionalComp: Snippet = {
 };
 
 export const reactFunctionalCompExport: Snippet = {
-  prefix: 'rfce',
+  prefix: 'rFCe',
   body: [
     `function \${1:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1}</$2>',
     '\t)',
     '}',
     '',
@@ -28,13 +28,13 @@ export const reactFunctionalCompExport: Snippet = {
 };
 
 export const reactFunctionalCompWithPropTypes: Snippet = {
-  prefix: 'rfcp',
+  prefix: 'rFCp',
   body: [
     "import PropTypes from 'prop-types'",
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1}</$2>',
     '\t)',
     '}',
     '',
@@ -44,7 +44,7 @@ export const reactFunctionalCompWithPropTypes: Snippet = {
 };
 
 export const reactFunctionalCompWithPropTypesChildren: Snippet = {
-  prefix: 'rfcpch',
+  prefix: 'rFCpch',
   body: [
     "import PropTypes from 'prop-types'",
     '',
@@ -62,11 +62,11 @@ export const reactFunctionalCompWithPropTypesChildren: Snippet = {
 };
 
 export const reactArrowFunctionComp: Snippet = {
-  prefix: 'rafc',
+  prefix: 'rAFC',
   body: [
     `export const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1}</$2>',
     '\t)',
     '}',
   ],
@@ -74,11 +74,11 @@ export const reactArrowFunctionComp: Snippet = {
 };
 
 export const reactArrowFunctionCompExport: Snippet = {
-  prefix: 'rafce',
+  prefix: 'rAFCe',
   body: [
     `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1}</$2>',
     '\t)',
     '}',
     '',
@@ -88,13 +88,13 @@ export const reactArrowFunctionCompExport: Snippet = {
 };
 
 export const reactArrowFunctionCompWithPropTypes: Snippet = {
-  prefix: 'rafcp',
+  prefix: 'rAFCp',
   body: [
     "import PropTypes from 'prop-types'",
     '',
     `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1 Component}</$2>',
+    '\t\t<${2:div}>${3:$1}</$2>',
     '\t)',
     '}',
     '',
@@ -106,7 +106,7 @@ export const reactArrowFunctionCompWithPropTypes: Snippet = {
 };
 
 export const reactArrowFunctionCompWithPropTypesChildren: Snippet = {
-  prefix: 'rafcpch',
+  prefix: 'rAFCpch',
   body: [
     "import PropTypes from 'prop-types'",
     '',
@@ -126,7 +126,7 @@ export const reactArrowFunctionCompWithPropTypesChildren: Snippet = {
 };
 
 export const hocComponent: Snippet = {
-  prefix: 'hoc',
+  prefix: ['hoc', 'rHOC'],
   body: [
     `export default function \${1:${FILENAME_CAMELCASE}}(WrappedComponent) {$0`,
     '\tconst Component = (props) => {',
