@@ -889,13 +889,40 @@
     "description": "Next.js getStaticPaths arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "rqUseQuery": {
-    "prefix": "rqUseQuery.$rqUseQuery.useQuery.🟨",
+  "rqQuery": {
+    "prefix": "rqUseQue.$rqUseQue.🟨",
     "body": [
       "const { isLoading, data, error } = ${2:useQuery}$3($1)",
       ""
     ],
     "description": "React Query useQuery",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "rqMutation": {
+    "prefix": "rqUseMut.$rqUseMut.🟨",
+    "body": [
+      "const { mutate, isLoading } = ${2:useMutation}$3($1)",
+      ""
+    ],
+    "description": "React Query useMutation",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "rqInfQuery": {
+    "prefix": "rqUseInf.$rqUseInf.🟨",
+    "body": [
+      "const { isLoading, isFetchingNextPage, data, error, fetchNextPage } = useInfiniteQuery$2($1)",
+      ""
+    ],
+    "description": "React Query useInfiniteQuery",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "rqQueryCustomHook": {
+    "prefix": "rqUseQue.$rqUseQue.hook.🟨",
+    "body": [
+      "export const use${1:Todo}Query = () => useQuery(['${1/(.*)/${1:/downcase}/}'], fetch$1)",
+      ""
+    ],
+    "description": "React Query useQuery custom hook",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "rqLDE": {
@@ -914,8 +941,8 @@
     "description": "React Query Loading-Data-Error pattern",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "rqUseQueryLDE": {
-    "prefix": "rqUseQueryLDE.$rqUseQueryLDE.useQueryLDE.🟨",
+  "rqQueryLDE": {
+    "prefix": "rqUseQueLDE.$rqUseQueLDE.🟨",
     "body": [
       "const { isLoading, data, error } = ${2:useQuery}$3($1)",
       "",
@@ -948,8 +975,8 @@
     "description": "React Query Loading-Error-Data pattern",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "rqUseQueryLED": {
-    "prefix": "rqUseQueryLED.$rqUseQueryLED.useQueryLED.🟨",
+  "rqQueryLED": {
+    "prefix": "rqUseQueLED.$rqUseQueLED.🟨",
     "body": [
       "const { isLoading, error, data } = ${2:useQuery}$3($1)",
       "",
@@ -964,15 +991,6 @@
       "return <div>🎉 Yay!</div>"
     ],
     "description": "React Query useQuery with Loading-Error-Data pattern",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "rqUseMutation": {
-    "prefix": "rqUseMutation.$rqUseMutation.useMutation.🟨",
-    "body": [
-      "const { mutate, isLoading } = ${2:useMutation}$3($1)",
-      ""
-    ],
-    "description": "React Query useMutation",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "rhfUseForm": {

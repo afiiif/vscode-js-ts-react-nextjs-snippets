@@ -1,9 +1,33 @@
 import { Snippet } from '../types';
 
-export const rqUseQuery: Snippet = {
-  prefix: ['rqUseQuery', 'useQuery'],
+export const rqQuery: Snippet = {
+  prefix: 'rqUseQue',
   body: ['const { isLoading, data, error } = ${2:useQuery}$3($1)', ''],
   description: 'React Query useQuery',
+};
+
+export const rqMutation: Snippet = {
+  prefix: 'rqUseMut',
+  body: ['const { mutate, isLoading } = ${2:useMutation}$3($1)', ''],
+  description: 'React Query useMutation',
+};
+
+export const rqInfQuery: Snippet = {
+  prefix: 'rqUseInf',
+  body: [
+    'const { isLoading, isFetchingNextPage, data, error, fetchNextPage } = useInfiniteQuery$2($1)',
+    '',
+  ],
+  description: 'React Query useInfiniteQuery',
+};
+
+export const rqQueryCustomHook: Snippet = {
+  prefix: ['rqUseQue', 'hook'],
+  body: [
+    "export const use${1:Todo}Query = () => useQuery(['${1/(.*)/${1:/downcase}/}'], fetch$1)",
+    '',
+  ],
+  description: 'React Query useQuery custom hook',
 };
 
 export const rqLDE: Snippet = {
@@ -22,8 +46,8 @@ export const rqLDE: Snippet = {
   description: 'React Query Loading-Data-Error pattern',
 };
 
-export const rqUseQueryLDE: Snippet = {
-  prefix: ['rqUseQueryLDE', 'useQueryLDE'],
+export const rqQueryLDE: Snippet = {
+  prefix: 'rqUseQueLDE',
   body: [
     'const { isLoading, data, error } = ${2:useQuery}$3($1)',
     '',
@@ -56,8 +80,8 @@ export const rqLED: Snippet = {
   description: 'React Query Loading-Error-Data pattern',
 };
 
-export const rqUseQueryLED: Snippet = {
-  prefix: ['rqUseQueryLED', 'useQueryLED'],
+export const rqQueryLED: Snippet = {
+  prefix: 'rqUseQueLED',
   body: [
     'const { isLoading, error, data } = ${2:useQuery}$3($1)',
     '',
@@ -72,10 +96,4 @@ export const rqUseQueryLED: Snippet = {
     'return <div>🎉 Yay!</div>',
   ],
   description: 'React Query useQuery with Loading-Error-Data pattern',
-};
-
-export const rqUseMutation: Snippet = {
-  prefix: ['rqUseMutation', 'useMutation'],
-  body: ['const { mutate, isLoading } = ${2:useMutation}$3($1)', ''],
-  description: 'React Query useMutation',
 };
