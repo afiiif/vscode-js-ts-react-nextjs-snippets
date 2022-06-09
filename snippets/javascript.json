@@ -696,6 +696,41 @@
     "description": "React Query useQuery with Loading-Error-Data pattern",
     "scope": "javascript,javascriptreact"
   },
+  "swrQuery": {
+    "prefix": "swrQue.$swrQue.🟨",
+    "body": [
+      "const { data, error } = useSWR(${1:'/api/todo'}, ${2:fetchTodo})",
+      ""
+    ],
+    "description": "SWR query",
+    "scope": "javascript,javascriptreact"
+  },
+  "swrQueryCustomHook": {
+    "prefix": "swrQue.$swrQue.hook.🟨",
+    "body": [
+      "const use${1:Todo} = () => {",
+      "\tconst { data, error } = useSWR(${2:'/api/todo'}, ${3:fetchTodo})",
+      "",
+      "\treturn {",
+      "\t\tdata,",
+      "\t\tisLoading: !error && !data,",
+      "\t\terror",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "SWR query custom hook",
+    "scope": "javascript,javascriptreact"
+  },
+  "swrMutation": {
+    "prefix": "swrMut.$swrMut.🟨",
+    "body": [
+      "const { mutate } = useSWRConfig$1()",
+      ""
+    ],
+    "description": "SWR mutation",
+    "scope": "javascript,javascriptreact"
+  },
   "rhfUseForm": {
     "prefix": "rhf.$rhf.useForm.🟨",
     "body": [

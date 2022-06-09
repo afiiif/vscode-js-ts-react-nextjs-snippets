@@ -13,6 +13,7 @@ const reactHookTS = normalizeSnippets(require('./snippets/react-hook-ts'), true)
 const next = normalizeSnippets(require('./snippets/next'));
 const nextTS = normalizeSnippets(require('./snippets/next-ts'), true);
 const reactQuery = normalizeSnippets(require('./snippets/react-query'));
+const swr = normalizeSnippets(require('./snippets/swr'));
 const reactHookForm = normalizeSnippets(require('./snippets/react-hook-form'));
 const zustand = normalizeSnippets(require('./snippets/zustand'));
 
@@ -32,6 +33,7 @@ const javascriptSnippets = {
   ...reactHook,
   ...next,
   ...reactQuery,
+  ...swr,
   ...reactHookForm,
   ...zustand,
   ...testing,
@@ -49,6 +51,7 @@ const typescriptSnippets = {
   ...next,
   ...nextTS,
   ...reactQuery,
+  ...swr,
   ...reactHookForm,
   ...zustand,
   ...testing,
