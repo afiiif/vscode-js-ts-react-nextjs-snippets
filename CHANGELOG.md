@@ -2,6 +2,14 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.6.0 <small>- 2022/06/10</small>
+
+- Add [SWR](https://swr.vercel.app/) snippets
+- Update React component snippets
+- Update React hook snippets
+- Update React Query snippets
+- Add Next.js dynamic import snippet (as wrapper-snippet)
+
 ## 1.5.0 <small>- 2022/06/07</small>
 
 - Updated wrapper-snippet prefix
@@ -20,7 +28,7 @@ All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will b
 ## 1.2.0 <small>- 2022/05/27</small>
 
 - Updated snippet's prefix emoji: 🟨 for JavaScript, and 🟦 for TypeScript  
-  <img src="https://i.postimg.cc/pdVNSdxm/snippet-prefix-emoji.jpg" alt="Snippet prefix emoji" width="480px" />
+  <img src="./images/snippet-prefix-emoji.jpg" alt="Snippet prefix emoji" width="480px" />
 
 ## 1.1.0 <small>- 2022/05/25</small>
 

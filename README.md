@@ -1,11 +1,12 @@
-# VSCode Snippets for JS/TS, React/Next.js, React Query, and some other Front-End tech stacks
+# VSCode Snippets for JS/TS, React/Next.js, React Query, SWR, Jest, & many more
 
 Write code faster using snippets!  
-Just type the snippet keyword (for example, type `rfc`), a suggestion will appear, then press `Tab`. If there is no suggestion, use `Ctrl`+`Space` to open it.
+Just type the snippet keyword (for example, type `rfc`), a suggestion will appear, then press `Tab`.  
+If there is no suggestion, use `Ctrl`+`Space` to open it.
 
-<img src="https://i.postimg.cc/yYg0HMjN/snippet-demo.gif" alt="VSCode snippet demo" width="100%" />
+![React/Next.js snippet](./images/snippet-demo.gif)
 
-## Tips
+## Usage
 
 - You can just type directly 👉 `rfc`
 - You can also use `$` prefix 👉 `$rfc`
@@ -13,8 +14,8 @@ Just type the snippet keyword (for example, type `rfc`), a suggestion will appea
 
 For TypeScript snippets:
 
-- You can use `$$` prefix 👉 `$$rfc`
-- You can also add `ts` at the end 👉 `rfcts`
+- You can add `ts` at the end 👉 `rfc` for JS became `rfcts` for TS
+- Or you can use `$$` prefix 👉 `$$rfc`
 
 ## List All Available Snippets
 
@@ -22,35 +23,38 @@ For TypeScript snippets:
 - Check React snippets using `$r`
 - Check Next.js snippets using `$n`
 - Check React Query snippets using `$rq`
+- Check SWR snippets using `$swr`
+- Check Jest snippets using `$t`
 - Check React Hook Form snippets using `$rhf`
 - Check Zustand snippets using `$zu`
-- Check Jest snippets using `$t`
 
-<img src="https://i.postimg.cc/HLHMbVgJ/snippet-list.gif" alt="VSCode available snippets" width="100%" />
+## Examples
+
+![Next.js snippet](./images/snippet-next-js.gif)
+
+<img src="./images/snippet-testing.gif" alt="Jest snippet" width="480px" />
 
 ## Wrapper Snippets
 
 Type `_` or `$_` to check all available wrapper snippets
 
-![Wrapper snippet](https://i.postimg.cc/d3zt2dvd/wrapper-snippet.gif)
-
-![Wrapper snippet](https://i.postimg.cc/0ybyJ47z/wrapper-snippet-2.gif)
+![Wrapper snippet](./images/snippet-wrapper.gif)
 
 ## Generate-from-Clipboard Snippets
 
 Select text and copy it 📋 write snippet and boom! 🪄💥
 
-![Generate-from-clipboard snippet](https://i.postimg.cc/1tKRrvPw/clipboard-snippet.gif)
+![Generate-from-clipboard snippet](./images/snippet-from-clipboard.gif)
 
 ## Why There Are No Snippet for Import? 🤔
 
 Because you might not need that. VSCode has built-in feature for auto-import your modules.
 
-<img src="https://i.postimg.cc/7LSDVKDX/auto-import.gif" alt="VSCode built-in auto import" width="100%" />
+<img src="./images/auto-import.gif" alt="VSCode built-in auto import" width="100%" />
 
 If auto import doesn't appear, open command palette (`Ctrl`+`Shift`+`P`) and select restart TS server.
 
-![Restart TS server](https://i.postimg.cc/cCPWZWSB/vscode-restart-ts-server.png)
+![Restart TS server](./images/vscode-restart-ts-server.png)
 
 ---
 
