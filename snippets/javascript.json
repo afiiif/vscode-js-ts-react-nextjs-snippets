@@ -901,8 +901,8 @@
     "description": "Zustand useStore with shallow",
     "scope": "javascript,javascriptreact"
   },
-  "tdesc": {
-    "prefix": "tdescribe.$tdescribe.describe(test).🟨",
+  "testDescribe": {
+    "prefix": "tDescribe.$tDescribe.describe(test).🟨",
     "body": [
       "describe('${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}', () => {",
       "\t${0:// code}",
@@ -911,8 +911,8 @@
     "description": "Testing `describe` block",
     "scope": "javascript,javascriptreact"
   },
-  "tit": {
-    "prefix": "tit.$tit.it(test).🟨",
+  "testIt": {
+    "prefix": "tIt.$tIt.it(test).🟨",
     "body": [
       "it('should ${1:work}', ${2:async }() => {",
       "\t${0:// code}",
@@ -921,8 +921,18 @@
     "description": "Testing `it` block",
     "scope": "javascript,javascriptreact"
   },
-  "tbefore": {
-    "prefix": "tbefore.$tbefore.before(test).🟨",
+  "test": {
+    "prefix": "tTest.$tTest.(test).🟨",
+    "body": [
+      "test('${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}', ${2:async }() => {",
+      "\t${0:// code}",
+      "})"
+    ],
+    "description": "Testing `test` block",
+    "scope": "javascript,javascriptreact"
+  },
+  "testBefore": {
+    "prefix": "tBefore.$tBefore.before(test).🟨",
     "body": [
       "${1|beforeEach,beforeAll|}(() => {",
       "\t${0:// code}",
@@ -931,8 +941,8 @@
     "description": "Testing `beforeAll` / `beforeEach` block",
     "scope": "javascript,javascriptreact"
   },
-  "tafter": {
-    "prefix": "tafter.$tafter.after(test).🟨",
+  "testAfter": {
+    "prefix": "tAfter.$tAfter.after(test).🟨",
     "body": [
       "${1|afterEach,afterAll|}(() => {",
       "\t${0:// code}",
