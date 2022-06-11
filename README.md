@@ -32,15 +32,17 @@ For TypeScript snippets:
 
 ![Next.js snippet](./images/snippet-next-js.gif)
 
-![Jest snippet](./images/snippet-testing.gif)
-
 ![React Query & SWR snippet](./images/snippet-demo-2.gif)
+
+![Jest snippet](./images/snippet-jest.gif)
 
 ## Wrapper Snippets
 
 Type `_` or `$_` to check all available wrapper snippets
 
 ![Wrapper snippet](./images/snippet-wrapper.gif)
+
+![Wrapper snippet](./images/snippet-wrapper-2.gif)
 
 ## Generate-from-Clipboard Snippets
 

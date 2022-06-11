@@ -3,7 +3,7 @@
   "displayName": "JS/TS React/Next.js Snippets",
   "description": "Snippets for JS/TS, React/Next.js, React Query, SWR, Jest, React Hook Form, & many more",
   "icon": "images/logo.png",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "publisher": "afifu",
   "keywords": [
     "vscode",
