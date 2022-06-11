@@ -1,4 +1,4 @@
-import { FILENAME_PASCALCASE, FILENAME_CAMELCASE } from '../constants';
+import { FILENAME_CAMELCASE, FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
 export const reactFunctionalComp: Snippet = {

@@ -1,6 +1,5 @@
-import { Snippet } from '../types';
-
 import { FILENAME_PASCALCASE } from '../constants';
+import { Snippet } from '../types';
 
 export const tsReactFunctionalComp: Snippet = {
   prefix: ['rFC', '(type)'],

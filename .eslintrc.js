@@ -5,6 +5,7 @@ module.exports = {
     node: true,
   },
   extends: ['airbnb-base', 'airbnb-typescript/base', 'plugin:unicorn/recommended', 'prettier'],
+  plugins: ['simple-import-sort'],
   parserOptions: {
     project: './tsconfig.eslint.json',
     ecmaVersion: 'latest',
@@ -12,6 +13,8 @@ module.exports = {
   rules: {
     'no-template-curly-in-string': 'off',
     'import/prefer-default-export': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
     'unicorn/prefer-module': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-array-reduce': 'off',
