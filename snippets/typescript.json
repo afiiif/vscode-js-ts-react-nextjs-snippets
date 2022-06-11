@@ -624,6 +624,82 @@
     "description": "React useCallback",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "reactNativeFunctionalComp": {
+    "prefix": "rnFC.$rnFC.🟨",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Native Functional Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactNativeFunctionalCompExport": {
+    "prefix": "rnFCe.$rnFCe.🟨",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Native Functional Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactNativeArrowFunctionComp": {
+    "prefix": "rnAFC.$rnAFC.🟨",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Native Arrow Function Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "reactNativeArrowFunctionCompExport": {
+    "prefix": "rnAFCe.$rnAFCe.🟨",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Native Arrow Function Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "nextSSR": {
     "prefix": "nSSR.$nSSR.getServerSideProps.🟨",
     "body": [

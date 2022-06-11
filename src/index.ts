@@ -9,6 +9,7 @@ const react = normalizeSnippets(require('./snippets/react'));
 const reactTS = normalizeSnippets(require('./snippets/react-ts'), true);
 const reactHook = normalizeSnippets(require('./snippets/react-hook'));
 const reactHookTS = normalizeSnippets(require('./snippets/react-hook-ts'), true);
+const reactNative = normalizeSnippets(require('./snippets/react-native'));
 
 const next = normalizeSnippets(require('./snippets/next'));
 const nextTS = normalizeSnippets(require('./snippets/next-ts'), true);
@@ -26,11 +27,13 @@ const miscTS = normalizeSnippets(require('./snippets/misc-ts'), true);
 // Add line break at the end
 Object.keys(react).forEach((key) => react[key].body.push(''));
 Object.keys(reactTS).forEach((key) => reactTS[key].body.push(''));
+Object.keys(reactNative).forEach((key) => reactNative[key].body.push(''));
 
 const javascriptSnippets = {
   ...vanilla,
   ...react,
   ...reactHook,
+  ...reactNative,
   ...next,
   ...reactQuery,
   ...swr,
@@ -48,6 +51,7 @@ const typescriptSnippets = {
   ...reactTS,
   ...reactHook,
   ...reactHookTS,
+  ...reactNative,
   ...next,
   ...nextTS,
   ...reactQuery,
