@@ -21,12 +21,14 @@ For TypeScript snippets:
 
 - Type `$` (and press `Ctrl`+`Space` if necessary), then check all available snippets.
 - Check React snippets using `$r`
-- Check Next.js snippets using `$n`
-- Check React Query snippets using `$rq`
-- Check SWR snippets using `$swr`
-- Check Jest snippets using `$t`
-- Check React Hook Form snippets using `$rhf`
-- Check Zustand snippets using `$zu`
+- Check [Next.js](https://nextjs.org/) snippets using `$n`
+- Check [React Native](https://reactnative.dev/) snippets using `$rn`
+- Check [React Query](https://react-query.tanstack.com/) snippets using `$rq`
+- Check [SWR](https://swr.vercel.app/) snippets using `$swr`
+- Check [Jest](https://jestjs.io/) snippets using `$t`
+- Check [React Hook Form](https://react-hook-form.com/) snippets using `$rhf`
+- Check [Zustand](https://www.npmjs.com/package/zustand) snippets using `$zu`
+- Check wrapper-snippets using `$_`
 
 ## Examples
 
