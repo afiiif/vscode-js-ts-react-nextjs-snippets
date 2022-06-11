@@ -2,13 +2,18 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.7.0 <small>- 2022/06/11</small>
+
+- Added [React Native](https://reactnative.dev/) snippets
+- Improved Jest snippets
+
 ## 1.6.0 <small>- 2022/06/10</small>
 
-- Add [SWR](https://swr.vercel.app/) snippets
-- Add Next.js dynamic import snippet (as wrapper-snippet)
-- Update React-component snippets
-- Update React-hook snippet's tabstop
-- Update React Query snippets
+- Added [SWR](https://swr.vercel.app/) snippets
+- Added Next.js dynamic import snippet (as wrapper-snippet)
+- Updated React-component snippets
+- Updated React-hook snippet's tabstop
+- Updated React Query snippets
 
 ## 1.5.0 <small>- 2022/06/07</small>
 
