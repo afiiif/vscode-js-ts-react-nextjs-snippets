@@ -32,7 +32,9 @@ For TypeScript snippets:
 
 ![Next.js snippet](./images/snippet-next-js.gif)
 
-<img src="./images/snippet-testing.gif" alt="Jest snippet" width="480px" />
+![Jest snippet](./images/snippet-testing.gif)
+
+![React Query & SWR snippet](./images/snippet-demo-2.gif)
 
 ## Wrapper Snippets
 
