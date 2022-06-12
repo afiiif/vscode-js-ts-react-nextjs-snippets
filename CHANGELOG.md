@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.8.0 <small>- 2022/06/12</small>
+
+- Improved snippet name & prefix
+
 ## 1.7.0 <small>- 2022/06/11</small>
 
 - Added [React Native](https://reactnative.dev/) snippets
