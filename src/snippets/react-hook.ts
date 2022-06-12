@@ -91,7 +91,7 @@ export const reactCustomHook: Snippet = {
   description: 'React create custom hook',
 };
 
-export const reactCustomHookArrowFunction: Snippet = {
+export const reactCustomHookArrowFn: Snippet = {
   prefix: ['rafhook', 'hook'],
   body: [
     "import { useEffect } from 'react'",

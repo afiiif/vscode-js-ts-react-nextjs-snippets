@@ -46,7 +46,7 @@ export const nextGSP: Snippet = {
   description: 'Next.js getStaticPaths',
 };
 
-export const nextSSRArrowFunction: Snippet = {
+export const nextSSRArrowFn: Snippet = {
   prefix: ['naSSR', 'getServerSideProps'],
   body: [
     'export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {',
@@ -61,7 +61,7 @@ export const nextSSRArrowFunction: Snippet = {
   description: 'Next.js getServerSideProps arrow function',
 };
 
-export const nextSSGArrowFunction: Snippet = {
+export const nextSSGArrowFn: Snippet = {
   prefix: ['naSSG', 'getStaticProps'],
   body: [
     'export const getStaticProps = async (${1:{ params \\}}) => {',
@@ -76,7 +76,7 @@ export const nextSSGArrowFunction: Snippet = {
   description: 'Next.js getStaticProps arrow function',
 };
 
-export const nextGSPArrowFunction: Snippet = {
+export const nextGSPArrowFn: Snippet = {
   prefix: ['naGSP', 'getStaticPaths'],
   body: [
     'export const getStaticPaths = async () => {',

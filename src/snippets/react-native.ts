@@ -1,7 +1,7 @@
 import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
-export const reactNativeFunctionalComp: Snippet = {
+export const reactNativeFnComp: Snippet = {
   prefix: 'rnFC',
   body: [
     "import React from 'react'",
@@ -18,7 +18,7 @@ export const reactNativeFunctionalComp: Snippet = {
   description: 'React Native Functional Component',
 };
 
-export const reactNativeFunctionalCompExport: Snippet = {
+export const reactNativeFnCompExport: Snippet = {
   prefix: 'rnFCe',
   body: [
     "import React from 'react'",
@@ -37,7 +37,7 @@ export const reactNativeFunctionalCompExport: Snippet = {
   description: 'React Native Functional Component',
 };
 
-export const reactNativeArrowFunctionComp: Snippet = {
+export const reactNativeArrowFnComp: Snippet = {
   prefix: 'rnAFC',
   body: [
     "import React from 'react'",
@@ -54,7 +54,7 @@ export const reactNativeArrowFunctionComp: Snippet = {
   description: 'React Native Arrow Function Component',
 };
 
-export const reactNativeArrowFunctionCompExport: Snippet = {
+export const reactNativeArrowFnCompExport: Snippet = {
   prefix: 'rnAFCe',
   body: [
     "import React from 'react'",

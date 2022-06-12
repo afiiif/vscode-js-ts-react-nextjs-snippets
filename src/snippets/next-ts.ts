@@ -62,7 +62,7 @@ export const tsNextGSP: Snippet = {
   description: 'Next.js getStaticPaths',
 };
 
-export const tsNextSSRArrowFunction: Snippet = {
+export const tsNextSSRArrowFn: Snippet = {
   prefix: ['naSSR', 'getServerSideProps'],
   body: [
     "import { GetServerSideProps } from 'next'",
@@ -81,7 +81,7 @@ export const tsNextSSRArrowFunction: Snippet = {
   description: 'Next.js getServerSideProps arrow function',
 };
 
-export const tsNextSSGArrowFunction: Snippet = {
+export const tsNextSSGArrowFn: Snippet = {
   prefix: ['naSSG', 'getStaticProps'],
   body: [
     "import { GetStaticProps } from 'next'",
@@ -100,7 +100,7 @@ export const tsNextSSGArrowFunction: Snippet = {
   description: 'Next.js getStaticProps arrow function',
 };
 
-export const tsNextGSPArrowFunction: Snippet = {
+export const tsNextGSPArrowFn: Snippet = {
   prefix: ['naGSP', 'getStaticPaths'],
   body: [
     "import { GetStaticPaths } from 'next'",

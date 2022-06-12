@@ -1,7 +1,7 @@
 import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
-export const tsReactFunctionalComp: Snippet = {
+export const tsReactFnComp: Snippet = {
   prefix: ['rFC', '(type)'],
   body: [
     'type Props = {',
@@ -17,7 +17,7 @@ export const tsReactFunctionalComp: Snippet = {
   description: 'React Functional Component',
 };
 
-export const tsReactFunctionalCompExport: Snippet = {
+export const tsReactFnCompExport: Snippet = {
   prefix: ['rFCe', '(type)'],
   body: [
     'type Props = {',
@@ -35,7 +35,7 @@ export const tsReactFunctionalCompExport: Snippet = {
   description: 'React Functional Component',
 };
 
-export const tsReactArrowFunctionComp: Snippet = {
+export const tsReactArrowFnComp: Snippet = {
   prefix: ['rAFC', '(type)'],
   body: [
     'type Props = {',
@@ -51,7 +51,7 @@ export const tsReactArrowFunctionComp: Snippet = {
   description: 'React Arrow Function Component',
 };
 
-export const tsReactArrowFunctionCompExport: Snippet = {
+export const tsReactArrowFnCompExport: Snippet = {
   prefix: ['rAFCe', '(type)'],
   body: [
     'type Props = {',
@@ -69,7 +69,7 @@ export const tsReactArrowFunctionCompExport: Snippet = {
   description: 'React Arrow Function Component',
 };
 
-export const tsReactFunctionalCompV2: Snippet = {
+export const tsReactFnCompV2: Snippet = {
   prefix: ['rFC', '(interface)'],
   body: [
     'interface Props {',
@@ -85,7 +85,7 @@ export const tsReactFunctionalCompV2: Snippet = {
   description: 'React Functional Component',
 };
 
-export const tsReactFunctionalCompExportV2: Snippet = {
+export const tsReactFnCompExportV2: Snippet = {
   prefix: ['rFCe', '(interface)'],
   body: [
     'interface Props {',
@@ -103,7 +103,7 @@ export const tsReactFunctionalCompExportV2: Snippet = {
   description: 'React Functional Component',
 };
 
-export const tsReactArrowFunctionCompV2: Snippet = {
+export const tsReactArrowFnCompV2: Snippet = {
   prefix: ['rAFC', '(interface)'],
   body: [
     'interface Props {',
@@ -119,7 +119,7 @@ export const tsReactArrowFunctionCompV2: Snippet = {
   description: 'React Arrow Function Component',
 };
 
-export const tsReactArrowFunctionCompExportV2: Snippet = {
+export const tsReactArrowFnCompExportV2: Snippet = {
   prefix: ['rAFCe', '(interface)'],
   body: [
     'interface Props {',
