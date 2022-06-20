@@ -4,13 +4,13 @@ export const normalizeSnippet = (snippet: Snippet, isTS?: boolean) => {
   const [primaryPrefix, ...prefix] =
     typeof snippet.prefix === 'string' ? [snippet.prefix] : snippet.prefix;
 
-  const flaggedPrefix = isTS ? `TS|$$${primaryPrefix}` : `$${primaryPrefix}`;
+  const flaggedPrefix = isTS ? `TS.$$${primaryPrefix}` : `$${primaryPrefix}`;
 
   const finalPrefix = [primaryPrefix, flaggedPrefix, ...prefix];
 
   return {
     ...snippet,
-    prefix: finalPrefix.join('|'),
+    prefix: finalPrefix.join('.'),
   };
 };
 

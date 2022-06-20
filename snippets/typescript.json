@@ -1,6 +1,6 @@
 {
   "🟨 consoleLog": {
-    "prefix": "clg|$clg",
+    "prefix": "clg.$clg",
     "body": [
       "console.log(${1:data})"
     ],
@@ -8,7 +8,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleLogWithLabel": {
-    "prefix": "cll|$cll|clg(labelled)",
+    "prefix": "cll.$cll.clg(labelled)",
     "body": [
       "console.log('${1:data}', ${1:data})"
     ],
@@ -16,7 +16,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleLogJSON": {
-    "prefix": "clj|$clj|clg(json)",
+    "prefix": "clj.$clj.clg(json)",
     "body": [
       "console.log('${1:data}', JSON.stringify(${1:data}, null, 2))"
     ],
@@ -24,7 +24,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleX": {
-    "prefix": "ccc|$ccc",
+    "prefix": "ccc.$ccc",
     "body": [
       "console.${2|log,info,warn,error|}('👉 ${1:Here}')"
     ],
@@ -32,7 +32,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleInfo": {
-    "prefix": "cin|$cin",
+    "prefix": "cin.$cin",
     "body": [
       "console.info(${1:data})"
     ],
@@ -40,7 +40,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleWarn": {
-    "prefix": "cwa|$cwa",
+    "prefix": "cwa.$cwa",
     "body": [
       "console.warn(${1:data})"
     ],
@@ -48,7 +48,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleError": {
-    "prefix": "cer|$cer",
+    "prefix": "cer.$cer",
     "body": [
       "console.error(${1:data})"
     ],
@@ -56,7 +56,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleTable": {
-    "prefix": "ctl|$ctl",
+    "prefix": "ctl.$ctl",
     "body": [
       "console.table(${1:data})"
     ],
@@ -64,7 +64,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleDir": {
-    "prefix": "cdi|$cdi",
+    "prefix": "cdi.$cdi",
     "body": [
       "console.dir(${1:data})"
     ],
@@ -72,7 +72,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleCount": {
-    "prefix": "cco|$cco",
+    "prefix": "cco.$cco",
     "body": [
       "console.count(${1:data})"
     ],
@@ -80,7 +80,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleGroup": {
-    "prefix": "cgr|$cgr",
+    "prefix": "cgr.$cgr",
     "body": [
       "console.group(${1:label})"
     ],
@@ -88,7 +88,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleGroupEnd": {
-    "prefix": "cge|$cge",
+    "prefix": "cge.$cge",
     "body": [
       "console.groupEnd()"
     ],
@@ -96,7 +96,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 consoleClear": {
-    "prefix": "ccl|$ccl",
+    "prefix": "ccl.$ccl",
     "body": [
       "console.clear()"
     ],
@@ -104,7 +104,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 setTimeout": {
-    "prefix": "sto|$sto",
+    "prefix": "sto.$sto",
     "body": [
       "setTimeout(() => {",
       "\t${2:// code}",
@@ -115,7 +115,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 setInterval": {
-    "prefix": "sti|$sti",
+    "prefix": "sti.$sti",
     "body": [
       "setInterval(() => {",
       "\t${2:// code}",
@@ -126,7 +126,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 arrowFunction": {
-    "prefix": "af|$af",
+    "prefix": "af.$af",
     "body": [
       "const ${1:myFunction} = ($2) => {",
       "\t${3:// code}",
@@ -136,7 +136,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 asyncArrowFunction": {
-    "prefix": "afa|$afa",
+    "prefix": "afa.$afa",
     "body": [
       "const ${1:myFunction} = async ($2) => {",
       "\t${3:// code}",
@@ -146,7 +146,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 arrowFunctionExport": {
-    "prefix": "afe|$afe",
+    "prefix": "afe.$afe",
     "body": [
       "export const ${1:myFunction} = ($2) => {",
       "\t${3:// code}",
@@ -156,7 +156,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 asyncArrowFunctionExport": {
-    "prefix": "afae|$afae",
+    "prefix": "afae.$afae",
     "body": [
       "export const ${1:myFunction} = async ($2) => {",
       "\t${3:// code}",
@@ -166,7 +166,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnComp": {
-    "prefix": "rFC|$rFC",
+    "prefix": "rFC.$rFC",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
       "\treturn (",
@@ -179,7 +179,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompExport": {
-    "prefix": "rFCe|$rFCe",
+    "prefix": "rFCe.$rFCe",
     "body": [
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
       "\treturn (",
@@ -194,7 +194,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompPropTypes": {
-    "prefix": "rFCp|$rFCp",
+    "prefix": "rFCp.$rFCp",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -211,7 +211,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompPropTypesChldrn": {
-    "prefix": "rFCpch|$rFCpch",
+    "prefix": "rFCpch.$rFCpch",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -230,7 +230,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactArrowFnComp": {
-    "prefix": "rAFC|$rAFC",
+    "prefix": "rAFC.$rAFC",
     "body": [
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
       "\treturn (",
@@ -243,7 +243,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactArrowFnCompExport": {
-    "prefix": "rAFCe|$rAFCe",
+    "prefix": "rAFCe.$rAFCe",
     "body": [
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
       "\treturn (",
@@ -258,7 +258,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactArrowFnCompPropTypes": {
-    "prefix": "rAFCp|$rAFCp",
+    "prefix": "rAFCp.$rAFCp",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -277,7 +277,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactArrowFnCompPropTypesChldrn": {
-    "prefix": "rAFCpch|$rAFCpch",
+    "prefix": "rAFCpch.$rAFCpch",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -298,7 +298,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 hocComponent": {
-    "prefix": "hoc|$hoc|rHOC",
+    "prefix": "hoc.$hoc.rHOC",
     "body": [
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}}(WrappedComponent) {$0",
       "\tconst Component = (props) => {",
@@ -313,7 +313,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactFnComp": {
-    "prefix": "rFC|TS|$$rFC|(type)",
+    "prefix": "rFC.TS.$$rFC.(type)",
     "body": [
       "type Props = {",
       "\t$2: unknown;",
@@ -330,7 +330,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactFnCompExport": {
-    "prefix": "rFCe|TS|$$rFCe|(type)",
+    "prefix": "rFCe.TS.$$rFCe.(type)",
     "body": [
       "type Props = {",
       "\t$2: unknown;",
@@ -349,7 +349,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactArrowFnComp": {
-    "prefix": "rAFC|TS|$$rAFC|(type)",
+    "prefix": "rAFC.TS.$$rAFC.(type)",
     "body": [
       "type Props = {",
       "\t$2: unknown;",
@@ -366,7 +366,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactArrowFnCompExport": {
-    "prefix": "rAFCe|TS|$$rAFCe|(type)",
+    "prefix": "rAFCe.TS.$$rAFCe.(type)",
     "body": [
       "type Props = {",
       "\t$2: unknown;",
@@ -385,7 +385,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactFnCompV2": {
-    "prefix": "rFC|TS|$$rFC|(interface)",
+    "prefix": "rFC.TS.$$rFC.(interface)",
     "body": [
       "interface Props {",
       "\t$2: unknown;",
@@ -402,7 +402,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactFnCompExportV2": {
-    "prefix": "rFCe|TS|$$rFCe|(interface)",
+    "prefix": "rFCe.TS.$$rFCe.(interface)",
     "body": [
       "interface Props {",
       "\t$2: unknown;",
@@ -421,7 +421,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactArrowFnCompV2": {
-    "prefix": "rAFC|TS|$$rAFC|(interface)",
+    "prefix": "rAFC.TS.$$rAFC.(interface)",
     "body": [
       "interface Props {",
       "\t$2: unknown;",
@@ -438,7 +438,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactArrowFnCompExportV2": {
-    "prefix": "rAFCe|TS|$$rAFCe|(interface)",
+    "prefix": "rAFCe.TS.$$rAFCe.(interface)",
     "body": [
       "interface Props {",
       "\t$2: unknown;",
@@ -457,7 +457,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useState": {
-    "prefix": "useState|$useState",
+    "prefix": "useState.$useState",
     "body": [
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$3($2)"
     ],
@@ -465,7 +465,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useRef": {
-    "prefix": "useRef|$useRef",
+    "prefix": "useRef.$useRef",
     "body": [
       "const ${1:ref} = useRef$3(${2:null})"
     ],
@@ -473,7 +473,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useReducer": {
-    "prefix": "useReducer|$useReducer",
+    "prefix": "useReducer.$useReducer",
     "body": [
       "const [state, dispatch] = useReducer$3(${1:reducer}, ${2:null})"
     ],
@@ -481,7 +481,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useEffect": {
-    "prefix": "useEffect|$useEffect",
+    "prefix": "useEffect.$useEffect",
     "body": [
       "useEffect$3(() => {",
       "\t${2:// code}",
@@ -492,7 +492,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useEffectV2": {
-    "prefix": "useEffectV2|$useEffectV2",
+    "prefix": "useEffectV2.$useEffectV2",
     "body": [
       "useEffect$4(() => {",
       "\t${2:// code}",
@@ -507,7 +507,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useLayoutEffect": {
-    "prefix": "useLayoutEffect|$useLayoutEffect",
+    "prefix": "useLayoutEffect.$useLayoutEffect",
     "body": [
       "useLayoutEffect$3(() => {",
       "\t${2:// code}",
@@ -518,7 +518,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useLayoutEffectV2": {
-    "prefix": "useLayoutEffectV2|$useLayoutEffectV2",
+    "prefix": "useLayoutEffectV2.$useLayoutEffectV2",
     "body": [
       "useLayoutEffect$4(() => {",
       "\t${2:// code}",
@@ -533,7 +533,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useMemo": {
-    "prefix": "useMemo|$useMemo",
+    "prefix": "useMemo.$useMemo",
     "body": [
       "useMemo$3(() => ${2:computeValue}, [$1])"
     ],
@@ -541,7 +541,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 useCallback": {
-    "prefix": "useCallback|$useCallback",
+    "prefix": "useCallback.$useCallback",
     "body": [
       "useCallback$3(() => {",
       "\t${2:// code}",
@@ -552,7 +552,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactCustomHook": {
-    "prefix": "rfhook|$rfhook|hook",
+    "prefix": "rfhook.$rfhook.hook",
     "body": [
       "import { useEffect } from 'react'",
       "",
@@ -570,7 +570,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactCustomHookArrowFn": {
-    "prefix": "rafhook|$rafhook|hook",
+    "prefix": "rafhook.$rafhook.hook",
     "body": [
       "import { useEffect } from 'react'",
       "",
@@ -590,7 +590,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS UseState": {
-    "prefix": "useState|TS|$$useState",
+    "prefix": "useState.TS.$$useState",
     "body": [
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState$4<${3:any}>($2)"
     ],
@@ -598,7 +598,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS UseRef": {
-    "prefix": "useRef|TS|$$useRef",
+    "prefix": "useRef.TS.$$useRef",
     "body": [
       "const ${1:ref} = useRef$4<${3:HTMLDivElement}>(${2:null})"
     ],
@@ -606,7 +606,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS UseMemo": {
-    "prefix": "useMemo|TS|$$useMemo",
+    "prefix": "useMemo.TS.$$useMemo",
     "body": [
       "useMemo$4<${3:any}>(() => ${2:computeValue}, [$1])"
     ],
@@ -614,7 +614,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS UseCallback": {
-    "prefix": "useCallback|TS|$$useCallback",
+    "prefix": "useCallback.TS.$$useCallback",
     "body": [
       "useCallback$4<() => ${3:void}>(() => {",
       "\t${2:// code}",
@@ -625,7 +625,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactNativeFnComp": {
-    "prefix": "rnFC|$rnFC",
+    "prefix": "rnFC.$rnFC",
     "body": [
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
@@ -643,7 +643,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactNativeFnCompExport": {
-    "prefix": "rnFCe|$rnFCe",
+    "prefix": "rnFCe.$rnFCe",
     "body": [
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
@@ -663,7 +663,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactNativeArrowFnComp": {
-    "prefix": "rnAFC|$rnAFC",
+    "prefix": "rnAFC.$rnAFC",
     "body": [
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
@@ -681,7 +681,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactNativeArrowFnCompExport": {
-    "prefix": "rnAFCe|$rnAFCe",
+    "prefix": "rnAFCe.$rnAFCe",
     "body": [
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
@@ -701,7 +701,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextSSR": {
-    "prefix": "nSSR|$nSSR|getServerSideProps",
+    "prefix": "nSSR.$nSSR.getServerSideProps",
     "body": [
       "export async function getServerSideProps(${1:{ req, res, params, query \\}}) {",
       "\t${0:// code}",
@@ -716,7 +716,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextSSG": {
-    "prefix": "nSSG|$nSSG|getStaticProps",
+    "prefix": "nSSG.$nSSG.getStaticProps",
     "body": [
       "export async function getStaticProps(${1:{ params \\}}) {",
       "\t${0:// code}",
@@ -731,7 +731,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextGSP": {
-    "prefix": "nGSP|$nGSP|getStaticPaths",
+    "prefix": "nGSP.$nGSP.getStaticPaths",
     "body": [
       "export async function getStaticPaths() {",
       "\t${0:// code}",
@@ -747,7 +747,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextSSRArrowFn": {
-    "prefix": "naSSR|$naSSR|getServerSideProps",
+    "prefix": "naSSR.$naSSR.getServerSideProps",
     "body": [
       "export const getServerSideProps = async (${1:{ req, res, params, query \\}}) => {",
       "\t${0:// code}",
@@ -762,7 +762,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextSSGArrowFn": {
-    "prefix": "naSSG|$naSSG|getStaticProps",
+    "prefix": "naSSG.$naSSG.getStaticProps",
     "body": [
       "export const getStaticProps = async (${1:{ params \\}}) => {",
       "\t${0:// code}",
@@ -777,7 +777,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextGSPArrowFn": {
-    "prefix": "naGSP|$naGSP|getStaticPaths",
+    "prefix": "naGSP.$naGSP.getStaticPaths",
     "body": [
       "export const getStaticPaths = async () => {",
       "\t${0:// code}",
@@ -793,7 +793,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextUseRouter": {
-    "prefix": "nUseRouter|$nUseRouter|useRouter",
+    "prefix": "nUseRouter.$nUseRouter.useRouter",
     "body": [
       "const { ${1:pathname, query} } = useRouter$2()"
     ],
@@ -801,7 +801,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextLinkComponent": {
-    "prefix": "nLink|$nLink",
+    "prefix": "nLink.$nLink",
     "body": [
       "<Link href=${1:\"/\"}>",
       "\t<a>${2:LinkText}</a>",
@@ -811,7 +811,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextCustomDocComponent": {
-    "prefix": "nDoc|$nDoc",
+    "prefix": "nDoc.$nDoc",
     "body": [
       "import { Html, Head, Main, NextScript } from 'next/document'",
       "",
@@ -832,7 +832,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextDynamicImport": {
-    "prefix": "nDyn|$nDyn|_nDyn",
+    "prefix": "nDyn.$nDyn._nDyn",
     "body": [
       "${TM_SELECTED_TEXT/(import )(\\w+)( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4))$5/g}"
     ],
@@ -840,7 +840,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 nextDynamicImportNamed": {
-    "prefix": "nDynNamed|$nDynNamed|_nDynNamed",
+    "prefix": "nDynNamed.$nDynNamed._nDynNamed",
     "body": [
       "${TM_SELECTED_TEXT/(import ){ ?(\\w+) ?}( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4).then(mod => mod.$2))$5/g}"
     ],
@@ -848,7 +848,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS NextSSR": {
-    "prefix": "nSSR|TS|$$nSSR|getServerSideProps",
+    "prefix": "nSSR.TS.$$nSSR.getServerSideProps",
     "body": [
       "import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'",
       "",
@@ -870,7 +870,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS NextSSG": {
-    "prefix": "nSSG|TS|$$nSSG|getStaticProps",
+    "prefix": "nSSG.TS.$$nSSG.getStaticProps",
     "body": [
       "import { GetStaticPropsContext, GetStaticPropsResult } from 'next'",
       "",
@@ -892,7 +892,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS NextGSP": {
-    "prefix": "nGSP|TS|$$nGSP|getStaticPaths",
+    "prefix": "nGSP.TS.$$nGSP.getStaticPaths",
     "body": [
       "import { GetStaticPathsResult } from 'next'",
       "",
@@ -910,7 +910,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS NextSSRArrowFn": {
-    "prefix": "naSSR|TS|$$naSSR|getServerSideProps",
+    "prefix": "naSSR.TS.$$naSSR.getServerSideProps",
     "body": [
       "import { GetServerSideProps } from 'next'",
       "",
@@ -929,7 +929,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS NextSSGArrowFn": {
-    "prefix": "naSSG|TS|$$naSSG|getStaticProps",
+    "prefix": "naSSG.TS.$$naSSG.getStaticProps",
     "body": [
       "import { GetStaticProps } from 'next'",
       "",
@@ -948,7 +948,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS NextGSPArrowFn": {
-    "prefix": "naGSP|TS|$$naGSP|getStaticPaths",
+    "prefix": "naGSP.TS.$$naGSP.getStaticPaths",
     "body": [
       "import { GetStaticPaths } from 'next'",
       "",
@@ -966,7 +966,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqQuery": {
-    "prefix": "rqUseQue|$rqUseQue",
+    "prefix": "rqUseQue.$rqUseQue",
     "body": [
       "const { isLoading, data, error } = ${2:useQuery}$3($1)",
       ""
@@ -975,7 +975,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqMutation": {
-    "prefix": "rqUseMut|$rqUseMut",
+    "prefix": "rqUseMut.$rqUseMut",
     "body": [
       "const { mutate, isLoading } = ${2:useMutation}$3($1)",
       ""
@@ -984,7 +984,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqInfQuery": {
-    "prefix": "rqUseInf|$rqUseInf",
+    "prefix": "rqUseInf.$rqUseInf",
     "body": [
       "const { isLoading, isFetchingNextPage, data, error, fetchNextPage } = useInfiniteQuery$2($1)",
       ""
@@ -993,7 +993,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqQueryCustomHook": {
-    "prefix": "rqUseQue|$rqUseQue|hook",
+    "prefix": "rqUseQue.$rqUseQue.hook",
     "body": [
       "export const use${1:Todo}Query = () => useQuery(['${1/(.*)/${1:/downcase}/}'], fetch$1)",
       ""
@@ -1002,7 +1002,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqLDE": {
-    "prefix": "rqLDE|$rqLDE",
+    "prefix": "rqLDE.$rqLDE",
     "body": [
       "if (isLoading) {",
       "\treturn <div>⏳ Loading</div>",
@@ -1018,7 +1018,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqQueryLDE": {
-    "prefix": "rqUseQueLDE|$rqUseQueLDE",
+    "prefix": "rqUseQueLDE.$rqUseQueLDE",
     "body": [
       "const { isLoading, data, error } = ${2:useQuery}$3($1)",
       "",
@@ -1036,7 +1036,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqLED": {
-    "prefix": "rqLED|$rqLED",
+    "prefix": "rqLED.$rqLED",
     "body": [
       "if (isLoading) {",
       "\treturn <div>⏳ Loading</div>",
@@ -1052,7 +1052,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rqQueryLED": {
-    "prefix": "rqUseQueLED|$rqUseQueLED",
+    "prefix": "rqUseQueLED.$rqUseQueLED",
     "body": [
       "const { isLoading, error, data } = ${2:useQuery}$3($1)",
       "",
@@ -1070,7 +1070,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 swrQuery": {
-    "prefix": "swrQue|$swrQue",
+    "prefix": "swrQue.$swrQue",
     "body": [
       "const { data, error } = useSWR(${1:'/api/todo'}, ${2:fetchTodo})",
       ""
@@ -1079,7 +1079,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 swrQueryCustomHook": {
-    "prefix": "swrQue|$swrQue|hook",
+    "prefix": "swrQue.$swrQue.hook",
     "body": [
       "const use${1:Todo} = () => {",
       "\tconst { data, error } = useSWR(${2:'/api/todo'}, ${3:fetchTodo})",
@@ -1096,7 +1096,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 swrMutation": {
-    "prefix": "swrMut|$swrMut",
+    "prefix": "swrMut.$swrMut",
     "body": [
       "const { mutate } = useSWRConfig$1()",
       ""
@@ -1105,7 +1105,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rhfUseForm": {
-    "prefix": "rhf|$rhf|useForm",
+    "prefix": "rhf.$rhf.useForm",
     "body": [
       "const { ${1:register, control, handleSubmit, formState: { errors \\}} } = useForm$2($0)",
       "const onSubmit = data => console.log(data)"
@@ -1114,7 +1114,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rhfUseFormYup": {
-    "prefix": "rhfYup|$rhfYup|useForm",
+    "prefix": "rhfYup.$rhfYup.useForm",
     "body": [
       "const schema = yup$4.object({",
       "\t${3:// schema fields}",
@@ -1129,7 +1129,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 rhfCreateFormProvider": {
-    "prefix": "rhfProv|$rhfProv|useForm",
+    "prefix": "rhfProv.$rhfProv.useForm",
     "body": [
       "const methods = useForm$1($2)",
       "const onSubmit = data => console.log(data)",
@@ -1146,7 +1146,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 zuCreate": {
-    "prefix": "zuc|$zuc",
+    "prefix": "zuc.$zuc",
     "body": [
       "import create from 'zustand'",
       "",
@@ -1160,7 +1160,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 zuCreateImmer": {
-    "prefix": "zuci|$zuci",
+    "prefix": "zuci.$zuci",
     "body": [
       "import create from 'zustand'",
       "import { immer } from 'zustand/middleware/immer'",
@@ -1175,7 +1175,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 zuUse": {
-    "prefix": "zuu|$zuu",
+    "prefix": "zuu.$zuu",
     "body": [
       "const ${2:bears} = use${1:Store}(state => state.$2)"
     ],
@@ -1183,7 +1183,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 zuUsePickObj": {
-    "prefix": "zuuObj|$zuuObj",
+    "prefix": "zuuObj.$zuuObj",
     "body": [
       "const { ${2:nuts}, ${3:honey} } = use${1:Store}(state => ({ $2: state.$2, $3: state.$3 }), shallow$4)"
     ],
@@ -1191,7 +1191,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 zuUsePickArr": {
-    "prefix": "zuuArr|$zuuArr",
+    "prefix": "zuuArr.$zuuArr",
     "body": [
       "const [${2:nuts}, ${3:honey}] = use${1:Store}(state => [state.$2, state.$3], shallow$4)"
     ],
@@ -1199,7 +1199,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 testDescribe": {
-    "prefix": "tDescribe|$tDescribe|describe(test)",
+    "prefix": "tDescribe.$tDescribe.describe(test)",
     "body": [
       "describe('${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}', () => {",
       "\t${0:// code}",
@@ -1209,7 +1209,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 testIt": {
-    "prefix": "tIt|$tIt|it(test)",
+    "prefix": "tIt.$tIt.it(test)",
     "body": [
       "it('should ${1:work}', ${2:async }() => {",
       "\t${0:// code}",
@@ -1219,7 +1219,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 test": {
-    "prefix": "tTest|$tTest|(test)",
+    "prefix": "tTest.$tTest.(test)",
     "body": [
       "test('${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}', ${2:async }() => {",
       "\t${0:// code}",
@@ -1229,7 +1229,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 testBefore": {
-    "prefix": "tBefore|$tBefore|before(test)",
+    "prefix": "tBefore.$tBefore.before(test)",
     "body": [
       "${1|beforeEach,beforeAll|}(() => {",
       "\t${0:// code}",
@@ -1239,7 +1239,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 testAfter": {
-    "prefix": "tAfter|$tAfter|after(test)",
+    "prefix": "tAfter.$tAfter.after(test)",
     "body": [
       "${1|afterEach,afterAll|}(() => {",
       "\t${0:// code}",
@@ -1249,7 +1249,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithFunction": {
-    "prefix": "_func|$_func",
+    "prefix": "_func.$_func",
     "body": [
       "${1:func}($TM_SELECTED_TEXT)"
     ],
@@ -1257,7 +1257,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 stringToTemplateLiterals": {
-    "prefix": "_lt|$_lt",
+    "prefix": "_lt.$_lt",
     "body": [
       "`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`"
     ],
@@ -1265,7 +1265,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactStringPropToTemplateLiteral": {
-    "prefix": "_ltr|$_ltr",
+    "prefix": "_ltr.$_ltr",
     "body": [
       "{`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`}"
     ],
@@ -1273,7 +1273,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithFragment": {
-    "prefix": "_rFrag|$_rFrag|_frag",
+    "prefix": "_rFrag.$_rFrag._frag",
     "body": [
       "<$1$0>",
       "\t$TM_SELECTED_TEXT",
@@ -1283,7 +1283,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactIf": {
-    "prefix": "_rIf|$_rIf",
+    "prefix": "_rIf.$_rIf",
     "body": [
       "{${1:condition} ? (",
       "\t$TM_SELECTED_TEXT",
@@ -1295,7 +1295,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactIfWithFragment": {
-    "prefix": "_rIfFrag|$_rIfFrag",
+    "prefix": "_rIfFrag.$_rIfFrag",
     "body": [
       "{${1:condition} ? (",
       "\t<>",
@@ -1309,7 +1309,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactElse": {
-    "prefix": "_rEl|$_rEl",
+    "prefix": "_rEl.$_rEl",
     "body": [
       "{${1:condition} ? (",
       "\t${0:null}",
@@ -1321,7 +1321,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactElseWithFragment": {
-    "prefix": "_rElFrag|$_rElFrag",
+    "prefix": "_rElFrag.$_rElFrag",
     "body": [
       "{${1:condition} ? (",
       "\t${0:null}",
@@ -1335,7 +1335,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactConditional": {
-    "prefix": "_rCon|$_rCon",
+    "prefix": "_rCon.$_rCon",
     "body": [
       "{${1:condition} && (",
       "\t$TM_SELECTED_TEXT",
@@ -1345,7 +1345,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactConditionalWithFragment": {
-    "prefix": "_rConFrag|$_rConFrag",
+    "prefix": "_rConFrag.$_rConFrag",
     "body": [
       "{${1:condition} && (",
       "\t<>",
@@ -1357,7 +1357,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithJsonStringify": {
-    "prefix": "_js|$_js",
+    "prefix": "_js.$_js",
     "body": [
       "JSON.stringify($TM_SELECTED_TEXT)"
     ],
@@ -1365,7 +1365,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithJsonParse": {
-    "prefix": "_jp|$_jp",
+    "prefix": "_jp.$_jp",
     "body": [
       "JSON.parse($TM_SELECTED_TEXT)"
     ],
@@ -1373,7 +1373,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 htmlButton": {
-    "prefix": "button|$button",
+    "prefix": "button.$button",
     "body": [
       "<button type=\"button\" onClick={${2:onClick}}$3>",
       "\t${1:Button}",
@@ -1383,7 +1383,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 getFileNamePascalCase": {
-    "prefix": "fnpascalcase|$fnpascalcase",
+    "prefix": "fnpascalcase.$fnpascalcase",
     "body": [
       "${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}"
     ],
@@ -1391,7 +1391,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 getFileNameCamelCase": {
-    "prefix": "fncamelcase|$fncamelcase",
+    "prefix": "fncamelcase.$fncamelcase",
     "body": [
       "${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}"
     ],
@@ -1399,7 +1399,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 generatePropTypes": {
-    "prefix": "genPropTypes|$genPropTypes",
+    "prefix": "genPropTypes.$genPropTypes",
     "body": [
       "${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}.propTypes = {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}",
@@ -1409,7 +1409,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 generateInterface": {
-    "prefix": "genInt|TS|$$genInt",
+    "prefix": "genInt.TS.$$genInt",
     "body": [
       "interface ${1:Props} {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
@@ -1419,7 +1419,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 generateType": {
-    "prefix": "genType|TS|$$genType",
+    "prefix": "genType.TS.$$genType",
     "body": [
       "type ${1:Props} = {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: unknown;\n}/gm}}",
