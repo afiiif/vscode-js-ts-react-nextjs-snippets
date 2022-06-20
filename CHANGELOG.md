@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.9.0 <small>- 2022/06/21</small>
+
+- Added React functional component without export snippet (`rFCne`, `rAFCne`)
+- Improved snippets prefix and snippets order  
+  <img src="./images/snippet-prefix-v1.9.0.jpg" alt="Snippet prefix v1.9.0" width="500px" />
+
 ## 1.8.0 <small>- 2022/06/12</small>
 
 - Improved snippet name & prefix
@@ -37,7 +43,7 @@ All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will b
 ## 1.2.0 <small>- 2022/05/27</small>
 
 - Updated snippet's prefix emoji: 🟨 for JavaScript, and 🟦 for TypeScript  
-  <img src="./images/snippet-prefix-emoji.jpg" alt="Snippet prefix emoji" width="480px" />
+  <img src="./images/snippet-prefix-emoji.jpg" alt="Snippet prefix emoji" width="500px" />
 
 ## 1.1.0 <small>- 2022/05/25</small>
 
