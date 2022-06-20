@@ -27,6 +27,18 @@ export const reactFnCompExport: Snippet = {
   description: 'React Functional Component',
 };
 
+export const reactFnCompNoExport: Snippet = {
+  prefix: 'rFCne',
+  body: [
+    `function \${1:${FILENAME_PASCALCASE}}() {$0`,
+    '\treturn (',
+    '\t\t<${2:div}>${3:$1}</$2>',
+    '\t)',
+    '}',
+  ],
+  description: 'React Functional Component',
+};
+
 export const reactFnCompPropTypes: Snippet = {
   prefix: 'rFCp',
   body: [
@@ -83,6 +95,18 @@ export const reactArrowFnCompExport: Snippet = {
     '}',
     '',
     'export default $1',
+  ],
+  description: 'React Arrow Function Component',
+};
+
+export const reactArrowFnCompNoExport: Snippet = {
+  prefix: 'rAFCne',
+  body: [
+    `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
+    '\treturn (',
+    '\t\t<${2:div}>${3:$1}</$2>',
+    '\t)',
+    '}',
   ],
   description: 'React Arrow Function Component',
 };

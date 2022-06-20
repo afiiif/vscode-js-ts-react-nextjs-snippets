@@ -193,6 +193,19 @@
     "description": "React Functional Component",
     "scope": "javascript,javascriptreact"
   },
+  "🟨 reactFnCompNoExport": {
+    "prefix": "rFCne.$rFCne",
+    "body": [
+      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<${2:div}>${3:$1}</$2>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Functional Component",
+    "scope": "javascript,javascriptreact"
+  },
   "🟨 reactFnCompPropTypes": {
     "prefix": "rFCp.$rFCp",
     "body": [
@@ -252,6 +265,19 @@
       "}",
       "",
       "export default $1",
+      ""
+    ],
+    "description": "React Arrow Function Component",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactArrowFnCompNoExport": {
+    "prefix": "rAFCne.$rAFCne",
+    "body": [
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<${2:div}>${3:$1}</$2>",
+      "\t)",
+      "}",
       ""
     ],
     "description": "React Arrow Function Component",
