@@ -1224,6 +1224,70 @@
     "description": "Zustand useStore with shallow",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 reactFnCompEmotion": {
+    "prefix": "emoRFC.$emoRFC",
+    "body": [
+      "import * as styles from './styles'",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Functional Component with Emotion CSS",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 reactFnCompExportEmotion": {
+    "prefix": "emoRFCe.$emoRFCe",
+    "body": [
+      "import * as styles from './styles'",
+      "",
+      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Functional Component with Emotion CSS",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 reactArrowFnCompEmotion": {
+    "prefix": "emoRAFC.$emoRAFC",
+    "body": [
+      "import * as styles from './styles'",
+      "",
+      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Arrow Function Component with Emotion CSS",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 reactArrowFnCompExportEmotion": {
+    "prefix": "emoRAFCe.$emoRAFCe",
+    "body": [
+      "import * as styles from './styles'",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Arrow Function Component with Emotion CSS",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 testDescribe": {
     "prefix": "tDescribe.$tDescribe.describe(test)",
     "body": [

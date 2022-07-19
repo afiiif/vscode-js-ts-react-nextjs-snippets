@@ -17,6 +17,7 @@ const reactQuery = normalizeSnippets(require('./snippets/react-query'));
 const swr = normalizeSnippets(require('./snippets/swr'));
 const reactHookForm = normalizeSnippets(require('./snippets/react-hook-form'));
 const zustand = normalizeSnippets(require('./snippets/zustand'));
+const emotion = normalizeSnippets(require('./snippets/emotion'));
 
 const testing = normalizeSnippets(require('./snippets/testing'));
 const wrapper = normalizeSnippets(require('./snippets/wrapper'));
@@ -28,6 +29,7 @@ const miscTS = normalizeSnippets(require('./snippets/misc-ts'), true);
 Object.keys(react).forEach((key) => react[key].body.push(''));
 Object.keys(reactTS).forEach((key) => reactTS[key].body.push(''));
 Object.keys(reactNative).forEach((key) => reactNative[key].body.push(''));
+Object.keys(emotion).forEach((key) => emotion[key].body.push(''));
 
 const javascriptSnippets = {
   ...vanilla,
@@ -39,6 +41,7 @@ const javascriptSnippets = {
   ...swr,
   ...reactHookForm,
   ...zustand,
+  ...emotion,
   ...testing,
   ...wrapper,
   ...htmlJsx,
@@ -58,6 +61,7 @@ const typescriptSnippets = {
   ...swr,
   ...reactHookForm,
   ...zustand,
+  ...emotion,
   ...testing,
   ...wrapper,
   ...htmlJsx,
