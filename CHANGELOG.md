@@ -2,6 +2,11 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.10.0 <small>- 2022/07/19</small>
+
+- Added React with Emotion CSS snippet (`emoRFC`, `emoRFCe`, `emoRAFC`, `emoRAFCe`)
+- Added React element with `dangerouslySetInnerHTML` prop
+
 ## 1.9.0 <small>- 2022/06/21</small>
 
 - Added React functional component without export snippet (`rFCne`, `rAFCne`)
