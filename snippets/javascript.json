@@ -1165,7 +1165,15 @@
     "description": "Wrap with `JSON.parse`",
     "scope": "javascript,javascriptreact"
   },
-  "🟨 htmlButton": {
+  "🟨 jsxInnerHTML": {
+    "prefix": "innerHTML.$innerHTML.dangerously",
+    "body": [
+      "<${1:div} dangerouslySetInnerHTML={{ __html: $2 }} />"
+    ],
+    "description": "Create element with `dangerouslySetInnerHTML` prop",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 jsxButton": {
     "prefix": "button.$button",
     "body": [
       "<button type=\"button\" onClick={${2:onClick}}$3>",
