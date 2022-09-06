@@ -181,6 +181,14 @@
     "description": "JSON.parse",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 typeOf": {
+    "prefix": "typeof.$typeof",
+    "body": [
+      "typeof ${1:data} ${3|===,!==,==,!=|} '${2|undefined,number,string,boolean,object,function,symbol,bigint|}'"
+    ],
+    "description": "typeof X === ?",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 reactFnComp": {
     "prefix": "rFC.$rFC",
     "body": [

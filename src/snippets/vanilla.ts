@@ -125,3 +125,11 @@ export const jsonParse: Snippet = {
   body: ['JSON.parse(${1:data})'],
   description: 'JSON.parse',
 };
+
+export const typeOf: Snippet = {
+  prefix: 'typeof',
+  body: [
+    "typeof ${1:data} ${3|===,!==,==,!=|} '${2|undefined,number,string,boolean,object,function,symbol,bigint|}'",
+  ],
+  description: 'typeof X === ?',
+};
