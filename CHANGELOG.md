@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.11.0 <small>- 2022/09/06</small>
+
+- Added Redux snippet (`rxDispatch`, `rxStore`, `rxSlice`)
+
 ## 1.10.0 <small>- 2022/07/19</small>
 
 - Added React with Emotion CSS snippet (`emoRFC`, `emoRFCe`, `emoRAFC`, `emoRAFCe`)

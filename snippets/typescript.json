@@ -1224,6 +1224,103 @@
     "description": "Zustand useStore with shallow",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 rxUseDispatch": {
+    "prefix": "rxDispatch.$rxDispatch.useDispatch",
+    "body": [
+      "const dispatch = useDispatch$1()",
+      ""
+    ],
+    "description": "Redux useDispatch",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 rxConfigStore": {
+    "prefix": "rxStore.$rxStore.configureStore",
+    "body": [
+      "import { configureStore } from '@reduxjs/toolkit'",
+      "",
+      "const ${1:store} = configureStore({",
+      "\treducer: {",
+      "\t\t$2",
+      "\t},",
+      "})",
+      "",
+      "export default $1"
+    ],
+    "description": "Redux configureStore",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 rxCreateSlice": {
+    "prefix": "rxSlice.$rxSlice.createSlice",
+    "body": [
+      "const initialState = {",
+      "\t${2:value: 0,}",
+      "}",
+      "",
+      "export const ${1:counter}Slice = createSlice({",
+      "\tname: '$1',",
+      "\tinitialState,",
+      "\treducers: {",
+      "\t\t$3",
+      "\t},",
+      "})",
+      "",
+      "export const { $0 } = $1Slice.actions",
+      "",
+      "export default $1Slice.reducer"
+    ],
+    "description": "Redux createSlice",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 rxCreateSliceWithExample": {
+    "prefix": "rxSlice.$rxSlice.createSliceWithExample",
+    "body": [
+      "const initialState = {",
+      "\t${2:value: 0,}",
+      "}",
+      "",
+      "export const ${1:counter}Slice = createSlice({",
+      "\tname: '$1',",
+      "\tinitialState,",
+      "\treducers: {",
+      "\t\t$3increment: (state) => {",
+      "\t\t\tstate.value += 1",
+      "\t\t},",
+      "\t\tdecrement: (state) => {",
+      "\t\t\tstate.value -= 1",
+      "\t\t},",
+      "\t\tincrementByAmount: (state, action) => {",
+      "\t\t\tstate.value += action.payload",
+      "\t\t},",
+      "\t},",
+      "})",
+      "",
+      "export const { increment, decrement, incrementByAmount } = $1Slice.actions",
+      "",
+      "export default $1Slice.reducer"
+    ],
+    "description": "Redux createSlice (with example)",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟦 TS RxConfigStore": {
+    "prefix": "rxStore.TS.$$rxStore.configureStore",
+    "body": [
+      "import { configureStore } from '@reduxjs/toolkit'",
+      "",
+      "const ${1:store} = configureStore({",
+      "\treducer: {",
+      "\t\t$2",
+      "\t},",
+      "})",
+      "",
+      "export default $1",
+      "",
+      "export type RootState = ReturnType<typeof $1.getState>",
+      "",
+      "export type AppDispatch = typeof $1.dispatch"
+    ],
+    "description": "Redux configure store",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 reactFnCompEmotion": {
     "prefix": "emoRFC.$emoRFC",
     "body": [

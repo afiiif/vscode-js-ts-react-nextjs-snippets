@@ -17,6 +17,8 @@ const reactQuery = normalizeSnippets(require('./snippets/react-query'));
 const swr = normalizeSnippets(require('./snippets/swr'));
 const reactHookForm = normalizeSnippets(require('./snippets/react-hook-form'));
 const zustand = normalizeSnippets(require('./snippets/zustand'));
+const redux = normalizeSnippets(require('./snippets/redux'));
+const reduxTS = normalizeSnippets(require('./snippets/redux-ts'), true);
 const emotion = normalizeSnippets(require('./snippets/emotion'));
 
 const testing = normalizeSnippets(require('./snippets/testing'));
@@ -41,6 +43,7 @@ const javascriptSnippets = {
   ...swr,
   ...reactHookForm,
   ...zustand,
+  ...redux,
   ...emotion,
   ...testing,
   ...wrapper,
@@ -61,6 +64,8 @@ const typescriptSnippets = {
   ...swr,
   ...reactHookForm,
   ...zustand,
+  ...redux,
+  ...reduxTS,
   ...emotion,
   ...testing,
   ...wrapper,
