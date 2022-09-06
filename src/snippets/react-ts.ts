@@ -5,7 +5,7 @@ export const tsReactFnComp: Snippet = {
   prefix: ['rFC', '(type)'],
   body: [
     'type Props = {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -21,7 +21,7 @@ export const tsReactFnCompExport: Snippet = {
   prefix: ['rFCe', '(type)'],
   body: [
     'type Props = {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -39,7 +39,7 @@ export const tsReactArrowFnComp: Snippet = {
   prefix: ['rAFC', '(type)'],
   body: [
     'type Props = {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
@@ -55,7 +55,7 @@ export const tsReactArrowFnCompExport: Snippet = {
   prefix: ['rAFCe', '(type)'],
   body: [
     'type Props = {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
@@ -73,7 +73,7 @@ export const tsReactFnCompV2: Snippet = {
   prefix: ['rFC', '(interface)'],
   body: [
     'interface Props {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -89,7 +89,7 @@ export const tsReactFnCompExportV2: Snippet = {
   prefix: ['rFCe', '(interface)'],
   body: [
     'interface Props {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
@@ -107,7 +107,7 @@ export const tsReactArrowFnCompV2: Snippet = {
   prefix: ['rAFC', '(interface)'],
   body: [
     'interface Props {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
@@ -123,7 +123,7 @@ export const tsReactArrowFnCompExportV2: Snippet = {
   prefix: ['rAFCe', '(interface)'],
   body: [
     'interface Props {',
-    '\t$2: unknown;',
+    '\t$2: ReactNode;',
     '}',
     '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,

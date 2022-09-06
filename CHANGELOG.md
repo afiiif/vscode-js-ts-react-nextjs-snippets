@@ -5,6 +5,7 @@ All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will b
 ## 1.11.0 <small>- 2022/09/06</small>
 
 - Added Redux snippet (`rxDispatch`, `rxStore`, `rxSlice`)
+- Improved React TS snippets
 
 ## 1.10.0 <small>- 2022/07/19</small>
 

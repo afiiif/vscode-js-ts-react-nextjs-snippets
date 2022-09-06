@@ -342,7 +342,7 @@
     "prefix": "rFC.TS.$$rFC.(type)",
     "body": [
       "type Props = {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -359,7 +359,7 @@
     "prefix": "rFCe.TS.$$rFCe.(type)",
     "body": [
       "type Props = {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -378,7 +378,7 @@
     "prefix": "rAFC.TS.$$rAFC.(type)",
     "body": [
       "type Props = {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
@@ -395,7 +395,7 @@
     "prefix": "rAFCe.TS.$$rAFCe.(type)",
     "body": [
       "type Props = {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
@@ -414,7 +414,7 @@
     "prefix": "rFC.TS.$$rFC.(interface)",
     "body": [
       "interface Props {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -431,7 +431,7 @@
     "prefix": "rFCe.TS.$$rFCe.(interface)",
     "body": [
       "interface Props {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ ${2:children} }: Props) {$0",
@@ -450,7 +450,7 @@
     "prefix": "rAFC.TS.$$rAFC.(interface)",
     "body": [
       "interface Props {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
@@ -467,7 +467,7 @@
     "prefix": "rAFCe.TS.$$rAFCe.(interface)",
     "body": [
       "interface Props {",
-      "\t$2: unknown;",
+      "\t$2: ReactNode;",
       "}",
       "",
       "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ ${2:children} }: Props) => {$0",
