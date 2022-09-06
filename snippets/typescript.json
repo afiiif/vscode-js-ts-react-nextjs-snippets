@@ -165,6 +165,22 @@
     "description": "Async arrow function export",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 jsonStringify": {
+    "prefix": "JSON.$JSON.jstr",
+    "body": [
+      "JSON.stringify(${2:data}${1:, null, 2})"
+    ],
+    "description": "JSON.stringify",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsonParse": {
+    "prefix": "JSON.$JSON.jprs",
+    "body": [
+      "JSON.parse(${1:data})"
+    ],
+    "description": "JSON.parse",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 reactFnComp": {
     "prefix": "rFC.$rFC",
     "body": [
@@ -1544,7 +1560,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithJsonStringify": {
-    "prefix": "_js.$_js",
+    "prefix": "_jstr.$_jstr",
     "body": [
       "JSON.stringify($TM_SELECTED_TEXT)"
     ],
@@ -1552,7 +1568,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithJsonParse": {
-    "prefix": "_jp.$_jp",
+    "prefix": "_jprs.$_jprs",
     "body": [
       "JSON.parse($TM_SELECTED_TEXT)"
     ],

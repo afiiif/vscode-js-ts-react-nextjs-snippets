@@ -113,3 +113,15 @@ export const asyncArrowFunctionExport: Snippet = {
   body: ['export const ${1:myFunction} = async ($2) => {', '\t${3:// code}', '}'],
   description: 'Async arrow function export',
 };
+
+export const jsonStringify: Snippet = {
+  prefix: ['JSON', 'jstr'],
+  body: ['JSON.stringify(${2:data}${1:, null, 2})'],
+  description: 'JSON.stringify',
+};
+
+export const jsonParse: Snippet = {
+  prefix: ['JSON', 'jprs'],
+  body: ['JSON.parse(${1:data})'],
+  description: 'JSON.parse',
+};
