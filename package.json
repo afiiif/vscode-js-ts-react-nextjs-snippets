@@ -1,7 +1,7 @@
 {
   "name": "vscode-js-ts-react-nextjs-snippets",
   "displayName": "JS/TS React/Next.js Snippets",
-  "description": "Snippets for JS/TS, React/Next.js, React Query, SWR, Jest, React Hook Form, & many more",
+  "description": "Snippets for JS/TS, React/Next.js, React Query, SWR, Redux, Jest, React Hook Form, Emotion CSS, & many more",
   "icon": "images/logo.png",
   "version": "1.11.0",
   "publisher": "afifu",
