@@ -495,82 +495,6 @@
     "description": "React create custom hook",
     "scope": "javascript,javascriptreact"
   },
-  "🟨 reactNativeFnComp": {
-    "prefix": "rnFC.$rnFC",
-    "body": [
-      "import React from 'react'",
-      "import { View, Text } from 'react-native'",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>${2:$1}</Text>",
-      "\t\t</View>",
-      "\t)",
-      "}",
-      ""
-    ],
-    "description": "React Native Functional Component",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactNativeFnCompExport": {
-    "prefix": "rnFCe.$rnFCe",
-    "body": [
-      "import React from 'react'",
-      "import { View, Text } from 'react-native'",
-      "",
-      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>${2:$1}</Text>",
-      "\t\t</View>",
-      "\t)",
-      "}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "React Native Functional Component",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactNativeArrowFnComp": {
-    "prefix": "rnAFC.$rnAFC",
-    "body": [
-      "import React from 'react'",
-      "import { View, Text } from 'react-native'",
-      "",
-      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>${2:$1}</Text>",
-      "\t\t</View>",
-      "\t)",
-      "}",
-      ""
-    ],
-    "description": "React Native Arrow Function Component",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactNativeArrowFnCompExport": {
-    "prefix": "rnAFCe.$rnAFCe",
-    "body": [
-      "import React from 'react'",
-      "import { View, Text } from 'react-native'",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
-      "\treturn (",
-      "\t\t<View>",
-      "\t\t\t<Text>${2:$1}</Text>",
-      "\t\t</View>",
-      "\t)",
-      "}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "React Native Arrow Function Component",
-    "scope": "javascript,javascriptreact"
-  },
   "🟨 nextSSR": {
     "prefix": "nSSR.$nSSR.getServerSideProps",
     "body": [
@@ -716,6 +640,82 @@
       "${TM_SELECTED_TEXT/(import ){ ?(\\w+) ?}( from )([^;\r\n]+)([;])?/const $2 = dynamic(() => import($4).then(mod => mod.$2))$5/g}"
     ],
     "description": "Convert import to Next.js dynamic import",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactNativeFnComp": {
+    "prefix": "rnFC.$rnFC",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Native Functional Component",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactNativeFnCompExport": {
+    "prefix": "rnFCe.$rnFCe",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Native Functional Component",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactNativeArrowFnComp": {
+    "prefix": "rnAFC.$rnAFC",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Native Arrow Function Component",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactNativeArrowFnCompExport": {
+    "prefix": "rnAFCe.$rnAFCe",
+    "body": [
+      "import React from 'react'",
+      "import { View, Text } from 'react-native'",
+      "",
+      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "\treturn (",
+      "\t\t<View>",
+      "\t\t\t<Text>${2:$1}</Text>",
+      "\t\t</View>",
+      "\t)",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "React Native Arrow Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactRouterUseParams": {
