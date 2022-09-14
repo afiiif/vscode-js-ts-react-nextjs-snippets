@@ -13,6 +13,9 @@ const reactNative = normalizeSnippets(require('./snippets/react-native'));
 
 const next = normalizeSnippets(require('./snippets/next'));
 const nextTS = normalizeSnippets(require('./snippets/next-ts'), true);
+const reactRouter = normalizeSnippets(require('./snippets/react-router'));
+const reactRouterV6 = normalizeSnippets(require('./snippets/react-router-v6'));
+const reactRouterV5 = normalizeSnippets(require('./snippets/react-router-v5'));
 const reactQuery = normalizeSnippets(require('./snippets/react-query'));
 const swr = normalizeSnippets(require('./snippets/swr'));
 const reactHookForm = normalizeSnippets(require('./snippets/react-hook-form'));
@@ -39,6 +42,9 @@ const javascriptSnippets = {
   ...reactHook,
   ...reactNative,
   ...next,
+  ...reactRouter,
+  ...reactRouterV6,
+  ...reactRouterV5,
   ...reactQuery,
   ...swr,
   ...reactHookForm,
@@ -60,6 +66,9 @@ const typescriptSnippets = {
   ...reactNative,
   ...next,
   ...nextTS,
+  ...reactRouter,
+  ...reactRouterV6,
+  ...reactRouterV5,
   ...reactQuery,
   ...swr,
   ...reactHookForm,

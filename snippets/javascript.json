@@ -718,6 +718,100 @@
     "description": "Convert import to Next.js dynamic import",
     "scope": "javascript,javascriptreact"
   },
+  "🟨 reactRouterUseParams": {
+    "prefix": "rou.$rou.useParams",
+    "body": [
+      "const { $1 } = useParams$2()"
+    ],
+    "description": "React Router useParams",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseLocation": {
+    "prefix": "rou.$rou.useLocation",
+    "body": [
+      "const { pathname } = useLocation$1()"
+    ],
+    "description": "React Router useLocation",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseNavigate": {
+    "prefix": "rou.$rou.useNavigate",
+    "body": [
+      "const navigate = useNavigate$1()"
+    ],
+    "description": "React Router useNavigate",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseSearchParams": {
+    "prefix": "rou.$rou.useSearchParams",
+    "body": [
+      "const [searchParams, setSearchParams] = useSearchParams$1()"
+    ],
+    "description": "React Router useSearchParams",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterCreate": {
+    "prefix": "rou.$rou.createBrowserRouter",
+    "body": [
+      "const router = createBrowserRouter([",
+      "\t{",
+      "\t\tpath: \"/$1\",",
+      "\t\telement: <${2:Root} />,",
+      "\t\terrorElement: <ErrorPage />,",
+      "\t\tloader: rootLoader,$3",
+      "\t},",
+      "])",
+      ""
+    ],
+    "description": "React Router v6 createBrowserRouter",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterChildren": {
+    "prefix": "rou.$rou.children",
+    "body": [
+      "children: [",
+      "\t{",
+      "\t\tpath: \"$1\",",
+      "\t\telement: <${2:DetailPage} />,",
+      "\t\tloader: ${3:detailPageLoader},",
+      "\t},",
+      "],"
+    ],
+    "description": "React Router v6 router children",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseRouterError": {
+    "prefix": "rou.$rou.useRouteError",
+    "body": [
+      "const error = useRouteError()"
+    ],
+    "description": "React Router v6 useRouteError",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseLoaderData": {
+    "prefix": "rou.$rou.useLoaderData",
+    "body": [
+      "const { $1 } = useLoaderData$2()"
+    ],
+    "description": "React Router v6 useLoaderData",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseNavigation": {
+    "prefix": "rou.$rou.useNavigation",
+    "body": [
+      "const { ${1:state, location} } = useNavigation$2()"
+    ],
+    "description": "React Router v6 useNavigation",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactRouterUseHistory": {
+    "prefix": "rou.$rou.useHistory",
+    "body": [
+      "const { ${1:location, push, replace, goBack} } = useHistory$2()"
+    ],
+    "description": "React Router v5 useHistory",
+    "scope": "javascript,javascriptreact"
+  },
   "🟨 rqQuery": {
     "prefix": "rqUseQue.$rqUseQue",
     "body": [
