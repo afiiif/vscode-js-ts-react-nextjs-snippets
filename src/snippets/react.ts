@@ -162,3 +162,11 @@ export const hocComponent: Snippet = {
   ],
   description: 'React HOC',
 };
+
+export const reactLazy: Snippet = {
+  prefix: '_rLazy',
+  body: [
+    '${TM_SELECTED_TEXT/(import )(\\w+)( from )([^;\r\n]+)([;])?/const $2 = lazy(() => import($4))$5/g}',
+  ],
+  description: 'Convert import to React.lazy import',
+};

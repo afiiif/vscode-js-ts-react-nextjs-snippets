@@ -362,6 +362,15 @@
     "description": "React HOC",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 reactLazy": {
+    "prefix": "_rLazy.$_rLazy",
+    "body": [
+      "${TM_SELECTED_TEXT/(import )(\\w+)( from )([^;\r\n]+)([;])?/const $2 = lazy(() => import($4))$5/g}",
+      ""
+    ],
+    "description": "Convert import to React.lazy import",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟦 TS ReactFnComp": {
     "prefix": "rFC.TS.$$rFC.(type)",
     "body": [
