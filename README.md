@@ -23,6 +23,7 @@ For TypeScript snippets:
 - Check React snippets using `$r`
 - Check [Next.js](https://nextjs.org/) snippets using `$n`
 - Check [React Native](https://reactnative.dev/) snippets using `$rn`
+- Check [React Router](https://reactrouter.com/) snippets using `$rou`
 - Check [React Query](https://react-query.tanstack.com/) snippets using `$rq`
 - Check [SWR](https://swr.vercel.app/) snippets using `$swr`
 - Check [Redux](https://react-redux.js.org/) snippets using `$rx`
@@ -31,6 +32,8 @@ For TypeScript snippets:
 - Check [Zustand](https://www.npmjs.com/package/zustand) snippets using `$zu`
 - Check [Emotion CSS](https://emotion.sh/docs/introduction) snippets using `$emo`
 - Check wrapper-snippets using `$_`
+
+### 👉 [See All Available Snippets Here!](./snippets.md) 👈
 
 ## Examples
 
@@ -56,7 +59,7 @@ Select text and copy it 📋 write snippet and boom! 🪄💥
 
 ## Why There Are No Snippet for Import? 🤔
 
-Because you might not need that. VSCode has built-in feature for auto-import your modules.
+Because you might not need that. VSCode has built-in feature for auto-import your modules. Use `Ctrl`+`Space` on your variable and a popup will appear.
 
 <img src="./images/auto-import.gif" alt="VSCode built-in auto import" width="100%" />
 

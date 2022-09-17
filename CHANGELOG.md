@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.13.0 <small>- 2022/09/14</small>
+
+- Added React.lazy snippet (`_rLazy`)
+- Added [React Router](https://reactrouter.com/) snippets
+- Improved documentation! [Full Examples](./snippets.md) are now available 🥳
+
 ## 1.12.0 <small>- 2022/09/07</small>
 
 - Improved JSON stringify/parse wrapper-snippet
