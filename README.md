@@ -10,7 +10,7 @@ If there is no suggestion, use `Ctrl`+`Space` to open it.
 
 - You can just type directly 👉 `rfc`
 - You can also use `$` prefix 👉 `$rfc`
-- You don't need to write complete snippet prefix. For example, there is `useState` snippet, you can just type `useSt` and the suggestion will appear.
+- You don't need to write a complete snippet prefix. For example, there is `useState` snippet, you can just type `useSt` and the suggestion will appear.
 
 For TypeScript snippets:
 
@@ -31,6 +31,7 @@ For TypeScript snippets:
 - Check [React Hook Form](https://react-hook-form.com/) snippets using `$rhf`
 - Check [Zustand](https://www.npmjs.com/package/zustand) snippets using `$zu`
 - Check [Emotion CSS](https://emotion.sh/docs/introduction) snippets using `$emo`
+- Check [Yup](https://www.npmjs.com/package/yup) snippets using `$yup`
 - Check wrapper-snippets using `$_`
 
 ### 👉 [See All Available Snippets Here!](./snippets.md) 👈

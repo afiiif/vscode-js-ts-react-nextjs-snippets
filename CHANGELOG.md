@@ -2,6 +2,12 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.14.0 <small>- 2023/02/22</small>
+
+- Added [yup](https://www.npmjs.com/package/yup) snippet
+- Updated `useMemo` & `useCallback` snippet
+- Updated `JSON.stringify` snippet
+
 ## 1.13.0 <small>- 2022/09/18</small>
 
 - Added React.lazy snippet (`_rLazy`)
