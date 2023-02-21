@@ -166,7 +166,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 jsonStringify": {
-    "prefix": "JSON.$JSON.jstr",
+    "prefix": "jstr.$jstr.JSON",
     "body": [
       "JSON.stringify(${2:data}${1:, null, 2})"
     ],
@@ -174,7 +174,7 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 jsonParse": {
-    "prefix": "JSON.$JSON.jprs",
+    "prefix": "jprs.$jprs.JSON",
     "body": [
       "JSON.parse(${1:data})"
     ],
@@ -1669,15 +1669,15 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithJsonStringify": {
-    "prefix": "_jstr.$_jstr",
+    "prefix": "_jstr.$_jstr.JSON",
     "body": [
-      "JSON.stringify($TM_SELECTED_TEXT)"
+      "JSON.stringify($TM_SELECTED_TEXT${1:, null, 2})"
     ],
     "description": "Wrap with `JSON.stringify`",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 wrapWithJsonParse": {
-    "prefix": "_jprs.$_jprs",
+    "prefix": "_jprs.$_jprs.JSON",
     "body": [
       "JSON.parse($TM_SELECTED_TEXT)"
     ],

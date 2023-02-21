@@ -77,13 +77,13 @@ export const reactConditionalWithFragment: Snippet = {
 };
 
 export const wrapWithJsonStringify: Snippet = {
-  prefix: '_jstr',
-  body: ['JSON.stringify($TM_SELECTED_TEXT)'],
+  prefix: ['_jstr', 'JSON'],
+  body: ['JSON.stringify($TM_SELECTED_TEXT${1:, null, 2})'],
   description: 'Wrap with `JSON.stringify`',
 };
 
 export const wrapWithJsonParse: Snippet = {
-  prefix: '_jprs',
+  prefix: ['_jprs', 'JSON'],
   body: ['JSON.parse($TM_SELECTED_TEXT)'],
   description: 'Wrap with `JSON.parse`',
 };

@@ -115,13 +115,13 @@ export const asyncArrowFunctionExport: Snippet = {
 };
 
 export const jsonStringify: Snippet = {
-  prefix: ['JSON', 'jstr'],
+  prefix: ['jstr', 'JSON'],
   body: ['JSON.stringify(${2:data}${1:, null, 2})'],
   description: 'JSON.stringify',
 };
 
 export const jsonParse: Snippet = {
-  prefix: ['JSON', 'jprs'],
+  prefix: ['jprs', 'JSON'],
   body: ['JSON.parse(${1:data})'],
   description: 'JSON.parse',
 };
