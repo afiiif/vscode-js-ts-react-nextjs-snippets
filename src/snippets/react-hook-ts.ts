@@ -14,12 +14,16 @@ export const tsUseRef: Snippet = {
 
 export const tsUseMemo: Snippet = {
   prefix: 'useMemo',
-  body: ['useMemo$4<${3:any}>(() => ${2:computeValue}, [$1])'],
+  body: ['const ${1:memo} = useMemo$5<${4:any}>(() => ${3:computeValue}, [$2])'],
   description: 'React useMemo',
 };
 
 export const tsUseCallback: Snippet = {
   prefix: 'useCallback',
-  body: ['useCallback$4<() => ${3:void}>(() => {', '\t${2:// code}', '}, [$1])', ''],
+  body: [
+    'const ${1:callback} = useCallback$5<() => ${4:void}>(() => {',
+    '\t${3:// code}',
+    '}, [$2])',
+  ],
   description: 'React useCallback',
 };

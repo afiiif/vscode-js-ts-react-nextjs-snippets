@@ -63,13 +63,13 @@ export const useLayoutEffectV2: Snippet = {
 
 export const useMemo: Snippet = {
   prefix: 'useMemo',
-  body: ['useMemo$3(() => ${2:computeValue}, [$1])'],
+  body: ['const ${1:memo} = useMemo$4(() => ${3:computeValue}, [$2])'],
   description: 'React useMemo',
 };
 
 export const useCallback: Snippet = {
   prefix: 'useCallback',
-  body: ['useCallback$3(() => {', '\t${2:// code}', '}, [$1])', ''],
+  body: ['const ${1:callback} = useCallback$4(() => {', '\t${3:// code}', '}, [$2])'],
   description: 'React useCallback',
 };
 

@@ -450,8 +450,7 @@
   "🟨 useMemo": {
     "prefix": "useMemo.$useMemo",
     "body": [
-      "const ${1:memo} = useMemo$4(() => ${3:computeValue}, [$2])",
-      ""
+      "const ${1:memo} = useMemo$4(() => ${3:computeValue}, [$2])"
     ],
     "description": "React useMemo",
     "scope": "javascript,javascriptreact"
@@ -461,8 +460,7 @@
     "body": [
       "const ${1:callback} = useCallback$4(() => {",
       "\t${3:// code}",
-      "}, [$2])",
-      ""
+      "}, [$2])"
     ],
     "description": "React useCallback",
     "scope": "javascript,javascriptreact"
