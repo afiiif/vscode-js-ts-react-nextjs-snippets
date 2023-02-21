@@ -594,7 +594,8 @@
   "🟨 useMemo": {
     "prefix": "useMemo.$useMemo",
     "body": [
-      "useMemo$3(() => ${2:computeValue}, [$1])"
+      "const ${1:memo} = useMemo$4(() => ${3:computeValue}, [$2])",
+      ""
     ],
     "description": "React useMemo",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -602,9 +603,9 @@
   "🟨 useCallback": {
     "prefix": "useCallback.$useCallback",
     "body": [
-      "useCallback$3(() => {",
-      "\t${2:// code}",
-      "}, [$1])",
+      "const ${1:callback} = useCallback$4(() => {",
+      "\t${3:// code}",
+      "}, [$2])",
       ""
     ],
     "description": "React useCallback",
@@ -667,7 +668,8 @@
   "🟦 TS UseMemo": {
     "prefix": "useMemo.TS.$$useMemo",
     "body": [
-      "useMemo$4<${3:any}>(() => ${2:computeValue}, [$1])"
+      "const ${1:memo} = useMemo$5<${4:any}>(() => ${3:computeValue}, [$2])",
+      ""
     ],
     "description": "React useMemo",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
@@ -675,9 +677,9 @@
   "🟦 TS UseCallback": {
     "prefix": "useCallback.TS.$$useCallback",
     "body": [
-      "useCallback$4<() => ${3:void}>(() => {",
-      "\t${2:// code}",
-      "}, [$1])",
+      "const ${1:callback} = useCallback$5<() => ${4:void}>(() => {",
+      "\t${3:// code}",
+      "}, [$2])",
       ""
     ],
     "description": "React useCallback",
