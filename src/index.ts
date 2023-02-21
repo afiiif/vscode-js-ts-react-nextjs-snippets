@@ -35,6 +35,7 @@ const emotion = normalizeSnippets(require('./snippets/emotion'));
 const testing = normalizeSnippets(require('./snippets/testing'));
 const wrapper = normalizeSnippets(require('./snippets/wrapper'));
 const htmlJsx = normalizeSnippets(require('./snippets/html-jsx'));
+const yup = normalizeSnippets(require('./snippets/yup'));
 const misc = normalizeSnippets(require('./snippets/misc'));
 const miscTS = normalizeSnippets(require('./snippets/misc-ts'), true);
 
@@ -64,6 +65,7 @@ const javascriptSnippets = {
   ...testing,
   ...wrapper,
   ...htmlJsx,
+  ...yup,
   ...misc,
 };
 
@@ -89,6 +91,7 @@ const typescriptSnippets = {
   ...testing,
   ...wrapper,
   ...htmlJsx,
+  ...yup,
   ...misc,
   ...miscTS,
 };

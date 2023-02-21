@@ -1702,6 +1702,32 @@
     "description": "Create `<button />` element",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 yupV0Schema": {
+    "prefix": "yupSchema.$yupSchema",
+    "body": [
+      "export const ${1:user}Schema = yup.object({",
+      "\t${2:name}: ${3:yup.string().required()},",
+      "})",
+      "",
+      "export type ${1/(.*)/${1:/capitalize}/} = yup.Asserts<typeof ${1:user}Schema>",
+      ""
+    ],
+    "description": "Yup v0 schema",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 yupV1Schema": {
+    "prefix": "yupSchema.$yupSchema",
+    "body": [
+      "export const ${1:user}Schema = yup.object({",
+      "\t${2:name}: ${3:yup.string().required()},",
+      "})",
+      "",
+      "export type ${1/(.*)/${1:/capitalize}/} = yup.InferType<typeof ${1:user}Schema>",
+      ""
+    ],
+    "description": "Yup v1 schema",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 getFileNamePascalCase": {
     "prefix": "fnpascalcase.$fnpascalcase",
     "body": [
