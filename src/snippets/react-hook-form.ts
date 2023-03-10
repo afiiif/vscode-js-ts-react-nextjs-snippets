@@ -1,7 +1,7 @@
 import { Snippet } from '../types';
 
 export const rhfUseForm: Snippet = {
-  prefix: ['rhf', 'useForm'],
+  prefix: ['useForm', 'rhf'],
   body: [
     'const { ${1:register, control, handleSubmit, formState: { errors \\}} } = useForm$2($0)',
     'const onSubmit = data => console.log(data)',
@@ -10,7 +10,7 @@ export const rhfUseForm: Snippet = {
 };
 
 export const rhfUseFormYup: Snippet = {
-  prefix: ['rhfYup', 'useForm'],
+  prefix: ['useForm', 'rhfYup'],
   body: [
     'const schema = yup$4.object({',
     '\t${3:// schema fields}',
@@ -25,7 +25,7 @@ export const rhfUseFormYup: Snippet = {
 };
 
 export const rhfCreateFormProvider: Snippet = {
-  prefix: ['rhfProv', 'useForm'],
+  prefix: ['useForm', 'rhfProv'],
   body: [
     'const methods = useForm$1($2)',
     'const onSubmit = data => console.log(data)',

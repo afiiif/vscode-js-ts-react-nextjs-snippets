@@ -978,7 +978,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 rhfUseForm": {
-    "prefix": "rhf.$rhf.useForm",
+    "prefix": "useForm.$useForm.rhf",
     "body": [
       "const { ${1:register, control, handleSubmit, formState: { errors \\}} } = useForm$2($0)",
       "const onSubmit = data => console.log(data)"
@@ -987,7 +987,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 rhfUseFormYup": {
-    "prefix": "rhfYup.$rhfYup.useForm",
+    "prefix": "useForm.$useForm.rhfYup",
     "body": [
       "const schema = yup$4.object({",
       "\t${3:// schema fields}",
@@ -1002,7 +1002,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 rhfCreateFormProvider": {
-    "prefix": "rhfProv.$rhfProv.useForm",
+    "prefix": "useForm.$useForm.rhfProv",
     "body": [
       "const methods = useForm$1($2)",
       "const onSubmit = data => console.log(data)",
