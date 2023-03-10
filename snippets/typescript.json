@@ -1720,6 +1720,18 @@
     "description": "Create `<button />` element",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 jsxLoop": {
+    "prefix": "loopJSX.$loopJSX",
+    "body": [
+      "{${1:list}.map((${2:$1Item}) => {$5",
+      "\treturn (",
+      "\t\t<${4:div} key={${2:$1Item}.${3:id}}>$0</$4>",
+      "\t)",
+      "})}"
+    ],
+    "description": "JSX mapping an array",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 yupV0Schema": {
     "prefix": "yupSchema.$yupSchema",
     "body": [
