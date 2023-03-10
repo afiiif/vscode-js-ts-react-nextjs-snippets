@@ -2,6 +2,13 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.15.0 <small>- 2023/03/10</small>
+
+- Added `loopJSX` (JSX mapping an array) snippet
+- Updated logo
+- Update [React Hook Form](https://react-hook-form.com/) snippets prefix to `useForm`
+- Updated React hook snippets
+
 ## 1.14.0 <small>- 2023/02/22</small>
 
 - Added [yup](https://www.npmjs.com/package/yup) snippet

@@ -1,4 +1,4 @@
-# VSCode Snippets for JS/TS, React/Next.js, React Query, SWR, Redux, Jest, React Hook Form, Emotion CSS, & many more
+# VSCode Snippets for JavaScript, TypeScript, React/Next.js, React Query, SWR, Redux, Jest, React Hook Form, Emotion CSS, & many more
 
 Write code faster using snippets!  
 Just type the snippet keyword (for example, type `rfc`), a suggestion will appear, then press `Tab`.  
