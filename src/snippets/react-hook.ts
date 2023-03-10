@@ -74,7 +74,7 @@ export const useCallback: Snippet = {
 };
 
 export const reactCustomHook: Snippet = {
-  prefix: ['rfhook', 'hook'],
+  prefix: ['rFHook', 'hook'],
   body: [
     "import { useEffect } from 'react'",
     '',
@@ -92,7 +92,7 @@ export const reactCustomHook: Snippet = {
 };
 
 export const reactCustomHookArrowFn: Snippet = {
-  prefix: ['rafhook', 'hook'],
+  prefix: ['rAFHook', 'hook'],
   body: [
     "import { useEffect } from 'react'",
     '',
@@ -108,5 +108,23 @@ export const reactCustomHookArrowFn: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React create custom hook',
+  description: 'React create custom hook arrow function',
+};
+
+export const reactCustomHookArrowFnExport: Snippet = {
+  prefix: ['rAFHookEx', 'hook'],
+  body: [
+    "import { useEffect } from 'react'",
+    '',
+    `export const \${1:${FILENAME_CAMELCASE}} = () => {`,
+    '\t${0:// code}',
+    '\t',
+    '\tuseEffect(() => {',
+    '\t\t// code',
+    '\t}, [])',
+    '\t',
+    '\treturn null',
+    '}',
+  ],
+  description: 'React create custom hook arrow function',
 };

@@ -466,7 +466,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactCustomHook": {
-    "prefix": "rfhook.$rfhook.hook",
+    "prefix": "rFHook.$rFHook.hook",
     "body": [
       "import { useEffect } from 'react'",
       "",
@@ -484,7 +484,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactCustomHookArrowFn": {
-    "prefix": "rafhook.$rafhook.hook",
+    "prefix": "rAFHook.$rAFHook.hook",
     "body": [
       "import { useEffect } from 'react'",
       "",
@@ -500,7 +500,25 @@
       "",
       "export default $1"
     ],
-    "description": "React create custom hook",
+    "description": "React create custom hook arrow function",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 reactCustomHookArrowFnExport": {
+    "prefix": "rAFHookEx.$rAFHookEx.hook",
+    "body": [
+      "import { useEffect } from 'react'",
+      "",
+      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}} = () => {",
+      "\t${0:// code}",
+      "\t",
+      "\tuseEffect(() => {",
+      "\t\t// code",
+      "\t}, [])",
+      "\t",
+      "\treturn null",
+      "}"
+    ],
+    "description": "React create custom hook arrow function",
     "scope": "javascript,javascriptreact"
   },
   "🟨 nextSSR": {
