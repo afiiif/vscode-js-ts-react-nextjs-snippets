@@ -192,7 +192,7 @@
   "🟨 reactFnComp": {
     "prefix": "rFC.$rFC",
     "body": [
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -205,7 +205,7 @@
   "🟨 reactFnCompExport": {
     "prefix": "rFCe.$rFCe",
     "body": [
-      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -220,7 +220,7 @@
   "🟨 reactFnCompNoExport": {
     "prefix": "rFCne.$rFCne",
     "body": [
-      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -235,7 +235,7 @@
     "body": [
       "import PropTypes from 'prop-types'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -252,7 +252,7 @@
     "body": [
       "import PropTypes from 'prop-types'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}({ children }) {$0",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}({ children }) {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:{ children \\}}</$2>",
       "\t)",
@@ -269,7 +269,7 @@
   "🟨 reactArrowFnComp": {
     "prefix": "rAFC.$rAFC",
     "body": [
-      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "export const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -282,7 +282,7 @@
   "🟨 reactArrowFnCompExport": {
     "prefix": "rAFCe.$rAFCe",
     "body": [
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -297,7 +297,7 @@
   "🟨 reactArrowFnCompNoExport": {
     "prefix": "rAFCne.$rAFCne",
     "body": [
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -312,7 +312,7 @@
     "body": [
       "import PropTypes from 'prop-types'",
       "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:$1}</$2>",
       "\t)",
@@ -331,7 +331,7 @@
     "body": [
       "import PropTypes from 'prop-types'",
       "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = ({ children }) => {$0",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = ({ children }) => {$0",
       "\treturn (",
       "\t\t<${2:div}>${3:{ children \\}}</$2>",
       "\t)",
@@ -350,7 +350,7 @@
   "🟨 hocComponent": {
     "prefix": "hoc.$hoc.rHOC",
     "body": [
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}}(WrappedComponent) {$0",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${2:/camelcase}/g}}(WrappedComponent) {$0",
       "\tconst Component = (props) => {",
       "\t\treturn <WrappedComponent {...props} />",
       "\t}",
@@ -470,7 +470,7 @@
     "body": [
       "import { useEffect } from 'react'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}}() {",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${2:/camelcase}/g}}() {",
       "\t${0:// code}",
       "\t",
       "\tuseEffect(() => {",
@@ -488,7 +488,7 @@
     "body": [
       "import { useEffect } from 'react'",
       "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}} = () => {",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${2:/camelcase}/g}} = () => {",
       "\t${0:// code}",
       "\t",
       "\tuseEffect(() => {",
@@ -508,7 +508,7 @@
     "body": [
       "import { useEffect } from 'react'",
       "",
-      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}} = () => {",
+      "export const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${2:/camelcase}/g}} = () => {",
       "\t${0:// code}",
       "\t",
       "\tuseEffect(() => {",
@@ -674,7 +674,7 @@
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<View>",
       "\t\t\t<Text>${2:$1}</Text>",
@@ -692,7 +692,7 @@
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
       "",
-      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<View>",
       "\t\t\t<Text>${2:$1}</Text>",
@@ -712,7 +712,7 @@
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
       "",
-      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "export const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<View>",
       "\t\t\t<Text>${2:$1}</Text>",
@@ -730,7 +730,7 @@
       "import React from 'react'",
       "import { View, Text } from 'react-native'",
       "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<View>",
       "\t\t\t<Text>${2:$1}</Text>",
@@ -1153,7 +1153,7 @@
     "body": [
       "import * as styles from './styles'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
       "\t)",
@@ -1168,7 +1168,7 @@
     "body": [
       "import * as styles from './styles'",
       "",
-      "function ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}() {$0",
+      "function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
       "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
       "\t)",
@@ -1185,7 +1185,7 @@
     "body": [
       "import * as styles from './styles'",
       "",
-      "export const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "export const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
       "\t)",
@@ -1200,7 +1200,7 @@
     "body": [
       "import * as styles from './styles'",
       "",
-      "const ${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}} = () => {$0",
+      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
       "\treturn (",
       "\t\t<${2:div} css={styles.${3:container}}>${4:$1}</$2>",
       "\t)",
@@ -1215,7 +1215,7 @@
   "🟨 testDescribe": {
     "prefix": "tDescribe.$tDescribe.describe(test)",
     "body": [
-      "describe('${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}', () => {",
+      "describe('${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}', () => {",
       "\t${0:// code}",
       "})"
     ],
@@ -1235,7 +1235,7 @@
   "🟨 test": {
     "prefix": "tTest.$tTest.(test)",
     "body": [
-      "test('${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}', ${2:async }() => {",
+      "test('${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}', ${2:async }() => {",
       "\t${0:// code}",
       "})"
     ],
@@ -1445,7 +1445,7 @@
   "🟨 getFileNamePascalCase": {
     "prefix": "fnpascalcase.$fnpascalcase",
     "body": [
-      "${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}"
+      "${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}"
     ],
     "description": "Get filename in PascalCase",
     "scope": "javascript,javascriptreact"
@@ -1453,7 +1453,7 @@
   "🟨 getFileNameCamelCase": {
     "prefix": "fncamelcase.$fncamelcase",
     "body": [
-      "${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${3:/camelcase}/g}"
+      "${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|([\\w\\-_]*)/${2:/camelcase}/g}"
     ],
     "description": "Get filename in camelCase",
     "scope": "javascript,javascriptreact"
@@ -1461,7 +1461,7 @@
   "🟨 generatePropTypes": {
     "prefix": "genPropTypes.$genPropTypes",
     "body": [
-      "${1:${RELATIVE_FILEPATH/(^.+?(?=[\\/\\\\][^\\/\\\\]+[\\/\\\\][^\\/\\\\]+\\.[jt]sx?))|(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|\\[))|[.\\-_\\/\\\\])|(\\w+)/${3:/capitalize}/g}}.propTypes = {",
+      "${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}.propTypes = {",
       "${CLIPBOARD/(\\=\\s*[^,]*),?|(\\w+)|(\\s*),?/${2:+  }$2${2:+: PropTypes.any,\n}/gm}}",
       ""
     ],
