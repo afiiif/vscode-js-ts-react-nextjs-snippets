@@ -3,7 +3,7 @@
   "displayName": "JavaScript/TypeScript React/Next.js Snippets",
   "description": "Snippets for JavaScript, TypeScript, React.js, Next.js, React Query, SWR, Redux, Jest, React Hook Form, Emotion CSS, & many more",
   "icon": "images/logo.png",
-  "version": "1.15.0",
+  "version": "1.16.0",
   "publisher": "afifu",
   "keywords": [
     "vscode",

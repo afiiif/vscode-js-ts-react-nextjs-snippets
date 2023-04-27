@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.16.0 <small>- 2023/04/27</small>
+
+- Improved snippets that depend on directory & filename
+
 ## 1.15.0 <small>- 2023/03/10</small>
 
 - Added `loopJSX` (JSX mapping an array) snippet
