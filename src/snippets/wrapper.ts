@@ -1,11 +1,5 @@
 import { Snippet } from '../types';
 
-export const wrapWithFunction: Snippet = {
-  prefix: '_func',
-  body: ['${1:func}($TM_SELECTED_TEXT)'],
-  description: 'Wrap with function',
-};
-
 export const stringToTemplateLiterals: Snippet = {
   prefix: '_lt',
   body: ['`${TM_SELECTED_TEXT/^[\'"](.*)[\'"]$/$1/g}`'],
@@ -16,6 +10,18 @@ export const reactStringPropToTemplateLiteral: Snippet = {
   prefix: '_ltr',
   body: ['{`${TM_SELECTED_TEXT/^[\'"](.*)[\'"]$/$1/g}`}'],
   description: "Convert regular string in react prop's value to template literals",
+};
+
+export const wrapWithUseMemo: Snippet = {
+  prefix: '_useMemo',
+  body: ['useMemo$0(() => {', '\t$TM_SELECTED_TEXT', '}, ${1:[]})'],
+  description: 'Wrap with function',
+};
+
+export const wrapWithUseCallback: Snippet = {
+  prefix: '_useCallback',
+  body: ['useCallback$0(', '\t$TM_SELECTED_TEXT', ', ${1:[]})'],
+  description: 'Wrap with function',
 };
 
 export const wrapWithFragment: Snippet = {

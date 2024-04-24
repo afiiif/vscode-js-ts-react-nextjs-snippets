@@ -1226,14 +1226,6 @@
     "description": "Testing `afterAll` / `afterEach` block",
     "scope": "javascript,javascriptreact"
   },
-  "🟨 wrapWithFunction": {
-    "prefix": "_func.$_func",
-    "body": [
-      "${1:func}($TM_SELECTED_TEXT)"
-    ],
-    "description": "Wrap with function",
-    "scope": "javascript,javascriptreact"
-  },
   "🟨 stringToTemplateLiterals": {
     "prefix": "_lt.$_lt",
     "body": [
@@ -1248,6 +1240,26 @@
       "{`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`}"
     ],
     "description": "Convert regular string in react prop's value to template literals",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 wrapWithUseMemo": {
+    "prefix": "_useMemo.$_useMemo",
+    "body": [
+      "useMemo$0(() => {",
+      "\t$TM_SELECTED_TEXT",
+      "}, ${1:[]})"
+    ],
+    "description": "Wrap with function",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 wrapWithUseCallback": {
+    "prefix": "_useCallback.$_useCallback",
+    "body": [
+      "useCallback$0(",
+      "\t$TM_SELECTED_TEXT",
+      ", ${1:[]})"
+    ],
+    "description": "Wrap with function",
     "scope": "javascript,javascriptreact"
   },
   "🟨 wrapWithFragment": {
