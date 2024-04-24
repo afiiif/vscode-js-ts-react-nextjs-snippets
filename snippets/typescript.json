@@ -199,7 +199,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompExport": {
@@ -214,7 +214,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompNoExport": {
@@ -227,7 +227,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompPropTypes": {
@@ -246,7 +246,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component with PropTypes",
+    "description": "React Function Component with PropTypes",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactArrowFnComp": {
@@ -348,7 +348,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactFnCompExport": {
@@ -366,7 +366,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactArrowFnComp": {
@@ -416,7 +416,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactFnCompExportV2": {
@@ -434,7 +434,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟦 TS ReactArrowFnCompV2": {
@@ -935,7 +935,7 @@
       "}",
       ""
     ],
-    "description": "React Native Functional Component",
+    "description": "React Native Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactNativeFnCompExport": {
@@ -955,7 +955,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Native Functional Component",
+    "description": "React Native Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactNativeArrowFnComp": {
@@ -1432,7 +1432,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component with Emotion CSS",
+    "description": "React Function Component with Emotion CSS",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactFnCompExportEmotion": {
@@ -1449,7 +1449,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component with Emotion CSS",
+    "description": "React Function Component with Emotion CSS",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 reactArrowFnCompEmotion": {

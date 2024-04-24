@@ -199,7 +199,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompExport": {
@@ -214,7 +214,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompNoExport": {
@@ -227,7 +227,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompPropTypes": {
@@ -246,7 +246,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component with PropTypes",
+    "description": "React Function Component with PropTypes",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactArrowFnComp": {
@@ -647,7 +647,7 @@
       "}",
       ""
     ],
-    "description": "React Native Functional Component",
+    "description": "React Native Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactNativeFnCompExport": {
@@ -667,7 +667,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Native Functional Component",
+    "description": "React Native Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactNativeArrowFnComp": {
@@ -1124,7 +1124,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component with Emotion CSS",
+    "description": "React Function Component with Emotion CSS",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompExportEmotion": {
@@ -1141,7 +1141,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component with Emotion CSS",
+    "description": "React Function Component with Emotion CSS",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactArrowFnCompEmotion": {
