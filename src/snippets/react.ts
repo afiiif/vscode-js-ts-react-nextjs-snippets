@@ -10,7 +10,7 @@ export const reactFnComp: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const reactFnCompExport: Snippet = {
@@ -24,7 +24,7 @@ export const reactFnCompExport: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const reactFnCompNoExport: Snippet = {
@@ -36,7 +36,7 @@ export const reactFnCompNoExport: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const reactFnCompPropTypes: Snippet = {
@@ -54,7 +54,7 @@ export const reactFnCompPropTypes: Snippet = {
     '\tchildren: PropTypes.node.isRequired',
     '}',
   ],
-  description: 'React Functional Component with PropTypes',
+  description: 'React Function Component with PropTypes',
 };
 
 export const reactArrowFnComp: Snippet = {

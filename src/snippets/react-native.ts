@@ -15,7 +15,7 @@ export const reactNativeFnComp: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Native Functional Component',
+  description: 'React Native Function Component',
 };
 
 export const reactNativeFnCompExport: Snippet = {
@@ -34,7 +34,7 @@ export const reactNativeFnCompExport: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Native Functional Component',
+  description: 'React Native Function Component',
 };
 
 export const reactNativeArrowFnComp: Snippet = {

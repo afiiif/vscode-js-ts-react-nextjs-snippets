@@ -13,7 +13,7 @@ export const tsReactFnComp: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactFnCompExport: Snippet = {
@@ -30,7 +30,7 @@ export const tsReactFnCompExport: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactArrowFnComp: Snippet = {
@@ -77,7 +77,7 @@ export const tsReactFnCompV2: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactFnCompExportV2: Snippet = {
@@ -94,7 +94,7 @@ export const tsReactFnCompExportV2: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactArrowFnCompV2: Snippet = {
