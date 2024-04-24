@@ -231,34 +231,17 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompPropTypes": {
-    "prefix": "rFCp.$rFCp",
+    "prefix": "rFCpropType.$rFCpropType",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
+      "export ${1:default }function ${2:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}({ children }) {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1}</$2>",
+      "\t\t<${3:div}>${4:{ children \\}}</$3>",
       "\t)",
       "}",
       "",
-      "$1.propTypes = {}",
-      ""
-    ],
-    "description": "React Functional Component with PropTypes",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactFnCompPropTypesChldrn": {
-    "prefix": "rFCpch.$rFCpch",
-    "body": [
-      "import PropTypes from 'prop-types'",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}({ children }) {$0",
-      "\treturn (",
-      "\t\t<${2:div}>${3:{ children \\}}</$2>",
-      "\t)",
-      "}",
-      "",
-      "$1.propTypes = {",
+      "$2.propTypes = {",
       "\tchildren: PropTypes.node.isRequired",
       "}",
       ""
@@ -308,26 +291,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactArrowFnCompPropTypes": {
-    "prefix": "rAFCp.$rAFCp",
-    "body": [
-      "import PropTypes from 'prop-types'",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
-      "\treturn (",
-      "\t\t<${2:div}>${3:$1}</$2>",
-      "\t)",
-      "}",
-      "",
-      "$1.propTypes = {}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "React Arrow Function Component with PropTypes",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactArrowFnCompPropTypesChldrn": {
-    "prefix": "rAFCpch.$rAFCpch",
+    "prefix": "rAFCpropType.$rAFCpropType",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
