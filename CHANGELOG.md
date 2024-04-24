@@ -2,6 +2,11 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.17.0 <small>- 2024/04/25</small>
+
+- Improved react snippets
+- Added `useMemo` & `useCallback` wrapper snippet
+
 ## 1.16.0 <small>- 2023/04/27</small>
 
 - Improved snippets that depend on directory & filename
