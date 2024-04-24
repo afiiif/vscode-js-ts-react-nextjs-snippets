@@ -12,7 +12,7 @@ export const reactFnCompEmotion: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Functional Component with Emotion CSS',
+  description: 'React Function Component with Emotion CSS',
 };
 
 export const reactFnCompExportEmotion: Snippet = {
@@ -28,7 +28,7 @@ export const reactFnCompExportEmotion: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component with Emotion CSS',
+  description: 'React Function Component with Emotion CSS',
 };
 
 export const reactArrowFnCompEmotion: Snippet = {

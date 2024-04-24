@@ -192,14 +192,14 @@
   "🟨 reactFnComp": {
     "prefix": "rFC.$rFC",
     "body": [
-      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
+      "export ${1:default }function ${2:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1}</$2>",
+      "\t\t<${3:div}>${4:$2}</$3>",
       "\t)",
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompExport": {
@@ -214,7 +214,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompNoExport": {
@@ -227,43 +227,26 @@
       "}",
       ""
     ],
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompPropTypes": {
-    "prefix": "rFCp.$rFCp",
+    "prefix": "rFCpropType.$rFCpropType",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
-      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
+      "export ${1:default }function ${2:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}({ children }) {$0",
       "\treturn (",
-      "\t\t<${2:div}>${3:$1}</$2>",
+      "\t\t<${3:div}>${4:{ children \\}}</$3>",
       "\t)",
       "}",
       "",
-      "$1.propTypes = {}",
-      ""
-    ],
-    "description": "React Functional Component with PropTypes",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactFnCompPropTypesChldrn": {
-    "prefix": "rFCpch.$rFCpch",
-    "body": [
-      "import PropTypes from 'prop-types'",
-      "",
-      "export default function ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}({ children }) {$0",
-      "\treturn (",
-      "\t\t<${2:div}>${3:{ children \\}}</$2>",
-      "\t)",
-      "}",
-      "",
-      "$1.propTypes = {",
+      "$2.propTypes = {",
       "\tchildren: PropTypes.node.isRequired",
       "}",
       ""
     ],
-    "description": "React Functional Component with PropTypes",
+    "description": "React Function Component with PropTypes",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactArrowFnComp": {
@@ -308,26 +291,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactArrowFnCompPropTypes": {
-    "prefix": "rAFCp.$rAFCp",
-    "body": [
-      "import PropTypes from 'prop-types'",
-      "",
-      "const ${1:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}} = () => {$0",
-      "\treturn (",
-      "\t\t<${2:div}>${3:$1}</$2>",
-      "\t)",
-      "}",
-      "",
-      "$1.propTypes = {}",
-      "",
-      "export default $1",
-      ""
-    ],
-    "description": "React Arrow Function Component with PropTypes",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 reactArrowFnCompPropTypesChldrn": {
-    "prefix": "rAFCpch.$rAFCpch",
+    "prefix": "rAFCpropType.$rAFCpropType",
     "body": [
       "import PropTypes from 'prop-types'",
       "",
@@ -683,7 +647,7 @@
       "}",
       ""
     ],
-    "description": "React Native Functional Component",
+    "description": "React Native Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactNativeFnCompExport": {
@@ -703,7 +667,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Native Functional Component",
+    "description": "React Native Function Component",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactNativeArrowFnComp": {
@@ -1160,7 +1124,7 @@
       "}",
       ""
     ],
-    "description": "React Functional Component with Emotion CSS",
+    "description": "React Function Component with Emotion CSS",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactFnCompExportEmotion": {
@@ -1177,7 +1141,7 @@
       "export default $1",
       ""
     ],
-    "description": "React Functional Component with Emotion CSS",
+    "description": "React Function Component with Emotion CSS",
     "scope": "javascript,javascriptreact"
   },
   "🟨 reactArrowFnCompEmotion": {
@@ -1262,14 +1226,6 @@
     "description": "Testing `afterAll` / `afterEach` block",
     "scope": "javascript,javascriptreact"
   },
-  "🟨 wrapWithFunction": {
-    "prefix": "_func.$_func",
-    "body": [
-      "${1:func}($TM_SELECTED_TEXT)"
-    ],
-    "description": "Wrap with function",
-    "scope": "javascript,javascriptreact"
-  },
   "🟨 stringToTemplateLiterals": {
     "prefix": "_lt.$_lt",
     "body": [
@@ -1284,6 +1240,26 @@
       "{`${TM_SELECTED_TEXT/^['\"](.*)['\"]$/$1/g}`}"
     ],
     "description": "Convert regular string in react prop's value to template literals",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 wrapWithUseMemo": {
+    "prefix": "_useMemo.$_useMemo",
+    "body": [
+      "useMemo$0(() => {",
+      "\t$TM_SELECTED_TEXT",
+      "}, ${1:[]})"
+    ],
+    "description": "Wrap with function",
+    "scope": "javascript,javascriptreact"
+  },
+  "🟨 wrapWithUseCallback": {
+    "prefix": "_useCallback.$_useCallback",
+    "body": [
+      "useCallback$0(",
+      "\t$TM_SELECTED_TEXT",
+      ", ${1:[]})"
+    ],
+    "description": "Wrap with function",
     "scope": "javascript,javascriptreact"
   },
   "🟨 wrapWithFragment": {

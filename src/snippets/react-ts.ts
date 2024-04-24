@@ -5,16 +5,15 @@ export const tsReactFnComp: Snippet = {
   prefix: ['rFC', '(type)'],
   body: [
     'type Props = {',
-    '\t$2: ReactNode;',
+    '\t$3: ReactNode;',
     '}',
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}({ \${3:children} }: Props) {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1}</$3>',
+    '\t\t<${4:div}>${5:$2}</$4>',
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactFnCompExport: Snippet = {
@@ -23,7 +22,6 @@ export const tsReactFnCompExport: Snippet = {
     'type Props = {',
     '\t$2: ReactNode;',
     '}',
-    '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
     '\treturn (',
     '\t\t<${3:div}>${4:$1}</$3>',
@@ -32,7 +30,7 @@ export const tsReactFnCompExport: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactArrowFnComp: Snippet = {
@@ -41,7 +39,6 @@ export const tsReactArrowFnComp: Snippet = {
     'type Props = {',
     '\t$2: ReactNode;',
     '}',
-    '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
     '\t\t<${3:div}>${4:$1}</$3>',
@@ -57,7 +54,6 @@ export const tsReactArrowFnCompExport: Snippet = {
     'type Props = {',
     '\t$2: ReactNode;',
     '}',
-    '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
     '\t\t<${3:div}>${4:$1}</$3>',
@@ -73,16 +69,15 @@ export const tsReactFnCompV2: Snippet = {
   prefix: ['rFC', '(interface)'],
   body: [
     'interface Props {',
-    '\t$2: ReactNode;',
+    '\t$3: ReactNode;',
     '}',
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}({ \${3:children} }: Props) {$0`,
     '\treturn (',
-    '\t\t<${3:div}>${4:$1}</$3>',
+    '\t\t<${4:div}>${5:$2}</$4>',
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactFnCompExportV2: Snippet = {
@@ -91,7 +86,6 @@ export const tsReactFnCompExportV2: Snippet = {
     'interface Props {',
     '\t$2: ReactNode;',
     '}',
-    '',
     `function \${1:${FILENAME_PASCALCASE}}({ \${2:children} }: Props) {$0`,
     '\treturn (',
     '\t\t<${3:div}>${4:$1}</$3>',
@@ -100,7 +94,7 @@ export const tsReactFnCompExportV2: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const tsReactArrowFnCompV2: Snippet = {
@@ -109,7 +103,6 @@ export const tsReactArrowFnCompV2: Snippet = {
     'interface Props {',
     '\t$2: ReactNode;',
     '}',
-    '',
     `export const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
     '\t\t<${3:div}>${4:$1}</$3>',
@@ -125,7 +118,6 @@ export const tsReactArrowFnCompExportV2: Snippet = {
     'interface Props {',
     '\t$2: ReactNode;',
     '}',
-    '',
     `const \${1:${FILENAME_PASCALCASE}} = ({ \${2:children} }: Props) => {$0`,
     '\treturn (',
     '\t\t<${3:div}>${4:$1}</$3>',

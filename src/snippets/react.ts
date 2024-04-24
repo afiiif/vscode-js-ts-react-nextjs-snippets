@@ -4,13 +4,13 @@ import { Snippet } from '../types';
 export const reactFnComp: Snippet = {
   prefix: 'rFC',
   body: [
-    `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1}</$2>',
+    '\t\t<${3:div}>${4:$2}</$3>',
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const reactFnCompExport: Snippet = {
@@ -24,7 +24,7 @@ export const reactFnCompExport: Snippet = {
     '',
     'export default $1',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const reactFnCompNoExport: Snippet = {
@@ -36,41 +36,25 @@ export const reactFnCompNoExport: Snippet = {
     '\t)',
     '}',
   ],
-  description: 'React Functional Component',
+  description: 'React Function Component',
 };
 
 export const reactFnCompPropTypes: Snippet = {
-  prefix: 'rFCp',
+  prefix: 'rFCpropType',
   body: [
     "import PropTypes from 'prop-types'",
     '',
-    `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}({ children }) {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1}</$2>',
+    '\t\t<${3:div}>${4:{ children \\}}</$3>',
     '\t)',
     '}',
     '',
-    '$1.propTypes = {}',
-  ],
-  description: 'React Functional Component with PropTypes',
-};
-
-export const reactFnCompPropTypesChldrn: Snippet = {
-  prefix: 'rFCpch',
-  body: [
-    "import PropTypes from 'prop-types'",
-    '',
-    `export default function \${1:${FILENAME_PASCALCASE}}({ children }) {$0`,
-    '\treturn (',
-    '\t\t<${2:div}>${3:{ children \\}}</$2>',
-    '\t)',
-    '}',
-    '',
-    '$1.propTypes = {',
+    '$2.propTypes = {',
     '\tchildren: PropTypes.node.isRequired',
     '}',
   ],
-  description: 'React Functional Component with PropTypes',
+  description: 'React Function Component with PropTypes',
 };
 
 export const reactArrowFnComp: Snippet = {
@@ -112,25 +96,7 @@ export const reactArrowFnCompNoExport: Snippet = {
 };
 
 export const reactArrowFnCompPropTypes: Snippet = {
-  prefix: 'rAFCp',
-  body: [
-    "import PropTypes from 'prop-types'",
-    '',
-    `const \${1:${FILENAME_PASCALCASE}} = () => {$0`,
-    '\treturn (',
-    '\t\t<${2:div}>${3:$1}</$2>',
-    '\t)',
-    '}',
-    '',
-    '$1.propTypes = {}',
-    '',
-    'export default $1',
-  ],
-  description: 'React Arrow Function Component with PropTypes',
-};
-
-export const reactArrowFnCompPropTypesChldrn: Snippet = {
-  prefix: 'rAFCpch',
+  prefix: 'rAFCpropType',
   body: [
     "import PropTypes from 'prop-types'",
     '',
