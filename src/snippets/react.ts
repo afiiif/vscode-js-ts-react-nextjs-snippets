@@ -4,9 +4,9 @@ import { Snippet } from '../types';
 export const reactFnComp: Snippet = {
   prefix: 'rFC',
   body: [
-    `export default function \${1:${FILENAME_PASCALCASE}}() {$0`,
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}() {$0`,
     '\treturn (',
-    '\t\t<${2:div}>${3:$1}</$2>',
+    '\t\t<${3:div}>${4:$2}</$3>',
     '\t)',
     '}',
   ],
