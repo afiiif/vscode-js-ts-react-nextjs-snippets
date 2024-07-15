@@ -2,6 +2,11 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.18.0 <small>- 2024/07/15</small>
+
+- Added JSX snippets for [Astro](https://astro.build/)
+- Updated snippet prefix for JSX snippets
+
 ## 1.17.0 <small>- 2024/04/25</small>
 
 - Improved react snippets
