@@ -1279,7 +1279,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxWrap": {
-    "prefix": "_rFrag.$_rFrag._frag._jsxFrag",
+    "prefix": "_jsxFrag.$_jsxFrag._frag._rFrag",
     "body": [
       "<$1$0>",
       "\t$TM_SELECTED_TEXT",
@@ -1289,7 +1289,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxIf": {
-    "prefix": "_rIf.$_rIf._jsxIf",
+    "prefix": "_jsxIf.$_jsxIf._rIf",
     "body": [
       "{${1:condition} ? (",
       "\t$TM_SELECTED_TEXT",
@@ -1301,7 +1301,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxIfWithFragment": {
-    "prefix": "_rIfFrag.$_rIfFrag._jsxIfFrag",
+    "prefix": "_jsxIfFrag.$_jsxIfFrag._rIfFrag",
     "body": [
       "{${1:condition} ? (",
       "\t<>",
@@ -1315,7 +1315,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxElse": {
-    "prefix": "_rEl.$_rEl._jsxEl",
+    "prefix": "_jsxEl.$_jsxEl._rEl",
     "body": [
       "{${1:condition} ? (",
       "\t${0:null}",
@@ -1327,7 +1327,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxElseWithFragment": {
-    "prefix": "_rElFrag.$_rElFrag._jsxElFrag",
+    "prefix": "_jsxElFrag.$_jsxElFrag._rElFrag",
     "body": [
       "{${1:condition} ? (",
       "\t${0:null}",
@@ -1341,7 +1341,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxConditional": {
-    "prefix": "_rCond.$_rCond._jsxCond",
+    "prefix": "_jsxCond.$_jsxCond._rCond",
     "body": [
       "{${1:condition} && (",
       "\t$TM_SELECTED_TEXT",
@@ -1351,7 +1351,7 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsxConditionalWithFragment": {
-    "prefix": "_rCondFrag.$_rCondFrag._jsxCondFrag",
+    "prefix": "_jsxCondFrag.$_jsxCondFrag._rCondFrag",
     "body": [
       "{${1:condition} && (",
       "\t<>",

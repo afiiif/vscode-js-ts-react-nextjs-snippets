@@ -1,19 +1,19 @@
 import { Snippet } from '../types';
 
 export const jsxWrap: Snippet = {
-  prefix: ['_rFrag', '_frag', '_jsxFrag'],
+  prefix: ['_jsxFrag', '_frag', '_rFrag'],
   body: ['<$1$0>', '\t$TM_SELECTED_TEXT', '</$1>'],
   description: 'Wrap component with Fragment',
 };
 
 export const jsxIf: Snippet = {
-  prefix: ['_rIf', '_jsxIf'],
+  prefix: ['_jsxIf', '_rIf'],
   body: ['{${1:condition} ? (', '\t$TM_SELECTED_TEXT', ') : (', '\t${0:null}', ')}'],
   description: 'Wrap in if',
 };
 
 export const jsxIfWithFragment: Snippet = {
-  prefix: ['_rIfFrag', '_jsxIfFrag'],
+  prefix: ['_jsxIfFrag', '_rIfFrag'],
   body: [
     '{${1:condition} ? (',
     '\t<>',
@@ -27,13 +27,13 @@ export const jsxIfWithFragment: Snippet = {
 };
 
 export const jsxElse: Snippet = {
-  prefix: ['_rEl', '_jsxEl'],
+  prefix: ['_jsxEl', '_rEl'],
   body: ['{${1:condition} ? (', '\t${0:null}', ') : (', '\t$TM_SELECTED_TEXT', ')}'],
   description: 'Wrap in else',
 };
 
 export const jsxElseWithFragment: Snippet = {
-  prefix: ['_rElFrag', '_jsxElFrag'],
+  prefix: ['_jsxElFrag', '_rElFrag'],
   body: [
     '{${1:condition} ? (',
     '\t${0:null}',
@@ -47,13 +47,13 @@ export const jsxElseWithFragment: Snippet = {
 };
 
 export const jsxConditional: Snippet = {
-  prefix: ['_rCond', '_jsxCond'],
+  prefix: ['_jsxCond', '_rCond'],
   body: ['{${1:condition} && (', '\t$TM_SELECTED_TEXT', ')}'],
   description: 'Wrap with conditional',
 };
 
 export const jsxConditionalWithFragment: Snippet = {
-  prefix: ['_rCondFrag', '_jsxCondFrag'],
+  prefix: ['_jsxCondFrag', '_rCondFrag'],
   body: ['{${1:condition} && (', '\t<>', '\t\t$TM_SELECTED_TEXT', '\t</>', ')}'],
   description: 'Wrap with conditional',
 };
