@@ -1570,90 +1570,6 @@
     "description": "Wrap with function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
-  "🟨 wrapWithFragment": {
-    "prefix": "_rFrag.$_rFrag._frag",
-    "body": [
-      "<$1$0>",
-      "\t$TM_SELECTED_TEXT",
-      "</$1>"
-    ],
-    "description": "Wrap component with Fragment",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 reactIf": {
-    "prefix": "_rIf.$_rIf",
-    "body": [
-      "{${1:condition} ? (",
-      "\t$TM_SELECTED_TEXT",
-      ") : (",
-      "\t${0:null}",
-      ")}"
-    ],
-    "description": "Wrap in if",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 reactIfWithFragment": {
-    "prefix": "_rIfFrag.$_rIfFrag",
-    "body": [
-      "{${1:condition} ? (",
-      "\t<>",
-      "\t\t$TM_SELECTED_TEXT",
-      "\t</>",
-      ") : (",
-      "\t${0:null}",
-      ")}"
-    ],
-    "description": "Wrap in if",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 reactElse": {
-    "prefix": "_rEl.$_rEl",
-    "body": [
-      "{${1:condition} ? (",
-      "\t${0:null}",
-      ") : (",
-      "\t$TM_SELECTED_TEXT",
-      ")}"
-    ],
-    "description": "Wrap in else",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 reactElseWithFragment": {
-    "prefix": "_rElFrag.$_rElFrag",
-    "body": [
-      "{${1:condition} ? (",
-      "\t${0:null}",
-      ") : (",
-      "\t<>",
-      "\t\t$TM_SELECTED_TEXT",
-      "\t</>",
-      ")}"
-    ],
-    "description": "Wrap in else",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 reactConditional": {
-    "prefix": "_rCon.$_rCon",
-    "body": [
-      "{${1:condition} && (",
-      "\t$TM_SELECTED_TEXT",
-      ")}"
-    ],
-    "description": "Wrap with conditional",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 reactConditionalWithFragment": {
-    "prefix": "_rConFrag.$_rConFrag",
-    "body": [
-      "{${1:condition} && (",
-      "\t<>",
-      "\t\t$TM_SELECTED_TEXT",
-      "\t</>",
-      ")}"
-    ],
-    "description": "Wrap with conditional",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
   "🟨 wrapWithJsonStringify": {
     "prefix": "_jstr.$_jstr.JSON",
     "body": [
@@ -1668,6 +1584,90 @@
       "JSON.parse($TM_SELECTED_TEXT)"
     ],
     "description": "Wrap with `JSON.parse`",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxWrap": {
+    "prefix": "_rFrag.$_rFrag._frag._jsxFrag",
+    "body": [
+      "<$1$0>",
+      "\t$TM_SELECTED_TEXT",
+      "</$1>"
+    ],
+    "description": "Wrap component with Fragment",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxIf": {
+    "prefix": "_rIf.$_rIf._jsxIf",
+    "body": [
+      "{${1:condition} ? (",
+      "\t$TM_SELECTED_TEXT",
+      ") : (",
+      "\t${0:null}",
+      ")}"
+    ],
+    "description": "Wrap in if",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxIfWithFragment": {
+    "prefix": "_rIfFrag.$_rIfFrag._jsxIfFrag",
+    "body": [
+      "{${1:condition} ? (",
+      "\t<>",
+      "\t\t$TM_SELECTED_TEXT",
+      "\t</>",
+      ") : (",
+      "\t${0:null}",
+      ")}"
+    ],
+    "description": "Wrap in if",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxElse": {
+    "prefix": "_rEl.$_rEl._jsxEl",
+    "body": [
+      "{${1:condition} ? (",
+      "\t${0:null}",
+      ") : (",
+      "\t$TM_SELECTED_TEXT",
+      ")}"
+    ],
+    "description": "Wrap in else",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxElseWithFragment": {
+    "prefix": "_rElFrag.$_rElFrag._jsxElFrag",
+    "body": [
+      "{${1:condition} ? (",
+      "\t${0:null}",
+      ") : (",
+      "\t<>",
+      "\t\t$TM_SELECTED_TEXT",
+      "\t</>",
+      ")}"
+    ],
+    "description": "Wrap in else",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxConditional": {
+    "prefix": "_rCond.$_rCond._jsxCond",
+    "body": [
+      "{${1:condition} && (",
+      "\t$TM_SELECTED_TEXT",
+      ")}"
+    ],
+    "description": "Wrap with conditional",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
+  "🟨 jsxConditionalWithFragment": {
+    "prefix": "_rCondFrag.$_rCondFrag._jsxCondFrag",
+    "body": [
+      "{${1:condition} && (",
+      "\t<>",
+      "\t\t$TM_SELECTED_TEXT",
+      "\t</>",
+      ")}"
+    ],
+    "description": "Wrap with conditional",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 jsxInnerHTML": {

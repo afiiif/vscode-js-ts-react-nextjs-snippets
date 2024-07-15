@@ -96,6 +96,10 @@ const typescriptSnippets = {
   ...miscTS,
 };
 
+const jsxSnippets = {
+  ...htmlJsx,
+};
+
 // Add scope
 Object.keys(javascriptSnippets).forEach((key) => {
   javascriptSnippets[key] = {
@@ -109,8 +113,15 @@ Object.keys(typescriptSnippets).forEach((key) => {
     scope: 'javascript,typescript,javascriptreact,typescriptreact',
   };
 });
+Object.keys(jsxSnippets).forEach((key) => {
+  jsxSnippets[key] = {
+    ...jsxSnippets[key],
+    scope: 'astro',
+  };
+});
 
 // Generate snippet file
 fs.mkdirSync('./snippets', { recursive: true });
 fs.writeFileSync('./snippets/javascript.json', JSON.stringify(javascriptSnippets, null, 2));
 fs.writeFileSync('./snippets/typescript.json', JSON.stringify(typescriptSnippets, null, 2));
+fs.writeFileSync('./snippets/jsx.json', JSON.stringify(jsxSnippets, null, 2));
