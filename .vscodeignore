@@ -7,6 +7,7 @@ vsc-extension-quickstart.md
 .github/**
 .husky/**
 src/**
+images/demo/**
 .lintstagedrc.js
 .prettierignore
 .releaserc
