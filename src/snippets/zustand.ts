@@ -3,7 +3,7 @@ import { Snippet } from '../types';
 export const zuCreate: Snippet = {
   prefix: 'zuc',
   body: [
-    "import create from 'zustand'",
+    "import { create } from 'zustand'",
     '',
     'const use${1:Store} = create((set) => ({',
     '\t${0:// code}',
@@ -17,7 +17,7 @@ export const zuCreate: Snippet = {
 export const zuCreateImmer: Snippet = {
   prefix: 'zuci',
   body: [
-    "import create from 'zustand'",
+    "import { create } from 'zustand'",
     "import { immer } from 'zustand/middleware/immer'",
     '',
     'const use${1:Store} = create(immer((set) => ({',
