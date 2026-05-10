@@ -39,6 +39,20 @@ export const reactFnCompNoExport: Snippet = {
   description: 'React Function Component',
 };
 
+export const reactFnClientComp: Snippet = {
+  prefix: 'rFCclient',
+  body: [
+    "'use client'",
+    '',
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}() {$0`,
+    '\treturn (',
+    '\t\t<${3:div}>${4:$2}</$3>',
+    '\t)',
+    '}',
+  ],
+  description: 'React Function Component',
+};
+
 export const reactFnCompPropTypes: Snippet = {
   prefix: 'rFCpropType',
   body: [

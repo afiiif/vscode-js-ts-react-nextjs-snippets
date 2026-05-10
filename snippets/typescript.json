@@ -210,6 +210,21 @@
     "description": "React Function Component",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟨 reactFnClientComp": {
+    "prefix": "rFCclient.$rFCclient",
+    "body": [
+      "'use client'",
+      "",
+      "export ${1:default }function ${2:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}() {$0",
+      "\treturn (",
+      "\t\t<${3:div}>${4:$2}</$3>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Function Component",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟨 reactFnCompPropTypes": {
     "prefix": "rFCpropType.$rFCpropType",
     "body": [
