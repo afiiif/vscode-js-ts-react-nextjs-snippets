@@ -118,7 +118,7 @@ export const reactArrowFnCompPropTypes: Snippet = {
 export const hocComponent: Snippet = {
   prefix: ['hoc', 'rHOC'],
   body: [
-    `export default function \${1:${FILENAME_CAMELCASE}}(WrappedComponent) {$0`,
+    `export \${2:default }function \${1:${FILENAME_CAMELCASE}}(WrappedComponent) {$0`,
     '\tconst Component = (props) => {',
     '\t\treturn <WrappedComponent {...props} />',
     '\t}',

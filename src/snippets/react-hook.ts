@@ -78,7 +78,7 @@ export const reactCustomHook: Snippet = {
   body: [
     "import { useEffect } from 'react'",
     '',
-    `export default function \${1:${FILENAME_CAMELCASE}}() {`,
+    `export \${2:default }function \${1:${FILENAME_CAMELCASE}}() {`,
     '\t${0:// code}',
     '\t',
     '\tuseEffect(() => {',
