@@ -68,14 +68,8 @@ If auto import doesn't appear, open command palette (`Ctrl`+`Shift`+`P`) and sel
 
 ![Restart TS server](./images/vscode-restart-ts-server.png)
 
+<br>
+
 ---
 
-## Donation
-
-<a href="https://www.buymeacoffee.com/afifu">
-  <img src="https://i.postimg.cc/m20G2cNj/bmc-button.png" alt="Buy Me A Coffee" height="64px">
-</a>
-<br />
-<a href="https://trakteer.id/afifu/tip">
-  <img src="https://i.postimg.cc/rwXxGJNr/trakteer-id.png" alt="Trakteer ID" height="44px">
-</a>
+https://afiiif.github.io
