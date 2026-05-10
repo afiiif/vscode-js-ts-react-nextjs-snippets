@@ -126,43 +126,23 @@
     "scope": "javascript,javascriptreact"
   },
   "🟨 arrowFunction": {
-    "prefix": "af.$af",
+    "prefix": "aFun.$aFun",
     "body": [
-      "const ${1:myFunction} = ($2) => {",
-      "\t${3:// code}",
+      "${2:export }const ${1:myFunction} = ($3) => {",
+      "\t${4:// code}",
       "}"
     ],
     "description": "Arrow function",
     "scope": "javascript,javascriptreact"
   },
   "🟨 asyncArrowFunction": {
-    "prefix": "afa.$afa",
+    "prefix": "aFunAsync.$aFunAsync",
     "body": [
-      "const ${1:myFunction} = async ($2) => {",
-      "\t${3:// code}",
+      "${2:export }const ${1:myFunction} = async ($3) => {",
+      "\t${4:// code}",
       "}"
     ],
     "description": "Async arrow function",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 arrowFunctionExport": {
-    "prefix": "afe.$afe",
-    "body": [
-      "export const ${1:myFunction} = ($2) => {",
-      "\t${3:// code}",
-      "}"
-    ],
-    "description": "Arrow function export",
-    "scope": "javascript,javascriptreact"
-  },
-  "🟨 asyncArrowFunctionExport": {
-    "prefix": "afae.$afae",
-    "body": [
-      "export const ${1:myFunction} = async ($2) => {",
-      "\t${3:// code}",
-      "}"
-    ],
-    "description": "Async arrow function export",
     "scope": "javascript,javascriptreact"
   },
   "🟨 jsonStringify": {

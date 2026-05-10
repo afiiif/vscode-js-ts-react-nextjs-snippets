@@ -126,43 +126,23 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 arrowFunction": {
-    "prefix": "af.$af",
+    "prefix": "aFun.$aFun",
     "body": [
-      "const ${1:myFunction} = ($2) => {",
-      "\t${3:// code}",
+      "${2:export }const ${1:myFunction} = ($3) => {",
+      "\t${4:// code}",
       "}"
     ],
     "description": "Arrow function",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 asyncArrowFunction": {
-    "prefix": "afa.$afa",
+    "prefix": "aFunAsync.$aFunAsync",
     "body": [
-      "const ${1:myFunction} = async ($2) => {",
-      "\t${3:// code}",
+      "${2:export }const ${1:myFunction} = async ($3) => {",
+      "\t${4:// code}",
       "}"
     ],
     "description": "Async arrow function",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 arrowFunctionExport": {
-    "prefix": "afe.$afe",
-    "body": [
-      "export const ${1:myFunction} = ($2) => {",
-      "\t${3:// code}",
-      "}"
-    ],
-    "description": "Arrow function export",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact"
-  },
-  "🟨 asyncArrowFunctionExport": {
-    "prefix": "afae.$afae",
-    "body": [
-      "export const ${1:myFunction} = async ($2) => {",
-      "\t${3:// code}",
-      "}"
-    ],
-    "description": "Async arrow function export",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
   "🟨 jsonStringify": {

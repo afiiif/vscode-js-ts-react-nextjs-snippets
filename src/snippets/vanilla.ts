@@ -91,27 +91,15 @@ export const setInterval: Snippet = {
 };
 
 export const arrowFunction: Snippet = {
-  prefix: 'af',
-  body: ['const ${1:myFunction} = ($2) => {', '\t${3:// code}', '}'],
+  prefix: 'aFun',
+  body: ['${2:export }const ${1:myFunction} = ($3) => {', '\t${4:// code}', '}'],
   description: 'Arrow function',
 };
 
 export const asyncArrowFunction: Snippet = {
-  prefix: 'afa',
-  body: ['const ${1:myFunction} = async ($2) => {', '\t${3:// code}', '}'],
+  prefix: 'aFunAsync',
+  body: ['${2:export }const ${1:myFunction} = async ($3) => {', '\t${4:// code}', '}'],
   description: 'Async arrow function',
-};
-
-export const arrowFunctionExport: Snippet = {
-  prefix: 'afe',
-  body: ['export const ${1:myFunction} = ($2) => {', '\t${3:// code}', '}'],
-  description: 'Arrow function export',
-};
-
-export const asyncArrowFunctionExport: Snippet = {
-  prefix: 'afae',
-  body: ['export const ${1:myFunction} = async ($2) => {', '\t${3:// code}', '}'],
-  description: 'Async arrow function export',
 };
 
 export const jsonStringify: Snippet = {
