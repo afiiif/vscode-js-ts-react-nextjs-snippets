@@ -2,6 +2,13 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.19.0 <small>- 2026/05/10</small>
+
+- Simplified arrow function snippet
+- Make it easier to switch from default export to named export
+- Added client component snippet
+- Updated Zustand snippet to v4+ syntax
+
 ## 1.18.0 <small>- 2024/07/15</small>
 
 - Added JSX snippets for [Astro](https://astro.build/)
