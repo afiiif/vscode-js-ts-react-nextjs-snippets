@@ -1,6 +1,18 @@
 import { FILENAME_PASCALCASE } from '../constants';
 import { Snippet } from '../types';
 
+export const tsReactFnCompWithChildren: Snippet = {
+  prefix: ['rFCchildren'],
+  body: [
+    `export \${1:default }function \${2:${FILENAME_PASCALCASE}}({ children }: { children: ReactNode$3 }) {$0`,
+    '\treturn (',
+    '\t\tchildren',
+    '\t)',
+    '}',
+  ],
+  description: 'React Function Component with Children prop',
+};
+
 export const tsReactFnComp: Snippet = {
   prefix: ['rFC', '(type)'],
   body: [

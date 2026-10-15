@@ -330,6 +330,19 @@
     "description": "Convert import to React.lazy import",
     "scope": "javascript,typescript,javascriptreact,typescriptreact"
   },
+  "🟦 TS ReactFnCompWithChildren": {
+    "prefix": "rFCchildren.TS.$$rFCchildren",
+    "body": [
+      "export ${1:default }function ${2:${RELATIVE_FILEPATH/(\\.[jt]sx?$|[\\/\\\\](?:index|\\[).*|.+[\\/\\\\](?!(?:index|page|\\[))|[.\\-_\\/\\\\])|(\\w+)/${2:/capitalize}/g}}({ children }: { children: ReactNode$3 }) {$0",
+      "\treturn (",
+      "\t\tchildren",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React Function Component with Children prop",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact"
+  },
   "🟦 TS ReactFnComp": {
     "prefix": "rFC.TS.$$rFC.(type)",
     "body": [
