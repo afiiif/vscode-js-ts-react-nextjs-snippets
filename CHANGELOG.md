@@ -2,6 +2,10 @@
 
 All notable changes to the "vscode-js-ts-react-nextjs-snippets" extension will be documented in this file.
 
+## 1.20.0 <small>- 2026/10/15</small>
+
+- Add simple react fc with children snippet
+
 ## 1.19.0 <small>- 2026/05/10</small>
 
 - Simplified arrow function snippet
